@@ -2,9 +2,9 @@ import type { Dictionary } from "../types";
 
 export const id: Dictionary = {
   meta: {
-    title: "Blinkin — Hidupmu dalam momen 30 detik",
+    title: "Blinkin — Buku harian video keluarga dari klip 30 detik",
     description:
-      "Blinkin adalah buku harian video pribadi untuk keluarga. Rekam momen 30 detik, simpan di kalender, dan ubah satu bulan atau satu tahun menjadi film. Semuanya tetap di ponselmu.",
+      "Rekam momen keluarga dalam klip 30 detik, simpan di kalender, dan buat film bermusik dari satu bulan atau tahun. Gratis di Android. Tanpa cloud dan iklan.",
   },
   nav: {
     privacy: "Privasi",
@@ -49,6 +49,32 @@ export const id: Dictionary = {
       { title: "Rekam", text: "Buka aplikasinya — langsung mulai di kamera. Sekali ketuk untuk mulai, sekali lagi untuk berhenti." },
       { title: "Kumpulkan", text: "Hari demi hari klip mengisi kalendermu dan menjadi arsip tenang kehidupan keluargamu." },
       { title: "Kenang kembali", text: "Buat film untuk bulan atau tahun itu, lalu simpan ke galeri atau bagikan." },
+    ],
+  },
+  faq: {
+    title: "Tanya jawab",
+    items: [
+      { question: "Apakah Blinkin gratis?", answer: "Ya. Blinkin gratis diunduh dan digunakan di Android, dan tidak ada iklan." },
+      {
+        question: "Apakah videoku diunggah ke suatu tempat?",
+        answer:
+          "Tidak. Klip direkam, disimpan, dan dijadikan film langsung di ponselmu. Tidak ada akun dan tidak ada cloud — tidak ada yang dikirim ke kami atau siapa pun.",
+      },
+      {
+        question: "Kenapa klip dibatasi 30 detik?",
+        answer:
+          "Klip pendek cepat direkam dan mudah ditonton ulang. Sebulan atau setahun momen 30 detik menjadi film yang benar-benar ingin kamu tonton.",
+      },
+      {
+        question: "Bisakah aku menambahkan musik ke film?",
+        answer:
+          "Bisa. Pilih file audio apa pun dari ponselmu, tentukan bagian lagu yang diputar, dan putuskan apakah suara asli klip tetap dipakai.",
+      },
+      {
+        question: "Bagaimana cara menyimpan atau membagikan film?",
+        answer: "Simpan film yang sudah jadi ke galeri ponsel atau kirim lewat aplikasi apa pun dengan menu berbagi standar.",
+      },
+      { question: "Apakah ada versi iPhone?", answer: "Belum. Blinkin hadir lebih dulu di Android." },
     ],
   },
   privacyBand: {

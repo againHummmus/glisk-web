@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/types";
-import { site } from "@/lib/site";
+import { getPlayStoreLink, site } from "@/lib/site";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 interface SiteHeaderProps {
@@ -29,7 +29,7 @@ export function SiteHeader({ lang, path, dict }: SiteHeaderProps) {
           {dict.nav.privacy}
         </Link>
         <a
-          href={site.playStoreUrl}
+          href={getPlayStoreLink(lang, "header")}
           className="rounded-full border border-white/15 bg-neutral-950 px-4 py-2 font-medium transition-opacity hover:opacity-80"
         >
           {dict.nav.getApp}

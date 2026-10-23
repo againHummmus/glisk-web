@@ -2,9 +2,9 @@ import type { Dictionary } from "../types";
 
 export const en: Dictionary = {
   meta: {
-    title: "Blinkin — Your life in 30-second moments",
+    title: "Blinkin — Family Video Diary in 30-Second Clips",
     description:
-      "Blinkin is a private video diary for families. Record 30-second moments, keep them in a calendar and turn a month or a year into a film. Everything stays on your phone.",
+      "Record 30-second family moments, keep them in a calendar and turn any month or year into a film with music. Free on Android. Private: no cloud, no ads.",
   },
   nav: {
     privacy: "Privacy",
@@ -49,6 +49,32 @@ export const en: Dictionary = {
       { title: "Record", text: "Open the app — it starts on the camera. One tap to start, one tap to stop." },
       { title: "Collect", text: "Clips fill your calendar day by day, building a quiet archive of your family life." },
       { title: "Relive", text: "Make a film for the month or the year and save it to your gallery or share it." },
+    ],
+  },
+  faq: {
+    title: "Questions & answers",
+    items: [
+      { question: "Is Blinkin free?", answer: "Yes. Blinkin is free to download and use on Android, and there are no ads." },
+      {
+        question: "Are my videos uploaded anywhere?",
+        answer:
+          "No. Clips are recorded, stored and turned into films right on your phone. There is no account and no cloud — nothing is sent to us or anyone else.",
+      },
+      {
+        question: "Why are clips limited to 30 seconds?",
+        answer:
+          "Short clips are quick to record and easy to rewatch. A month or a year of 30-second moments becomes a film you’ll actually want to watch.",
+      },
+      {
+        question: "Can I add music to my film?",
+        answer:
+          "Yes. Pick any audio file from your phone, choose which part of the song plays, and decide whether to keep the original sound of your clips.",
+      },
+      {
+        question: "How do I keep or share a film?",
+        answer: "Save the finished film to your phone’s gallery or send it through any app with the standard share menu.",
+      },
+      { question: "Is there an iPhone version?", answer: "Not yet. Blinkin is available on Android first." },
     ],
   },
   privacyBand: {

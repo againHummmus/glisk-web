@@ -2,9 +2,9 @@ import type { Dictionary } from "../types";
 
 export const tr: Dictionary = {
   meta: {
-    title: "Blinkin — Hayatın 30 saniyelik anlarda",
+    title: "Blinkin — 30 saniyelik kliplerle aile video günlüğü",
     description:
-      "Blinkin, aileler için gizli bir video günlüğü. 30 saniyelik anları kaydet, takvimde sakla ve bir ayı ya da bir yılı filme dönüştür. Her şey telefonunda kalır.",
+      "Aile anlarını 30 saniyelik kliplerle kaydet, takvimde sakla ve ayı ya da yılı müzikli bir filme dönüştür. Android’de ücretsiz. Bulut yok, reklam yok.",
   },
   nav: {
     privacy: "Gizlilik",
@@ -49,6 +49,32 @@ export const tr: Dictionary = {
       { title: "Kaydet", text: "Uygulamayı aç — doğrudan kamerayla başlar. Başlatmak için bir dokunuş, durdurmak için bir dokunuş." },
       { title: "Biriktir", text: "Klipler gün gün takvimini doldurur ve ailenin hayatından sakin bir arşiv oluşur." },
       { title: "Yeniden yaşa", text: "Ayın ya da yılın filmini yap, galeriye kaydet veya paylaş." },
+    ],
+  },
+  faq: {
+    title: "Sorular ve cevaplar",
+    items: [
+      { question: "Blinkin ücretsiz mi?", answer: "Evet. Blinkin’i Android’de ücretsiz indirip kullanabilirsin ve hiç reklam yok." },
+      {
+        question: "Videolarım bir yere yükleniyor mu?",
+        answer:
+          "Hayır. Klipler doğrudan telefonunda kaydedilir, saklanır ve filme dönüştürülür. Hesap yok, bulut yok — hiçbir şey bize ya da başka birine gönderilmez.",
+      },
+      {
+        question: "Klipler neden 30 saniyeyle sınırlı?",
+        answer:
+          "Kısa klipler hızlı çekilir ve kolay izlenir. Bir ayın ya da yılın 30 saniyelik anları, gerçekten izlemek isteyeceğin bir filme dönüşür.",
+      },
+      {
+        question: "Filmime müzik ekleyebilir miyim?",
+        answer:
+          "Evet. Telefonundan herhangi bir ses dosyası seç, şarkının hangi bölümünün çalacağını belirle ve kliplerin orijinal sesini koruyup korumayacağına karar ver.",
+      },
+      {
+        question: "Bir filmi nasıl saklarım veya paylaşırım?",
+        answer: "Bitmiş filmi telefonunun galerisine kaydet ya da standart paylaşım menüsüyle istediğin uygulamadan gönder.",
+      },
+      { question: "iPhone sürümü var mı?", answer: "Henüz yok. Blinkin önce Android’de çıkıyor." },
     ],
   },
   privacyBand: {

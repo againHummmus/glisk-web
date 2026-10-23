@@ -2,9 +2,9 @@ import type { Dictionary } from "../types";
 
 export const pt: Dictionary = {
   meta: {
-    title: "Blinkin — Sua vida em momentos de 30 segundos",
+    title: "Blinkin — Diário em vídeo da família em clipes de 30 segundos",
     description:
-      "Blinkin é um diário em vídeo privado para famílias. Grave momentos de 30 segundos, guarde-os em um calendário e transforme um mês ou um ano em um filme. Tudo fica no seu celular.",
+      "Grave momentos em família de 30 segundos, guarde em um calendário e crie um filme com música do mês ou do ano. Grátis no Android. Sem nuvem e sem anúncios.",
   },
   nav: {
     privacy: "Privacidade",
@@ -49,6 +49,32 @@ export const pt: Dictionary = {
       { title: "Grave", text: "Abra o app — ele já começa na câmera. Um toque para começar, outro para parar." },
       { title: "Colecione", text: "Dia após dia, os clipes preenchem seu calendário e formam um arquivo tranquilo da vida da sua família." },
       { title: "Reviva", text: "Crie um filme do mês ou do ano e salve na galeria ou compartilhe." },
+    ],
+  },
+  faq: {
+    title: "Perguntas e respostas",
+    items: [
+      { question: "O Blinkin é grátis?", answer: "Sim. O Blinkin é grátis para baixar e usar no Android, e não tem anúncios." },
+      {
+        question: "Meus vídeos são enviados para algum lugar?",
+        answer:
+          "Não. Os clipes são gravados, guardados e transformados em filmes no seu celular. Não há conta nem nuvem — nada é enviado para nós nem para ninguém.",
+      },
+      {
+        question: "Por que os clipes têm só 30 segundos?",
+        answer:
+          "Clipes curtos são rápidos de gravar e fáceis de rever. Um mês ou um ano de momentos de 30 segundos vira um filme que você realmente quer assistir.",
+      },
+      {
+        question: "Posso adicionar música ao meu filme?",
+        answer:
+          "Sim. Escolha qualquer arquivo de áudio do celular, selecione o trecho da música e decida se mantém o som original dos clipes.",
+      },
+      {
+        question: "Como guardo ou compartilho um filme?",
+        answer: "Salve o filme pronto na galeria do celular ou envie por qualquer app pelo menu de compartilhamento padrão.",
+      },
+      { question: "Tem versão para iPhone?", answer: "Ainda não. O Blinkin chega primeiro ao Android." },
     ],
   },
   privacyBand: {

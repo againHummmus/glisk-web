@@ -24,6 +24,13 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/privacy">)
       canonical: `/${lang}/privacy`,
       languages: languageAlternates("/privacy"),
     },
+    openGraph: {
+      title: `${dict.privacy.metaTitle} · ${site.name}`,
+      description: dict.privacy.metaDescription,
+      url: `/${lang}/privacy`,
+      siteName: site.name,
+      type: "article",
+    },
   };
 }
 

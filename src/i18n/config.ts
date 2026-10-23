@@ -61,6 +61,9 @@ export function matchLocale(acceptLanguage: string | null): Locale {
   return defaultLocale;
 }
 
-export function languageAlternates(path: string) {
-  return Object.fromEntries(locales.map((locale) => [languageTags[locale], `/${locale}${path}`]));
+export function languageAlternates(path: string, baseUrl = "") {
+  return {
+    ...Object.fromEntries(locales.map((locale) => [languageTags[locale], `${baseUrl}/${locale}${path}`])),
+    "x-default": `${baseUrl}/${defaultLocale}${path}`,
+  };
 }

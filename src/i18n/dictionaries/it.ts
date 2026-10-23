@@ -2,9 +2,9 @@ import type { Dictionary } from "../types";
 
 export const it: Dictionary = {
   meta: {
-    title: "Blinkin — La tua vita in momenti da 30 secondi",
+    title: "Blinkin — Diario video di famiglia in clip da 30 secondi",
     description:
-      "Blinkin è un diario video privato per le famiglie. Registra momenti da 30 secondi, conservali in un calendario e trasforma un mese o un anno in un film. Tutto resta sul tuo telefono.",
+      "Registra momenti in famiglia da 30 secondi, conservali in un calendario e crea un film con musica del mese o dell’anno. Gratis su Android. Senza cloud né pubblicità.",
   },
   nav: {
     privacy: "Privacy",
@@ -49,6 +49,32 @@ export const it: Dictionary = {
       { title: "Registra", text: "Apri l’app: parte subito dalla fotocamera. Un tocco per iniziare, uno per fermarti." },
       { title: "Raccogli", text: "Giorno dopo giorno le clip riempiono il calendario, creando un archivio tranquillo della vita della tua famiglia." },
       { title: "Rivivi", text: "Crea un film del mese o dell’anno e salvalo nella galleria o condividilo." },
+    ],
+  },
+  faq: {
+    title: "Domande e risposte",
+    items: [
+      { question: "Blinkin è gratis?", answer: "Sì. Blinkin si scarica e si usa gratis su Android, e non ha pubblicità." },
+      {
+        question: "I miei video vengono caricati da qualche parte?",
+        answer:
+          "No. Le clip vengono registrate, conservate e trasformate in film direttamente sul tuo telefono. Niente account e niente cloud: nulla viene inviato a noi o ad altri.",
+      },
+      {
+        question: "Perché le clip durano solo 30 secondi?",
+        answer:
+          "Le clip brevi si registrano in un attimo e si rivedono volentieri. Un mese o un anno di momenti da 30 secondi diventa un film che hai davvero voglia di guardare.",
+      },
+      {
+        question: "Posso aggiungere musica al mio film?",
+        answer:
+          "Sì. Scegli un file audio dal telefono, seleziona quale parte della canzone suonare e decidi se mantenere l’audio originale delle clip.",
+      },
+      {
+        question: "Come conservo o condivido un film?",
+        answer: "Salva il film finito nella galleria del telefono o invialo con qualsiasi app dal menu di condivisione standard.",
+      },
+      { question: "Esiste una versione per iPhone?", answer: "Non ancora. Blinkin arriva prima su Android." },
     ],
   },
   privacyBand: {

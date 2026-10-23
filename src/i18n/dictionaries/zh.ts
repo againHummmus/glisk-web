@@ -2,9 +2,9 @@ import type { Dictionary } from "../types";
 
 export const zh: Dictionary = {
   meta: {
-    title: "Blinkin — 用 30 秒的瞬间记录生活",
+    title: "Blinkin — 用 30 秒短片记录的家庭视频日记",
     description:
-      "Blinkin 是一款面向家庭的私密视频日记。录下 30 秒的瞬间，保存在日历里，把一个月或一整年做成一部影片。一切都只留在你的手机上。",
+      "用 30 秒短片记录家庭瞬间，保存在日历中，把一个月或一整年做成配乐影片。Android 免费，不上云，无广告。",
   },
   nav: {
     privacy: "隐私",
@@ -49,6 +49,29 @@ export const zh: Dictionary = {
       { title: "录制", text: "打开应用即进入相机。轻点一下开始，再点一下停止。" },
       { title: "收集", text: "视频一天天填满你的日历，慢慢汇成家庭生活的安静档案。" },
       { title: "重温", text: "为这个月或这一年制作影片，保存到相册或分享出去。" },
+    ],
+  },
+  faq: {
+    title: "常见问题",
+    items: [
+      { question: "Blinkin 免费吗？", answer: "是的。Blinkin 在 Android 上可免费下载和使用，而且没有广告。" },
+      {
+        question: "我的视频会被上传到别处吗？",
+        answer: "不会。视频的录制、保存和影片制作都在你的手机上完成。没有账号，也没有云端——任何内容都不会发送给我们或其他人。",
+      },
+      {
+        question: "为什么视频限制为 30 秒？",
+        answer: "短视频拍起来快，回看也轻松。一个月或一年的 30 秒瞬间，会变成一部你真正想看的影片。",
+      },
+      {
+        question: "可以给影片加音乐吗？",
+        answer: "可以。从手机中选择任意音频文件，选定要播放的歌曲片段，并决定是否保留视频的原声。",
+      },
+      {
+        question: "如何保存或分享影片？",
+        answer: "把成片保存到手机相册，或通过系统标准分享菜单发送到任意应用。",
+      },
+      { question: "有 iPhone 版吗？", answer: "暂时还没有。Blinkin 先在 Android 上推出。" },
     ],
   },
   privacyBand: {

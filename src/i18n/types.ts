@@ -42,6 +42,10 @@ export interface Dictionary {
     title: string;
     steps: [TextBlock, TextBlock, TextBlock];
   };
+  faq: {
+    title: string;
+    items: { question: string; answer: string }[];
+  };
   privacyBand: {
     title: string;
     text: string;

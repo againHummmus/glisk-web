@@ -2,9 +2,9 @@ import type { Dictionary } from "../types";
 
 export const de: Dictionary = {
   meta: {
-    title: "Blinkin — Dein Leben in 30-Sekunden-Momenten",
+    title: "Blinkin — Familien-Videotagebuch in 30-Sekunden-Clips",
     description:
-      "Blinkin ist ein privates Video-Tagebuch für Familien. Nimm 30-Sekunden-Momente auf, sammle sie im Kalender und mach aus einem Monat oder Jahr einen Film. Alles bleibt auf deinem Handy.",
+      "Halte Familienmomente in 30-Sekunden-Clips fest, sammle sie im Kalender und mach aus Monat oder Jahr einen Film mit Musik. Kostenlos für Android. Ohne Cloud und Werbung.",
   },
   nav: {
     privacy: "Datenschutz",
@@ -49,6 +49,32 @@ export const de: Dictionary = {
       { title: "Aufnehmen", text: "Öffne die App — sie startet direkt mit der Kamera. Ein Tipp zum Starten, einer zum Stoppen." },
       { title: "Sammeln", text: "Tag für Tag füllen Clips deinen Kalender und werden zu einem stillen Archiv eures Familienlebens." },
       { title: "Wiedererleben", text: "Erstelle einen Film für den Monat oder das Jahr und speichere ihn in der Galerie oder teile ihn." },
+    ],
+  },
+  faq: {
+    title: "Fragen und Antworten",
+    items: [
+      { question: "Ist Blinkin kostenlos?", answer: "Ja. Blinkin ist auf Android kostenlos zum Herunterladen und Nutzen, und es gibt keine Werbung." },
+      {
+        question: "Werden meine Videos irgendwo hochgeladen?",
+        answer:
+          "Nein. Clips werden direkt auf deinem Handy aufgenommen, gespeichert und zu Filmen gemacht. Es gibt kein Konto und keine Cloud — nichts wird an uns oder sonst jemanden gesendet.",
+      },
+      {
+        question: "Warum sind Clips auf 30 Sekunden begrenzt?",
+        answer:
+          "Kurze Clips sind schnell aufgenommen und leicht anzuschauen. Ein Monat oder ein Jahr voller 30-Sekunden-Momente wird zu einem Film, den du wirklich sehen willst.",
+      },
+      {
+        question: "Kann ich meinem Film Musik hinzufügen?",
+        answer:
+          "Ja. Wähle eine beliebige Audiodatei von deinem Handy, bestimme, welcher Teil des Songs läuft, und entscheide, ob der Originalton deiner Clips bleibt.",
+      },
+      {
+        question: "Wie behalte oder teile ich einen Film?",
+        answer: "Speichere den fertigen Film in der Galerie deines Handys oder teile ihn über das normale Teilen-Menü mit jeder App.",
+      },
+      { question: "Gibt es eine iPhone-Version?", answer: "Noch nicht. Blinkin erscheint zuerst für Android." },
     ],
   },
   privacyBand: {
