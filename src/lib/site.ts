@@ -8,7 +8,7 @@ export const site = {
   name: "Blinkin",
   url: resolveSiteUrl(),
   androidPackage: "com.ahh.blinkin",
-  contactEmail: "your-email@example.com",
+  contactEmail: "ahhummmus@gmail.com",
   privacyUpdatedAt: "2026-10-23T00:00:00Z",
   contentUpdatedAt: "2026-10-23T00:00:00Z",
   copyrightYear: 2026,
