@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand: #25311e;
+  --color-accent: #ee6c3d;
+  --color-record: #ef4444;
+  --font-sans: var(--font-geist-sans);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+}
+
+:lang(ja) {
+  word-break: auto-phrase;
+}
+
+:lang(ko) {
+  word-break: keep-all;
+}
