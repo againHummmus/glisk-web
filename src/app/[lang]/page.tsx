@@ -123,10 +123,10 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <h2 className="mb-8 text-3xl font-semibold tracking-tight">{dict.faq.title}</h2>
           <div className="flex flex-col gap-3">
             {dict.faq.items.map(({ question, answer }) => (
-              <details key={question} className="group rounded-2xl border border-white/10 bg-neutral-950">
+              <details key={question} className="faq-item group rounded-2xl border border-white/10 bg-neutral-950">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-medium [&::-webkit-details-marker]:hidden">
                   {question}
-                  <ChevronDown size={18} className="shrink-0 text-neutral-500 transition-transform group-open:rotate-180" />
+                  <ChevronDown size={18} className="shrink-0 text-neutral-500 transition-transform duration-300 group-open:rotate-180" />
                 </summary>
                 <p className="px-5 pb-5 leading-7 text-neutral-400">{answer}</p>
               </details>

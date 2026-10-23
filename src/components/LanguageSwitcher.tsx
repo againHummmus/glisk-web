@@ -1,5 +1,8 @@
+"use client";
+
 import { Globe } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 import { languageTags, localeNames, locales, type Locale } from "@/i18n/config";
 
 interface LanguageSwitcherProps {
@@ -9,8 +12,21 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher({ lang, path, label }: LanguageSwitcherProps) {
+  const detailsRef = useRef<HTMLDetailsElement>(null);
+
+  useEffect(() => {
+    const closeOnOutsideClick = (event: PointerEvent) => {
+      const details = detailsRef.current;
+      if (details?.open && event.target instanceof Node && !details.contains(event.target)) {
+        details.open = false;
+      }
+    };
+    document.addEventListener("pointerdown", closeOnOutsideClick);
+    return () => document.removeEventListener("pointerdown", closeOnOutsideClick);
+  }, []);
+
   return (
-    <details className="relative">
+    <details ref={detailsRef} className="language-menu relative">
       <summary
         aria-label={label}
         className="flex cursor-pointer list-none items-center gap-1.5 rounded-full px-3 py-2 text-neutral-400 transition-colors hover:text-white [&::-webkit-details-marker]:hidden"

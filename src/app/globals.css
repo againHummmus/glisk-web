@@ -23,3 +23,57 @@ body {
 :lang(ko) {
   word-break: keep-all;
 }
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+.faq-item::details-content {
+  block-size: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    block-size 300ms ease,
+    opacity 300ms ease,
+    content-visibility 300ms allow-discrete;
+}
+
+.faq-item[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item::details-content {
+    transition: none;
+  }
+}
+
+.language-menu::details-content {
+  transition: content-visibility 200ms allow-discrete;
+}
+
+.language-menu > div {
+  opacity: 0;
+  translate: 0 -6px;
+  transition:
+    opacity 200ms ease,
+    translate 200ms ease;
+}
+
+.language-menu[open] > div {
+  opacity: 1;
+  translate: 0 0;
+
+  @starting-style {
+    opacity: 0;
+    translate: 0 -6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-menu::details-content,
+  .language-menu > div {
+    transition: none;
+  }
+}
