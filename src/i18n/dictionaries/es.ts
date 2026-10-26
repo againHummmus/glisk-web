@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const es: Dictionary = {
   meta: {
-    title: "Glisk: diario en vídeo con clips de 30 segundos",
-    description: "Graba clips cortos de tu día a día, sin editar y sin filtros. Glisk los ordena por días y los convierte en una película del mes o del año. Gratis en Android, funciona sin conexión y sin anuncios.",
+    title: "Glisk: diario en vídeo de momentos de 30 segundos para Android",
+    description: "Un diario en vídeo acogedor para Android. Grabe clips cortos de días normales, guárdelos en un calendario y conviértalos en películas del mes o del año. Gratis, sin anuncios ni suscripciones.",
   },
   nav: {
     privacy: "Privacidad",
@@ -13,21 +13,11 @@ export const es: Dictionary = {
   storeButton: "Disponible en Google Play",
   hero: {
     badge: "Gratis en Android",
-    titleStart: "Tu vida, ",
-    titleAccent: "sin filtros",
-    titleEnd: ".",
-    text: "Glisk es una palabra escocesa antigua que significa «echar un vistazo». Graba treinta segundos de lo que está pasando ahora. Si te tiembla la mano o la luz es mala, da igual. Con el tiempo, esos clips cuentan cómo fue tu vida de verdad.",
-    privacyLink: "Qué hacemos con tus datos →",
-  },
-  manifesto: {
-    title: "No hace falta que quede bonito.",
-    lines: [
-      "No esperes a tener buena luz ni te arregles el pelo antes.",
-      "¿Te tiembla la mano? No pasa nada. Tampoco el ruido de fondo o una risa que se corta a mitad de frase.",
-      "No hace falta verlo diez veces ni repetirlo.",
-      "Aquí no hay likes. Es para ti, para más adelante.",
-    ],
-    closing: "Así que graba y ya.",
+    titleStart: "Su vida, ",
+    titleAccent: "tal como es.",
+    titleEnd: "",
+    text: "Las tomas perfectas se olvidan rápido, pero el día a día real, con todos sus detalles, se queda mucho tiempo. No tenga miedo de las manos temblorosas, las voces fuera de cámara, las frases cortadas o el horizonte torcido. La vida real no tiene que ser impecable. Grabe lo que está pasando ahora mismo.",
+    privacyLink: "Qué pasa con sus datos →",
   },
   mockup: {
     month: "Octubre 2026",
@@ -37,159 +27,159 @@ export const es: Dictionary = {
   features: [
     {
       title: "30 segundos como máximo",
-      text: "El temporizador para a los 30 segundos. Es suficiente para guardar el momento sin convertirlo en una producción.",
+      text: "El temporizador detiene la grabación a los 30 segundos. Para un momento es suficiente, y así grabar cada día cuesta poco.",
     },
     {
       title: "Ordenado por días",
-      text: "Cada clip va al día en que lo grabaste. No hay feed ni seguidores, solo un calendario de tus días.",
+      text: "Cada clip va al día en que se grabó. Sin feed ni seguidores, solo un calendario de sus días.",
     },
     {
       title: "Una película del mes o del año",
-      text: "Elige un mes, un año o unos días, añade música si quieres y Glisk une los clips en un solo vídeo.",
+      text: "Elija un mes, un año o unos días, añada música si lo desea y Glisk une los clips en un solo vídeo.",
     },
     {
-      title: "Se queda en tu teléfono",
-      text: "Sin cuenta, sin nube y sin anuncios. Nadie ve tus clips a menos que tú los envíes.",
+      title: "Se queda en su teléfono",
+      text: "No hay cuenta ni nube. Nadie ve sus clips a menos que usted los envíe.",
     },
   ],
   howItWorks: {
     title: "Cómo funciona",
     steps: [
       {
-        title: "Graba",
-        text: "La app se abre directamente en la cámara. Toca para empezar y otra vez para parar.",
+        title: "Grabe",
+        text: "La app se abre directamente en la cámara. Toque para empezar y otra vez para parar.",
       },
       {
-        title: "Guarda",
-        text: "Los clips van llenando tu calendario día a día, tal como los grabaste.",
+        title: "Guarde",
+        text: "Los clips van llenando el calendario día a día, tal como se grabaron.",
       },
       {
-        title: "Mira",
-        text: "Haz una película de un mes o de un año y mira cómo fue de verdad.",
+        title: "Vea",
+        text: "Cree una película de un mes o de un año y vea cómo fue todo de verdad.",
       },
     ],
   },
   faq: {
-    title: "Preguntas y respuestas",
+    title: "Preguntas frecuentes",
     items: [
       {
-        question: "¿Glisk es gratis?",
-        answer: "Sí. Es gratis en Android y no tiene anuncios.",
+        question: "¿Glisk es realmente gratis?",
+        answer: "Sí, totalmente. Y no tiene anuncios. La app se creó primero para uso personal, y compartirla con los demás es una gran alegría.",
       },
       {
-        question: "¿Qué significa «Glisk»?",
-        answer: "Es una palabra escocesa que significa vistazo o destello. Nos pareció que encajaba con una app de clips cortos.",
+        question: "¿Qué significa el nombre «Glisk»?",
+        answer: "Es una palabra escocesa antigua que significa «vistazo» o «destello de luz». Cada vídeo corto es un pequeño destello del día.",
       },
       {
-        question: "¿Por qué no hay filtros ni efectos?",
-        answer: "Queremos que el clip se vea como se veía el día. La mala luz y la cámara movida también acaban siendo parte del recuerdo.",
+        question: "¿Por qué la app no tiene filtros?",
+        answer: "La vida real es bonita con sus colores naturales, sin máscaras ni filtros.",
       },
       {
-        question: "¿Por qué solo 30 segundos?",
-        answer: "Los clips cortos se graban rápido y se ven fácil. Incluso con un año entero, sale una película que se puede ver hasta el final.",
+        question: "¿Por qué exactamente 30 segundos?",
+        answer: "Los fragmentos cortos son fáciles de grabar cada día. Y al final del año forman una película viva y completa que apetece ver hasta el final.",
       },
       {
-        question: "¿Se suben mis vídeos a algún sitio?",
-        answer: "No. La grabación, el almacenamiento y la edición se hacen en tu teléfono. No hay cuenta ni nube, así que no se envía nada ni a nosotros ni a nadie.",
+        question: "¿Mis vídeos se suben a internet?",
+        answer: "No. La grabación, el procesamiento y la edición se hacen solo dentro del teléfono. La app no tiene servidores ni cuentas, así que las grabaciones están completamente seguras.",
       },
       {
-        question: "¿Puedo añadir música a mi película?",
-        answer: "Sí. Elige un archivo de audio de tu teléfono, la parte de la canción que quieres y si mantienes el sonido de los clips.",
+        question: "¿Puedo añadir mi propia música a la película?",
+        answer: "¡Claro! Elija cualquier archivo de audio de su teléfono, su parte favorita de la canción y decida si mantener el sonido de los clips.",
       },
       {
-        question: "¿Cómo guardo o comparto una película?",
-        answer: "Guárdala en la galería o envíala desde el menú de compartir de siempre.",
+        question: "¿Cómo guardo una película o se la envío a mi familia?",
+        answer: "La película terminada se guarda en la galería o se envía desde el menú de compartir habitual con un solo toque.",
       },
       {
-        question: "¿Hay versión para iPhone?",
-        answer: "Todavía no. Por ahora Glisk solo está en Android.",
+        question: "¿Hay versión para iPhone (iOS)?",
+        answer: "Todavía no. Por ahora Glisk solo está disponible para dispositivos Android.",
       },
     ],
   },
   privacyBand: {
-    title: "Tus vídeos se quedan en tu teléfono.",
-    text: "Glisk graba, guarda y edita todo en el dispositivo. No tenemos servidores, ni registro, ni analíticas.",
+    title: "Sus vídeos se quedan en su teléfono.",
+    text: "Glisk graba, guarda y edita todo en el dispositivo. La app no tiene servidores, ni registro, ni analíticas, así que nadie más que usted puede ver sus vídeos.",
     link: "Leer la política de privacidad",
   },
   footer: {
-    tagline: "Para los días normales. Guardado en tu teléfono.",
+    tagline: "Hecho por una sola persona, para los días normales.",
     privacy: "Política de privacidad",
     contact: "Contacto",
   },
   privacy: {
     metaTitle: "Política de privacidad",
-    metaDescription: "Cómo trata Glisk tus videos y datos: todo se queda en tu dispositivo.",
+    metaDescription: "Cómo trata Glisk sus videos y datos: todo se queda en su dispositivo.",
     title: "Política de privacidad",
     lastUpdated: "Última actualización",
     translationNote: "Esta es una traducción. En caso de diferencias, prevalece la versión en inglés.",
     summaryTitle: "En resumen",
     summaryText:
-      "Glisk no recopila, almacena ni comparte ningún dato personal. Tus videos se graban, guardan y editan solo en tu teléfono. No tenemos servidores, cuentas, analíticas ni anuncios.",
+      "Glisk no recopila, almacena ni comparte ningún dato personal. Sus videos se graban, guardan y editan solo en su teléfono. No tengo servidores, cuentas, analíticas ni anuncios.",
     sectionsBefore: [
       {
-        title: "Quiénes somos",
+        title: "Quién hace Glisk",
         paragraphs: [
-          "Glisk («la app», «nosotros») es una app de diario en video para Android. Esta política explica qué ocurre con tu información cuando la usas.",
+          "Glisk es una app de diario en video para Android. La desarrollo yo sola, sin ninguna empresa detrás. Esta política explica qué pasa con su información cuando usa la app.",
         ],
       },
       {
-        title: "Datos que recopilamos",
+        title: "Qué datos se recopilan",
         paragraphs: [
-          "Ninguno. La app no recopila información personal, estadísticas de uso, informes de errores, identificadores del dispositivo ni ubicación. No contiene publicidad ni herramientas de analítica y no envía ningún dato por internet.",
+          "Ninguno. La app no recopila información personal, estadísticas de uso, informes de errores, identificadores del dispositivo ni ubicación. No contiene publicidad ni software de analítica, y no envía ningún dato por internet.",
         ],
       },
       {
-        title: "Tus videos",
+        title: "Sus videos",
         paragraphs: [
-          "Los clips que grabas se guardan en el almacenamiento privado de la app en tu dispositivo, junto con una pequeña imagen de vista previa, la fecha y la duración de cada clip. Esta información nunca sale de tu teléfono y no es accesible ni para nosotros ni para otras apps.",
-          "Las películas se montan en el dispositivo. Una película terminada solo sale de la app si decides guardarla en tu galería o compartirla mediante el menú de compartir estándar de Android; en ese caso va exactamente adonde la envíes.",
-          "Si añades música a una película, el archivo de audio que eliges se copia al almacenamiento temporal de la app mientras editas y se elimina al terminar.",
+          "Los clips que graba se guardan en el almacenamiento privado de la app en su dispositivo, junto con una pequeña imagen de vista previa, la fecha y la duración de cada clip. Esta información nunca sale de su teléfono y no es accesible ni para mí ni para otras apps.",
+          "Las películas se montan en el propio dispositivo. Una película terminada solo sale de la app si usted decide guardarla en la galería o compartirla desde el menú de compartir estándar de Android. En ese caso va exactamente adonde usted la envía.",
+          "Si añade música a una película, el archivo de audio elegido se copia al almacenamiento temporal de la app mientras edita y se elimina al terminar.",
         ],
       },
     ],
     permissions: {
       title: "Permisos",
       rows: [
-        { name: "Cámara", purpose: "Para grabar tus clips de 30 segundos." },
-        { name: "Micrófono", purpose: "Para grabar el sonido junto con tus clips." },
+        { name: "Cámara", purpose: "Para grabar sus clips de 30 segundos." },
+        { name: "Micrófono", purpose: "Para grabar el sonido junto con sus clips." },
         {
           name: "Fotos y videos / almacenamiento",
-          purpose: "Solo cuando decides guardar una película terminada en tu galería. Glisk nunca lee tu galería.",
+          purpose: "Solo cuando decide guardar una película terminada en la galería. Glisk nunca lee su galería.",
         },
-        { name: "Vibración", purpose: "Para una leve respuesta háptica al grabar o tocar botones." },
+        { name: "Vibración", purpose: "Para una ligera respuesta háptica al grabar o tocar botones." },
       ],
-      note: "Puedes retirar cualquier permiso en cualquier momento desde los ajustes de tu teléfono.",
+      note: "Puede retirar cualquier permiso en cualquier momento desde los ajustes de su teléfono.",
     },
     sectionsAfter: [
       {
-        title: "Copias de seguridad y eliminación de datos",
+        title: "Copias de seguridad y eliminación de sus datos",
         paragraphs: [
-          "Tus videos están excluidos de las copias de seguridad automáticas en la nube, así que nunca terminan en ningún servidor. Esto también significa que al desinstalar la app se eliminan todos los clips para siempre. Guarda en tu galería las películas que quieras conservar antes de desinstalarla.",
-          "Puedes eliminar cualquier clip en la app en cualquier momento. Los clips eliminados se borran de tu dispositivo de inmediato.",
+          "Sus videos están excluidos de las copias de seguridad automáticas en la nube, así que nunca terminan en ningún servidor. Esto también significa que al desinstalar la app se borran todos los clips para siempre. Guarde en la galería las películas que quiera conservar antes de desinstalarla.",
+          "Puede eliminar cualquier clip dentro de la app en cualquier momento. Los clips eliminados se borran de su dispositivo al instante.",
         ],
       },
       {
         title: "Terceros",
         paragraphs: [
-          "La app no usa servicios de terceros que reciban tus datos. Cuando descargas o actualizas la app, Google Play trata la información según la política de privacidad de Google.",
+          "La app no usa servicios de terceros que reciban sus datos. Cuando descarga o actualiza la app, Google Play trata la información según la política de privacidad de Google.",
         ],
       },
       {
         title: "Niños",
         paragraphs: [
-          "Glisk está pensado para adultos que quieren guardar momentos en familia. No está dirigido a niños. Los videos que grabas de tu familia se quedan en tu dispositivo y nunca los recopilamos.",
+          "Glisk está pensada para adultos que quieren guardar momentos en familia. No está dirigida a niños. Los videos que graba de su familia se quedan en su dispositivo y nunca me llegan.",
         ],
       },
       {
         title: "Cambios en esta política",
         paragraphs: [
-          "Si esta política cambia, actualizaremos esta página y la fecha de arriba. Como la app no recopila datos, cualquier cambio solo puede afectar a cómo funciona la app en tu dispositivo.",
+          "Si esta política cambia, actualizaré esta página y la fecha de arriba. Como la app no recopila datos, cualquier cambio solo puede afectar a cómo funciona la app en su dispositivo.",
         ],
       },
     ],
     contact: {
       title: "Contacto",
-      textBefore: "¿Preguntas sobre privacidad? Escribe a ",
+      textBefore: "¿Preguntas sobre privacidad? Escriba a ",
       textAfter: ".",
     },
   },

@@ -32,11 +32,6 @@ export interface Dictionary {
     text: string;
     privacyLink: string;
   };
-  manifesto: {
-    title: string;
-    lines: string[];
-    closing: string;
-  };
   mockup: {
     month: string;
     moments: string;

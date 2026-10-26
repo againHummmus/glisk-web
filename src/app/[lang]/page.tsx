@@ -81,24 +81,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <p className="max-w-lg text-lg leading-8 text-neutral-400">{dict.hero.text}</p>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <StoreButton label={dict.storeButton} lang={lang} placement="hero" />
-              <Link href={`/${lang}/privacy`} className="px-2 text-sm text-neutral-400 transition-colors hover:text-white">
-                {dict.hero.privacyLink}
-              </Link>
             </div>
           </div>
           <PhoneMockup labels={dict.mockup} />
-        </section>
-
-        <section className="mx-auto w-full max-w-6xl px-5 pb-24 sm:px-8">
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">{dict.manifesto.title}</h2>
-          <div className="mt-10 flex flex-col border-l-2 border-accent pl-6 sm:pl-8">
-            {dict.manifesto.lines.map((line) => (
-              <p key={line} className="text-md text-neutral-300 sm:text-base">
-                {line}
-              </p>
-            ))}
-          </div>
-          <p className="mt-10 text-xl font-semibold tracking-tight text-accent sm:text-2xl">{dict.manifesto.closing}</p>
         </section>
 
         <section className="mx-auto w-full max-w-6xl px-5 pb-24 sm:px-8">
@@ -151,9 +136,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <Image
               src="/logo-symbol.png"
               alt=""
-              width={420}
-              height={420}
-              className="pointer-events-none absolute -right-24 -top-16 opacity-15"
+              width={620}
+              height={620}
+              className="pointer-events-none absolute -right-16 top-1/2 -translate-y-1/2 opacity-15"
             />
             <h2 className="relative max-w-xl text-3xl font-semibold tracking-tight sm:text-4xl">
               {dict.privacyBand.title}

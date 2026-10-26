@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const tr: Dictionary = {
   meta: {
-    title: "Glisk: 30 saniyelik kliplerden video günlüğü",
-    description: "Gündelik hayatından kısa klipler çek, kurgu ve filtre olmadan. Glisk onları günlere göre sıralar ve ayın ya da yılın filmine dönüştürür. Android’de ücretsiz, çevrimdışı çalışır, reklam yok.",
+    title: "Glisk: Android için 30 saniyelik anlardan video günlüğü",
+    description: "Android için sıcacık bir video günlüğü. Sıradan günlerden kısa klipler çekin, takvimde saklayın ve ayın ya da yılın filmlerine dönüştürün. Ücretsiz, reklamsız ve aboneliksiz.",
   },
   nav: {
     privacy: "Gizlilik",
@@ -13,21 +13,11 @@ export const tr: Dictionary = {
   storeButton: "Google Play’den indir",
   hero: {
     badge: "Android’de ücretsiz",
-    titleStart: "Hayatın, ",
-    titleAccent: "filtresiz",
-    titleEnd: ".",
-    text: "Glisk, “göz atmak” anlamına gelen eski bir İskoç kelimesi. Şu an olan şeyin otuz saniyesini çek. Elin titriyorsa ya da ışık kötüyse sorun değil. Zamanla bu küçük klipler hayatının gerçekte nasıl geçtiğini anlatır.",
-    privacyLink: "Verilerinle ne yapıyoruz →",
-  },
-  manifesto: {
-    title: "Güzel olmak zorunda değil.",
-    lines: [
-      "İyi ışığı bekleme, önce saçını düzeltmeye uğraşma.",
-      "Elin mi titriyor? Sorun değil. Arkadaki gürültü ya da cümlenin ortasında kesilen bir kahkaha da sorun değil.",
-      "On kez izlemene ya da yeniden çekmene gerek yok.",
-      "Burada beğeni yok. Bu senin için, ileride izlemen için.",
-    ],
-    closing: "O yüzden sadece çek.",
+    titleStart: "Hayatınız, ",
+    titleAccent: "olduğu gibi.",
+    titleEnd: "",
+    text: "Kusursuz kareler çabuk unutulur, gerçek gündelik hayat ise tüm ayrıntılarıyla uzun süre kalır. Titreyen ellerden, kamera arkasındaki seslerden, yarım kalan cümlelerden ve eğri ufuk çizgisinden korkmayın. Gerçek hayatın kusursuz olması gerekmez. Şu anda olanı çekin.",
+    privacyLink: "Verilerinize ne oluyor →",
   },
   mockup: {
     month: "Ekim 2026",
@@ -37,160 +27,160 @@ export const tr: Dictionary = {
   features: [
     {
       title: "En fazla 30 saniye",
-      text: "Zamanlayıcı 30 saniyede durur. Anı saklamaya yeter, işi prodüksiyona çevirmez.",
+      text: "Zamanlayıcı kaydı 30 saniyede durdurur. Bir an için bu kadarı yeter ve her gün çekmek kolaylaşır.",
     },
     {
       title: "Günlere göre",
-      text: "Her klip çektiğin güne gider. Akış ya da takipçi yok, sadece günlerinin takvimi var.",
+      text: "Her klip çekildiği güne gider. Akış ya da takipçi yok, sadece günlerinizin takvimi var.",
     },
     {
       title: "Ayın ya da yılın filmi",
-      text: "Bir ay, bir yıl ya da birkaç gün seç, istersen müzik ekle. Glisk klipleri tek bir videoda birleştirir.",
+      text: "Bir ay, bir yıl ya da birkaç gün seçin, isterseniz müzik ekleyin. Glisk klipleri tek bir videoda birleştirir.",
     },
     {
-      title: "Telefonunda kalır",
-      text: "Hesap, bulut ve reklam yok. Sen göndermedikçe kliplerini kimse görmez.",
+      title: "Telefonunuzda kalır",
+      text: "Hesap da bulut da yok. Siz göndermedikçe kliplerinizi kimse görmez.",
     },
   ],
   howItWorks: {
     title: "Nasıl çalışır",
     steps: [
       {
-        title: "Çek",
-        text: "Uygulama doğrudan kamerayla açılır. Başlatmak için dokun, durdurmak için tekrar dokun.",
+        title: "Çekin",
+        text: "Uygulama doğrudan kamerayla açılır. Başlatmak için dokunun, durdurmak için tekrar dokunun.",
       },
       {
-        title: "Sakla",
-        text: "Klipler gün gün takvimine eklenir, çektiğin haliyle.",
+        title: "Saklayın",
+        text: "Klipler gün gün takvime eklenir, çekildiği haliyle.",
       },
       {
-        title: "İzle",
-        text: "Bir ayın ya da yılın filmini yap ve nasıl geçtiğini gör.",
+        title: "İzleyin",
+        text: "Bir ayın ya da yılın filmini yapın ve her şeyin gerçekte nasıl olduğunu görün.",
       },
     ],
   },
   faq: {
-    title: "Sorular ve cevaplar",
+    title: "Sık sorulan sorular",
     items: [
       {
-        question: "Glisk ücretsiz mi?",
-        answer: "Evet. Android’de ücretsiz ve reklam yok.",
+        question: "Glisk gerçekten ücretsiz mi?",
+        answer: "Evet, tamamen. Reklam da yok. Uygulama önce kişisel kullanım için yapıldı, ama başkalarıyla paylaşmak büyük bir mutluluk.",
       },
       {
-        question: "“Glisk” ne demek?",
-        answer: "Bir anlık bakış anlamına gelen İskoç bir kelime. Kısa kliplerden oluşan bir uygulamaya uygun geldi.",
+        question: "“Glisk” adı ne anlama geliyor?",
+        answer: "“Hızlı bir bakış” ya da “ışık parıltısı” anlamına gelen eski bir İskoç kelimesi. Her kısa video, günün küçük bir parıltısıdır.",
       },
       {
-        question: "Neden filtre veya efekt yok?",
-        answer: "Klibin o gün nasıl göründüyse öyle görünmesini istiyoruz. Kötü ışık ve titreyen görüntü de sonra anının bir parçası oluyor.",
+        question: "Uygulamada neden filtre yok?",
+        answer: "Gerçek hayat, maskesiz ve filtresiz, doğal renkleriyle güzeldir.",
       },
       {
-        question: "Neden sadece 30 saniye?",
-        answer: "Kısa klipler hızlı çekilir ve kolay izlenir. Koca bir yıldan bile sonuna kadar izlenebilecek bir film çıkar.",
+        question: "Neden tam olarak 30 saniye?",
+        answer: "Kısa parçaları her gün çekmek kolaydır. Yıl sonunda da bunlardan sonuna kadar izlemek istenecek canlı ve bütün bir film çıkar.",
       },
       {
-        question: "Videolarım bir yere yükleniyor mu?",
-        answer: "Hayır. Kayıt, depolama ve kurgu telefonunda yapılır. Hesap ve bulut olmadığı için hiçbir şey ne bize ne de başkasına gider.",
+        question: "Videolarım internete yükleniyor mu?",
+        answer: "Hayır. Kayıt, işleme ve kurgu yalnızca telefonun içinde yapılır. Uygulamanın sunucusu ve hesap sistemi yoktur, bu yüzden kayıtlar tamamen güvendedir.",
       },
       {
-        question: "Filmime müzik ekleyebilir miyim?",
-        answer: "Evet. Telefonundan bir ses dosyası seç, şarkının hangi kısmının çalacağını ve kliplerin kendi sesinin kalıp kalmayacağını belirle.",
+        question: "Filme kendi müziğimi ekleyebilir miyim?",
+        answer: "Elbette! Telefonunuzdan bir ses dosyası seçin, şarkının en sevdiğiniz kısmını belirleyin ve kliplerin kendi sesinin kalıp kalmayacağına karar verin.",
       },
       {
-        question: "Bir filmi nasıl saklar veya paylaşırım?",
-        answer: "Galeriye kaydet ya da her zamanki paylaşım menüsünden gönder.",
+        question: "Filmi nasıl kaydederim ya da sevdiklerime gönderirim?",
+        answer: "Hazır film tek dokunuşla galeriye kaydedilebilir ya da alışılmış paylaşım menüsünden gönderilebilir.",
       },
       {
-        question: "iPhone sürümü var mı?",
-        answer: "Henüz yok. Şimdilik Glisk sadece Android’de.",
+        question: "iPhone (iOS) sürümü var mı?",
+        answer: "Henüz yok. Şimdilik Glisk yalnızca Android cihazlarda kullanılabiliyor.",
       },
     ],
   },
   privacyBand: {
-    title: "Videoların telefonunda kalır.",
-    text: "Glisk her şeyi cihazda çeker, saklar ve kurgular. Sunucumuz, üyelik sistemimiz ve analizimiz yok.",
+    title: "Videolarınız telefonunuzda kalır.",
+    text: "Glisk her şeyi cihazda çeker, saklar ve kurgular. Uygulamanın sunucusu, üyelik sistemi ve analizi yoktur, bu yüzden videolarınızı sizden başka kimse göremez.",
     link: "Gizlilik politikasını oku",
   },
   footer: {
-    tagline: "Sıradan günler için. Telefonunda saklanır.",
+    tagline: "Tek bir kişi tarafından, sıradan günler için yapıldı.",
     privacy: "Gizlilik politikası",
     contact: "İletişim",
   },
   privacy: {
     metaTitle: "Gizlilik politikası",
-    metaDescription: "Glisk videolarını ve verilerini nasıl ele alır: her şey cihazında kalır.",
+    metaDescription: "Glisk videolarınızı ve verilerinizi nasıl ele alır: Her şey cihazınızda kalır.",
     title: "Gizlilik politikası",
     lastUpdated: "Son güncelleme",
     translationNote: "Bu bir çeviridir. Farklılık olması durumunda İngilizce sürüm geçerlidir.",
     summaryTitle: "Kısaca",
     summaryText:
-      "Glisk hiçbir kişisel veriyi toplamaz, saklamaz veya paylaşmaz. Videoların yalnızca telefonunda kaydedilir, saklanır ve düzenlenir. Sunucumuz, hesabımız, analiz aracımız ve reklamımız yok.",
+      "Glisk hiçbir kişisel veriyi toplamaz, saklamaz veya paylaşmaz. Videolarınız yalnızca telefonunuzda kaydedilir, saklanır ve düzenlenir. Sunucum, hesap sistemim, analiz aracım ve reklamım yok.",
     sectionsBefore: [
       {
-        title: "Biz kimiz",
+        title: "Glisk’i kim yapıyor",
         paragraphs: [
-          "Glisk (“uygulama”, “biz”), Android için bir video günlüğü uygulamasıdır. Bu politika, uygulamayı kullandığında bilgilerine ne olduğunu açıklar.",
+          "Glisk, Android için bir video günlüğü uygulamasıdır. Onu tek başıma geliştiriyorum, arkasında bir şirket yok. Bu politika, uygulamayı kullandığınızda bilgilerinize ne olduğunu açıklar.",
         ],
       },
       {
-        title: "Topladığımız veriler",
+        title: "Hangi veriler toplanıyor",
         paragraphs: [
           "Hiçbiri. Uygulama kişisel bilgi, kullanım istatistiği, çökme raporu, cihaz kimliği veya konum toplamaz. Reklam ya da analiz yazılımı içermez ve internet üzerinden hiçbir veri göndermez.",
         ],
       },
       {
-        title: "Videoların",
+        title: "Videolarınız",
         paragraphs: [
-          "Kaydettiğin klipler, her klibin küçük bir önizleme görseli, tarihi ve süresiyle birlikte cihazındaki uygulamaya özel depolama alanına kaydedilir. Bu bilgiler telefonundan asla çıkmaz; ne bizim ne de diğer uygulamaların erişimine açıktır.",
-          "Filmler cihazda birleştirilir. Bitmiş bir film yalnızca sen onu galeriye kaydetmeyi ya da Android’in standart paylaşım menüsüyle paylaşmayı seçersen uygulamadan çıkar. O zaman tam olarak gönderdiğin yere gider.",
-          "Bir filme müzik eklersen, seçtiğin ses dosyası düzenleme süresince uygulamanın geçici depolamasına kopyalanır ve işin bitince silinir.",
+          "Çektiğiniz klipler, her klibin küçük bir önizleme görseli, tarihi ve süresiyle birlikte uygulamanın cihazınızdaki özel depolama alanına kaydedilir. Bu bilgiler telefonunuzdan hiç çıkmaz ve ne bana ne de diğer uygulamalara açıktır.",
+          "Filmler cihazda birleştirilir. Bitmiş bir film yalnızca siz onu galeriye kaydetmeyi ya da Android’in standart paylaşım menüsüyle paylaşmayı seçerseniz uygulamadan çıkar. O zaman tam olarak gönderdiğiniz yere gider.",
+          "Bir filme müzik eklerseniz seçtiğiniz ses dosyası düzenleme sırasında uygulamanın geçici depolama alanına kopyalanır ve işiniz bitince silinir.",
         ],
       },
     ],
     permissions: {
       title: "İzinler",
       rows: [
-        { name: "Kamera", purpose: "30 saniyelik kliplerini kaydetmek için." },
-        { name: "Mikrofon", purpose: "Kliplerinle birlikte sesi kaydetmek için." },
+        { name: "Kamera", purpose: "30 saniyelik kliplerinizi çekmek için." },
+        { name: "Mikrofon", purpose: "Kliplerinizle birlikte sesi kaydetmek için." },
         {
-          name: "Fotoğraf ve videolar / depolama",
-          purpose: "Yalnızca bitmiş bir filmi galeriye kaydetmeyi seçtiğinde. Glisk galerini asla okumaz.",
+          name: "Fotoğraflar ve videolar / depolama",
+          purpose: "Yalnızca bitmiş bir filmi galeriye kaydetmeyi seçtiğinizde. Glisk galerinizi asla okumaz.",
         },
-        { name: "Titreşim", purpose: "Kayıt yaparken veya düğmelere dokunurken hafif dokunsal geri bildirim için." },
+        { name: "Titreşim", purpose: "Kayıt sırasında ve düğmelere dokunduğunuzda hafif titreşimli geri bildirim için." },
       ],
-      note: "Herhangi bir izni istediğin zaman telefonunun ayarlarından geri alabilirsin.",
+      note: "Herhangi bir izni istediğiniz zaman telefonunuzun ayarlarından geri alabilirsiniz.",
     },
     sectionsAfter: [
       {
-        title: "Yedeklemeler ve verilerin silinmesi",
+        title: "Yedekler ve verilerinizin silinmesi",
         paragraphs: [
-          "Videoların otomatik bulut yedeklemelerinin dışında tutulur, bu yüzden hiçbir sunucuya ulaşmaz. Bu aynı zamanda uygulamayı kaldırmanın tüm klipleri kalıcı olarak sileceği anlamına gelir. Saklamak istediğin filmleri kaldırmadan önce galeriye kaydet.",
-          "Herhangi bir klibi istediğin zaman uygulamada silebilirsin. Silinen klipler cihazından hemen kaldırılır.",
+          "Videolarınız otomatik bulut yedeklemelerinin dışında tutulur, bu yüzden hiçbir sunucuya ulaşmaz. Bu aynı zamanda uygulamayı kaldırdığınızda tüm kliplerin kalıcı olarak silineceği anlamına gelir. Saklamak istediğiniz filmleri kaldırmadan önce galeriye kaydedin.",
+          "Herhangi bir klibi uygulamanın içinden istediğiniz zaman silebilirsiniz. Silinen klipler cihazınızdan hemen kaldırılır.",
         ],
       },
       {
         title: "Üçüncü taraflar",
         paragraphs: [
-          "Uygulama, verilerini alan üçüncü taraf hizmetler kullanmaz. Uygulamayı indirdiğinde veya güncellediğinde Google Play, bilgileri Google’ın kendi gizlilik politikasına göre işler.",
+          "Uygulama, verilerinizi alan üçüncü taraf hizmetler kullanmaz. Uygulamayı indirdiğinizde veya güncellediğinizde Google Play bilgileri Google’ın kendi gizlilik politikasına göre işler.",
         ],
       },
       {
         title: "Çocuklar",
         paragraphs: [
-          "Glisk, aile anlarını saklamak isteyen yetişkinler için yapılmıştır. Çocuklara yönelik değildir. Ailenle çektiğin videolar cihazında kalır ve tarafımızdan asla toplanmaz.",
+          "Glisk, aile anlarını saklamak isteyen yetişkinler için yapıldı. Çocuklara yönelik değildir. Ailenizle çektiğiniz videolar cihazınızda kalır ve asla bana ulaşmaz.",
         ],
       },
       {
         title: "Bu politikadaki değişiklikler",
         paragraphs: [
-          "Bu politika değişirse bu sayfayı ve yukarıdaki tarihi güncelleriz. Uygulama hiçbir veri toplamadığı için herhangi bir değişiklik yalnızca uygulamanın cihazında nasıl çalıştığını etkileyebilir.",
+          "Bu politika değişirse bu sayfayı ve yukarıdaki tarihi güncellerim. Uygulama veri toplamadığı için herhangi bir değişiklik yalnızca uygulamanın cihazınızda nasıl çalıştığını etkileyebilir.",
         ],
       },
     ],
     contact: {
       title: "İletişim",
-      textBefore: "Gizlilikle ilgili soruların mı var? Şu adrese yaz: ",
-      textAfter: "",
+      textBefore: "Gizlilikle ilgili sorularınız mı var? Şu adrese yazın: ",
+      textAfter: ".",
     },
   },
 };

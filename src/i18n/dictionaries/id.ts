@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const id: Dictionary = {
   meta: {
-    title: "Glisk: buku harian video dari klip 30 detik",
-    description: "Rekam klip pendek dari keseharianmu, tanpa edit dan tanpa filter. Glisk mengurutkannya per hari dan menjadikannya film bulanan atau tahunan. Gratis di Android, bisa offline, tanpa iklan.",
+    title: "Glisk: buku harian video dari momen 30 detik untuk Android",
+    description: "Buku harian video yang hangat untuk Android. Rekam klip pendek dari hari-hari biasa, simpan di kalender, dan jadikan film bulanan atau tahunan. Gratis, tanpa iklan dan langganan.",
   },
   nav: {
     privacy: "Privasi",
@@ -13,21 +13,11 @@ export const id: Dictionary = {
   storeButton: "Dapatkan di Google Play",
   hero: {
     badge: "Gratis di Android",
-    titleStart: "Hidupmu, ",
-    titleAccent: "tanpa filter",
-    titleEnd: ".",
-    text: "Glisk adalah kata lama dari Skotlandia yang artinya “melirik sebentar”. Rekam tiga puluh detik dari apa yang sedang terjadi sekarang. Tangan gemetar atau cahaya kurang bagus tidak masalah. Lama-lama, klip kecil ini menunjukkan seperti apa hidupmu sebenarnya.",
-    privacyLink: "Apa yang kami lakukan dengan datamu →",
-  },
-  manifesto: {
-    title: "Tidak harus bagus.",
-    lines: [
-      "Tidak usah menunggu cahaya bagus atau merapikan rambut dulu.",
-      "Tangan gemetar? Tidak apa-apa. Suara bising atau tawa yang terpotong di tengah kalimat juga tidak apa-apa.",
-      "Kamu tidak perlu menontonnya sepuluh kali atau merekam ulang.",
-      "Di sini tidak ada like. Ini untukmu, untuk nanti.",
-    ],
-    closing: "Jadi rekam saja.",
+    titleStart: "Hidup Anda, ",
+    titleAccent: "apa adanya.",
+    titleEnd: "",
+    text: "Gambar yang sempurna cepat terlupakan, sedangkan keseharian yang nyata dengan semua detailnya akan bertahan lama. Jangan takut pada tangan yang gemetar, suara di balik kamera, kalimat yang terpotong, atau cakrawala yang miring. Hidup yang nyata tidak harus sempurna. Rekam apa yang sedang terjadi sekarang.",
+    privacyLink: "Apa yang terjadi dengan data Anda →",
   },
   mockup: {
     month: "Oktober 2026",
@@ -37,19 +27,19 @@ export const id: Dictionary = {
   features: [
     {
       title: "Maksimal 30 detik",
-      text: "Timer berhenti di 30 detik. Cukup untuk menyimpan momen tanpa menjadikannya produksi.",
+      text: "Timer menghentikan rekaman di 30 detik. Cukup untuk satu momen, dan merekam setiap hari jadi mudah.",
     },
     {
       title: "Diurutkan per hari",
-      text: "Setiap klip masuk ke hari saat kamu merekamnya. Tidak ada feed atau pengikut, hanya kalender hari-harimu.",
+      text: "Setiap klip masuk ke hari saat direkam. Tanpa feed dan pengikut, hanya kalender hari-hari Anda.",
     },
     {
       title: "Film bulanan atau tahunan",
-      text: "Pilih satu bulan, satu tahun, atau beberapa hari, tambahkan musik kalau mau, lalu Glisk menggabungkan klipnya jadi satu video.",
+      text: "Pilih satu bulan, satu tahun, atau beberapa hari, tambahkan musik bila mau, lalu Glisk menggabungkan klipnya jadi satu video.",
     },
     {
-      title: "Tetap di ponselmu",
-      text: "Tanpa akun, tanpa cloud, tanpa iklan. Tidak ada yang melihat klipmu kecuali kamu mengirimnya.",
+      title: "Tetap di ponsel Anda",
+      text: "Tidak ada akun dan tidak ada cloud. Tidak ada yang melihat klip Anda kecuali Anda mengirimkannya.",
     },
   ],
   howItWorks: {
@@ -61,7 +51,7 @@ export const id: Dictionary = {
       },
       {
         title: "Simpan",
-        text: "Klip masuk ke kalendermu hari demi hari, sama seperti saat direkam.",
+        text: "Klip masuk ke kalender hari demi hari, persis seperti saat direkam.",
       },
       {
         title: "Tonton",
@@ -70,120 +60,120 @@ export const id: Dictionary = {
     ],
   },
   faq: {
-    title: "Tanya jawab",
+    title: "Pertanyaan umum",
     items: [
       {
-        question: "Apakah Glisk gratis?",
-        answer: "Ya. Glisk gratis di Android dan tidak ada iklan.",
+        question: "Apakah Glisk benar-benar gratis?",
+        answer: "Ya, sepenuhnya. Dan tanpa iklan. Aplikasi ini awalnya dibuat untuk pemakaian pribadi, tetapi membagikannya kepada orang lain adalah kebahagiaan tersendiri.",
       },
       {
-        question: "Apa arti “Glisk”?",
-        answer: "Itu kata Skotlandia untuk lirikan atau kilasan. Rasanya cocok untuk aplikasi yang isinya klip pendek.",
+        question: "Apa arti nama “Glisk”?",
+        answer: "Ini kata lama dari Skotlandia yang berarti “lirikan cepat” atau “kilasan cahaya”. Setiap video pendek adalah kilasan kecil dari sebuah hari.",
       },
       {
-        question: "Kenapa tidak ada filter atau efek?",
-        answer: "Kami ingin klip terlihat seperti hari itu apa adanya. Cahaya jelek dan gambar goyang nanti juga jadi bagian dari kenangan.",
+        question: "Kenapa tidak ada filter di aplikasi?",
+        answer: "Hidup yang nyata indah dengan warna alaminya, tanpa topeng dan filter.",
       },
       {
-        question: "Kenapa hanya 30 detik?",
-        answer: "Klip pendek cepat direkam dan gampang ditonton ulang. Bahkan dari setahun penuh, hasilnya tetap film yang bisa ditonton sampai habis.",
+        question: "Kenapa tepat 30 detik?",
+        answer: "Potongan pendek mudah direkam setiap hari. Di akhir tahun, semuanya menjadi film yang hidup dan utuh, yang ingin ditonton sampai habis.",
       },
       {
-        question: "Apakah videoku diunggah ke suatu tempat?",
-        answer: "Tidak. Perekaman, penyimpanan, dan pengeditan terjadi di ponselmu. Tidak ada akun dan cloud, jadi tidak ada yang terkirim ke kami atau siapa pun.",
+        question: "Apakah video saya diunggah ke internet?",
+        answer: "Tidak. Perekaman, pemrosesan, dan pengeditan hanya terjadi di dalam ponsel. Aplikasi ini tidak punya server dan akun, jadi rekaman benar-benar aman.",
       },
       {
-        question: "Bisakah aku menambahkan musik ke film?",
-        answer: "Bisa. Pilih file audio di ponselmu, bagian lagu yang mau diputar, dan apakah suara klip tetap dipakai.",
+        question: "Bisakah menambahkan musik sendiri ke film?",
+        answer: "Tentu! Pilih file audio apa pun di ponsel, bagian lagu favorit, lalu tentukan apakah suara klip tetap dipakai.",
       },
       {
-        question: "Bagaimana cara menyimpan atau membagikan film?",
-        answer: "Simpan ke galeri atau kirim lewat menu berbagi biasa.",
+        question: "Bagaimana cara menyimpan film atau mengirimnya ke keluarga?",
+        answer: "Film yang sudah jadi bisa disimpan ke galeri atau dikirim lewat menu berbagi biasa dengan satu ketukan.",
       },
       {
-        question: "Apakah ada versi iPhone?",
-        answer: "Belum. Untuk sekarang Glisk hanya ada di Android.",
+        question: "Apakah ada versi iPhone (iOS)?",
+        answer: "Belum. Untuk saat ini Glisk hanya tersedia untuk perangkat Android.",
       },
     ],
   },
   privacyBand: {
-    title: "Videomu tetap di ponselmu.",
-    text: "Glisk merekam, menyimpan, dan mengedit semuanya di perangkat. Kami tidak punya server, pendaftaran, atau analitik.",
+    title: "Video Anda tetap di ponsel Anda.",
+    text: "Glisk merekam, menyimpan, dan mengedit semuanya di perangkat. Aplikasi ini tidak punya server, pendaftaran, atau analitik, jadi tidak ada orang lain selain Anda yang bisa melihat video Anda.",
     link: "Baca kebijakan privasi",
   },
   footer: {
-    tagline: "Untuk hari-hari biasa. Tersimpan di ponselmu.",
+    tagline: "Dibuat oleh satu orang, untuk hari-hari biasa.",
     privacy: "Kebijakan privasi",
     contact: "Kontak",
   },
   privacy: {
     metaTitle: "Kebijakan privasi",
-    metaDescription: "Cara Glisk menangani video dan datamu: semuanya tetap di perangkatmu.",
+    metaDescription: "Cara Glisk menangani video dan data Anda: semuanya tetap di perangkat Anda.",
     title: "Kebijakan privasi",
     lastUpdated: "Terakhir diperbarui",
     translationNote: "Ini adalah terjemahan. Jika ada perbedaan, versi bahasa Inggris yang berlaku.",
     summaryTitle: "Singkatnya",
     summaryText:
-      "Glisk tidak mengumpulkan, menyimpan, atau membagikan data pribadi apa pun. Videomu direkam, disimpan, dan diedit hanya di ponselmu. Kami tidak punya server, akun, analitik, maupun iklan.",
+      "Glisk tidak mengumpulkan, menyimpan, atau membagikan data pribadi apa pun. Video Anda direkam, disimpan, dan diedit hanya di ponsel Anda. Saya tidak punya server, akun, analitik, maupun iklan.",
     sectionsBefore: [
       {
-        title: "Siapa kami",
+        title: "Siapa yang membuat Glisk",
         paragraphs: [
-          "Glisk (“aplikasi”, “kami”) adalah aplikasi buku harian video untuk Android. Kebijakan ini menjelaskan apa yang terjadi pada informasimu saat kamu menggunakannya.",
+          "Glisk adalah aplikasi buku harian video untuk Android. Saya mengembangkannya sendiri, tanpa perusahaan di belakangnya. Kebijakan ini menjelaskan apa yang terjadi pada informasi Anda saat Anda menggunakan aplikasi.",
         ],
       },
       {
-        title: "Data yang kami kumpulkan",
+        title: "Data apa yang dikumpulkan",
         paragraphs: [
-          "Tidak ada. Aplikasi ini tidak mengumpulkan informasi pribadi, statistik penggunaan, laporan error, pengenal perangkat, atau lokasi. Aplikasi ini tidak berisi iklan atau perangkat lunak analitik dan tidak mengirim data apa pun melalui internet.",
+          "Tidak ada. Aplikasi tidak mengumpulkan informasi pribadi, statistik penggunaan, laporan error, pengenal perangkat, atau lokasi. Aplikasi tidak berisi iklan atau perangkat lunak analitik, dan tidak mengirim data apa pun lewat internet.",
         ],
       },
       {
-        title: "Videomu",
+        title: "Video Anda",
         paragraphs: [
-          "Klip yang kamu rekam disimpan di penyimpanan pribadi aplikasi di perangkatmu, bersama gambar pratinjau kecil, tanggal, dan durasi setiap klip. Informasi ini tidak pernah keluar dari ponselmu dan tidak dapat diakses oleh kami maupun aplikasi lain.",
-          "Film disusun di perangkat. Film yang sudah jadi hanya keluar dari aplikasi jika kamu memilih menyimpannya ke galeri atau membagikannya lewat menu berbagi standar Android. Film itu akan pergi tepat ke tempat yang kamu tuju.",
-          "Jika kamu menambahkan musik ke film, file audio yang kamu pilih disalin ke penyimpanan sementara aplikasi selama pengeditan dan dihapus setelah selesai.",
+          "Klip yang Anda rekam disimpan di penyimpanan pribadi aplikasi di perangkat Anda, bersama gambar pratinjau kecil, tanggal, dan durasi setiap klip. Informasi ini tidak pernah keluar dari ponsel Anda dan tidak bisa diakses oleh saya maupun aplikasi lain.",
+          "Film disusun di perangkat. Film yang sudah jadi hanya keluar dari aplikasi jika Anda memilih menyimpannya ke galeri atau membagikannya lewat menu berbagi standar Android. Film itu akan pergi tepat ke tempat yang Anda tuju.",
+          "Jika Anda menambahkan musik ke film, file audio yang dipilih disalin ke penyimpanan sementara aplikasi selama pengeditan dan dihapus setelah selesai.",
         ],
       },
     ],
     permissions: {
       title: "Izin",
       rows: [
-        { name: "Kamera", purpose: "Untuk merekam klip 30 detikmu." },
-        { name: "Mikrofon", purpose: "Untuk merekam suara bersama klipmu." },
+        { name: "Kamera", purpose: "Untuk merekam klip 30 detik Anda." },
+        { name: "Mikrofon", purpose: "Untuk merekam suara bersama klip Anda." },
         {
           name: "Foto dan video / penyimpanan",
-          purpose: "Hanya saat kamu memilih menyimpan film yang sudah jadi ke galeri. Glisk tidak pernah membaca galerimu.",
+          purpose: "Hanya saat Anda memilih menyimpan film yang sudah jadi ke galeri. Glisk tidak pernah membaca galeri Anda.",
         },
         { name: "Getaran", purpose: "Untuk umpan balik getar ringan saat merekam atau mengetuk tombol." },
       ],
-      note: "Kamu bisa mencabut izin apa pun kapan saja di pengaturan ponselmu.",
+      note: "Anda bisa mencabut izin apa pun kapan saja di pengaturan ponsel.",
     },
     sectionsAfter: [
       {
-        title: "Cadangan dan penghapusan data",
+        title: "Cadangan dan penghapusan data Anda",
         paragraphs: [
-          "Videomu dikecualikan dari pencadangan cloud otomatis, jadi tidak pernah sampai ke server mana pun. Ini juga berarti menghapus aplikasi akan menghapus semua klip secara permanen. Simpan film yang ingin kamu pertahankan ke galeri sebelum menghapus aplikasi.",
-          "Kamu bisa menghapus klip apa pun di aplikasi kapan saja. Klip yang dihapus langsung hilang dari perangkatmu.",
+          "Video Anda dikecualikan dari pencadangan cloud otomatis, jadi tidak pernah berakhir di server mana pun. Ini juga berarti menghapus aplikasi akan menghapus semua klip secara permanen. Simpan film yang ingin Anda simpan ke galeri sebelum menghapus aplikasi.",
+          "Anda bisa menghapus klip mana pun di dalam aplikasi kapan saja. Klip yang dihapus langsung hilang dari perangkat Anda.",
         ],
       },
       {
         title: "Pihak ketiga",
         paragraphs: [
-          "Aplikasi ini tidak menggunakan layanan pihak ketiga yang menerima datamu. Saat kamu mengunduh atau memperbarui aplikasi, Google Play memproses informasi sesuai kebijakan privasi Google sendiri.",
+          "Aplikasi tidak menggunakan layanan pihak ketiga yang menerima data Anda. Saat Anda mengunduh atau memperbarui aplikasi, Google Play memproses informasi sesuai kebijakan privasi Google sendiri.",
         ],
       },
       {
         title: "Anak-anak",
         paragraphs: [
-          "Glisk dibuat untuk orang dewasa yang ingin mengabadikan momen keluarga. Aplikasi ini tidak ditujukan untuk anak-anak. Video keluarga yang kamu rekam tetap di perangkatmu dan tidak pernah kami kumpulkan.",
+          "Glisk dibuat untuk orang dewasa yang ingin menyimpan momen keluarga. Aplikasi ini tidak ditujukan untuk anak-anak. Video yang Anda rekam bersama keluarga tetap di perangkat Anda dan tidak pernah sampai ke saya.",
         ],
       },
       {
         title: "Perubahan kebijakan ini",
         paragraphs: [
-          "Jika kebijakan ini berubah, kami akan memperbarui halaman ini dan tanggal di atas. Karena aplikasi tidak mengumpulkan data, perubahan apa pun hanya bisa memengaruhi cara aplikasi bekerja di perangkatmu.",
+          "Jika kebijakan ini berubah, saya akan memperbarui halaman ini dan tanggal di atas. Karena aplikasi tidak mengumpulkan data, perubahan apa pun hanya bisa memengaruhi cara aplikasi bekerja di perangkat Anda.",
         ],
       },
     ],
