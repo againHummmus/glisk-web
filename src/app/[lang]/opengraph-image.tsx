@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "Glisk — your life, unedited";
+export const alt = "Glisk: your life, unedited";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -32,7 +32,7 @@ export default function OpengraphImage() {
           alignItems: "center",
           justifyContent: "space-between",
           padding: "0 90px",
-          background: "radial-gradient(circle at 75% 50%, #25311e 0%, #000000 60%)",
+          background: "radial-gradient(circle at 75% 50%, #252c23 0%, #000000 60%)",
           color: "#ffffff",
         }}
       >

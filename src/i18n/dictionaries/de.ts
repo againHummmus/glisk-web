@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const de: Dictionary = {
   meta: {
-    title: "Glisk – Dein Leben, ungeschnitten. Ehrliches Video-Tagebuch in 30 Sekunden",
-    description: "Filme kurze, rohe 30-Sekunden-Clips aus dem echten Leben – ohne Filter, ohne zweiten Versuch, ohne Publikum. Glisk ordnet sie nach Tagen und macht aus einem Jahr einen ehrlichen Film. Kostenlos für Android, komplett offline.",
+    title: "Glisk: Video-Tagebuch in 30-Sekunden-Clips",
+    description: "Filme kurze Clips aus deinem Alltag, ohne Schnitt und ohne Filter. Glisk sortiert sie nach Tagen und macht daraus einen Film für den Monat oder das Jahr. Kostenlos für Android, funktioniert offline, keine Werbung.",
   },
   nav: {
     privacy: "Datenschutz",
@@ -16,18 +16,18 @@ export const de: Dictionary = {
     titleStart: "Dein Leben, ",
     titleAccent: "ungeschnitten",
     titleEnd: ".",
-    text: "Glisk ist Schottisch für einen flüchtigen Blick – einen Augenblick. Filme dreißig Sekunden von dem, was gerade passiert, mit zittrigen Händen und dem Licht, das eben da ist, und lass es, wie es war. Aus kurzen, rohen Clips wird dein echtes Leben.",
-    privacyLink: "So schützen wir deine Privatsphäre →",
+    text: "Glisk ist ein altes schottisches Wort für einen kurzen Blick. Filme dreißig Sekunden von dem, was gerade passiert. Wackelige Hände und schlechtes Licht sind okay. Mit der Zeit zeigen die kleinen Clips, wie dein Leben wirklich war.",
+    privacyLink: "So gehen wir mit Daten um →",
   },
   manifesto: {
-    title: "Hör auf, es perfekt zu machen.",
+    title: "Es muss nicht schön aussehen.",
     lines: [
-      "Warte nicht auf gutes Licht. Richte nicht deine Haare. Bitte nicht alle, noch einmal zu lächeln.",
-      "Zittrige Hände? Egal. Lärm im Hintergrund? Egal. Ein Lachen, das mitten im Satz abbricht? Umso besser.",
-      "Schau es dir nicht zehnmal an. Schneide nichts weg. Dreh es nicht neu.",
-      "Niemand wird es liken oder bewerten. Es ist kein Content – es ist dein Leben.",
+      "Warte nicht auf gutes Licht und mach dir nicht erst die Haare.",
+      "Die Hände zittern? Macht nichts. Lärm im Hintergrund oder ein Lachen, das mitten im Satz abbricht, auch nicht.",
+      "Du musst den Clip nicht zehnmal anschauen oder neu drehen.",
+      "Hier gibt es keine Likes. Das ist für dich, für später.",
     ],
-    closing: "Einfach filmen. Die Wahrheit reicht.",
+    closing: "Also einfach filmen.",
   },
   mockup: {
     month: "Oktober 2026",
@@ -36,20 +36,20 @@ export const de: Dictionary = {
   },
   features: [
     {
-      title: "Dreißig Sekunden reichen",
-      text: "Keine Produktion, ein Blick. Der Timer stoppt bei 30 Sekunden, damit du den Moment einfängst, statt Regie zu führen.",
+      title: "Maximal 30 Sekunden",
+      text: "Der Timer stoppt nach 30 Sekunden. Das reicht, um den Moment festzuhalten, ohne eine große Sache daraus zu machen.",
     },
     {
-      title: "Jeder Tag, wie er war",
-      text: "Clips landen an dem Tag, an dem sie passiert sind. Kein Feed, keine Likes, keine Follower – nur ein stiller Kalender davon, wie es wirklich war.",
+      title: "Nach Tagen sortiert",
+      text: "Jeder Clip landet an dem Tag, an dem du ihn gefilmt hast. Es gibt keinen Feed und keine Follower, nur einen Kalender deiner Tage.",
     },
     {
-      title: "Aus einem Jahr wird ein Film",
-      text: "Wähle einen Monat, ein Jahr oder ein paar Tage, füge Musik hinzu, wenn du magst, und Glisk fügt deine rohen Clips zu einem ehrlichen Film zusammen.",
+      title: "Ein Film für Monat oder Jahr",
+      text: "Wähle einen Monat, ein Jahr oder ein paar Tage, füg Musik hinzu, wenn du willst, und Glisk fügt die Clips zu einem Video zusammen.",
     },
     {
-      title: "Nur für dich",
-      text: "Kein Konto, keine Cloud, keine Werbung, kein Tracking. Wenn niemand zuschaut, gibt es keinen Grund, sich zu verstellen.",
+      title: "Bleibt auf deinem Handy",
+      text: "Kein Konto, keine Cloud, keine Werbung. Niemand sieht deine Clips, solange du sie nicht selbst verschickst.",
     },
   ],
   howItWorks: {
@@ -57,15 +57,15 @@ export const de: Dictionary = {
     steps: [
       {
         title: "Filmen",
-        text: "Öffne die App – sie startet direkt mit der Kamera. Einmal tippen zum Starten, einmal zum Stoppen. Nicht lange überlegen.",
+        text: "Die App startet direkt mit der Kamera. Einmal tippen zum Starten, noch einmal zum Stoppen.",
       },
       {
-        title: "Behalten",
-        text: "Clips füllen deinen Kalender Tag für Tag – unbearbeitet, genau so, wie es passiert ist.",
+        title: "Sammeln",
+        text: "Die Clips landen Tag für Tag im Kalender, so wie du sie gefilmt hast.",
       },
       {
-        title: "Erinnern",
-        text: "Mach einen Film aus einem Monat oder einem Jahr und sieh, wie dein Leben wirklich aussah.",
+        title: "Anschauen",
+        text: "Mach einen Film aus einem Monat oder einem Jahr und schau, wie es wirklich war.",
       },
     ],
   },
@@ -74,45 +74,45 @@ export const de: Dictionary = {
     items: [
       {
         question: "Ist Glisk kostenlos?",
-        answer: "Ja. Glisk ist auf Android kostenlos zum Herunterladen und Nutzen, und es gibt keine Werbung.",
+        answer: "Ja. Glisk ist auf Android kostenlos und hat keine Werbung.",
       },
       {
         question: "Was bedeutet „Glisk“?",
-        answer: "Ein schottisches Wort für einen Blick, einen Schimmer, einen flüchtigen Moment. Genau das ist ein 30-Sekunden-Clip.",
+        answer: "Das ist ein schottisches Wort für einen kurzen Blick. Es hat einfach gut zu einer App aus kurzen Clips gepasst.",
       },
       {
         question: "Warum gibt es keine Filter oder Effekte?",
-        answer: "Weil es nicht darum geht, gut auszusehen, sondern sich daran zu erinnern, wie es wirklich war. Schlechtes Licht, wackliges Bild, Lärm im Hintergrund – genau das wirst du später am meisten vermissen.",
+        answer: "Die Clips sollen so aussehen, wie der Tag aussah. Schlechtes Licht und eine wackelige Kamera gehören später zur Erinnerung dazu.",
       },
       {
         question: "Warum nur 30 Sekunden?",
-        answer: "Echte Momente sind kurz. Das Limit sorgt dafür, dass du filmst, statt Regie zu führen, und ein Jahr voller 30-Sekunden-Clips wird zu einem Film, den du dir wirklich wieder ansiehst.",
+        answer: "Kurze Clips sind schnell gefilmt und leicht anzuschauen. Selbst aus einem ganzen Jahr wird so ein Film, den man bis zum Ende schaut.",
       },
       {
         question: "Werden meine Videos irgendwo hochgeladen?",
-        answer: "Nein. Clips werden direkt auf deinem Handy aufgenommen, gespeichert und zu Filmen zusammengefügt. Es gibt kein Konto und keine Cloud – nichts wird an uns oder an andere gesendet.",
+        answer: "Nein. Aufnahme, Speicherung und Schnitt passieren auf deinem Handy. Es gibt kein Konto und keine Cloud, also geht nichts an uns oder an andere.",
       },
       {
         question: "Kann ich Musik zu meinem Film hinzufügen?",
-        answer: "Ja. Wähle eine beliebige Audiodatei auf deinem Handy, bestimme, welcher Teil des Songs läuft, und entscheide, ob der Originalton deiner Clips bleiben soll.",
+        answer: "Ja. Wähle eine Audiodatei auf deinem Handy, den Teil des Songs, der laufen soll, und ob der Originalton der Clips bleibt.",
       },
       {
         question: "Wie speichere oder teile ich einen Film?",
-        answer: "Speichere den fertigen Film in der Galerie deines Handys oder sende ihn über das normale Teilen-Menü mit einer beliebigen App.",
+        answer: "Speichere ihn in der Galerie oder schick ihn über das normale Teilen-Menü.",
       },
       {
         question: "Gibt es eine iPhone-Version?",
-        answer: "Noch nicht. Glisk erscheint zuerst für Android.",
+        answer: "Noch nicht. Glisk gibt es im Moment nur für Android.",
       },
     ],
   },
   privacyBand: {
-    title: "Nichts verlässt dein Handy. Niemals.",
-    text: "Aufnahme, Speicherung und Filmerstellung passieren direkt auf dem Gerät. Keine Server, keine Anmeldung, keine Analyse, kein Publikum. Ehrliche Momente verdienen Privatsphäre.",
+    title: "Deine Videos bleiben auf deinem Handy.",
+    text: "Glisk nimmt alles direkt auf dem Gerät auf und speichert und schneidet es auch dort. Wir haben keine Server, keine Anmeldung und keine Analyse.",
     link: "Datenschutzerklärung lesen",
   },
   footer: {
-    tagline: "Kurz, roh, echt. Bleibt auf deinem Handy.",
+    tagline: "Für ganz normale Tage. Gespeichert auf deinem Handy.",
     privacy: "Datenschutzerklärung",
     contact: "Kontakt",
   },
@@ -142,7 +142,7 @@ export const de: Dictionary = {
         title: "Deine Videos",
         paragraphs: [
           "Aufgenommene Clips werden im privaten Speicher der App auf deinem Gerät abgelegt, zusammen mit einem kleinen Vorschaubild, dem Datum und der Länge jedes Clips. Diese Informationen verlassen dein Handy nie und sind weder für uns noch für andere Apps zugänglich.",
-          "Filme werden direkt auf dem Gerät erstellt. Ein fertiger Film verlässt die App nur, wenn du ihn selbst in der Galerie speicherst oder über das normale Android-Teilen-Menü teilst — dann geht er genau dorthin, wohin du ihn schickst.",
+          "Filme werden direkt auf dem Gerät erstellt. Ein fertiger Film verlässt die App nur, wenn du ihn selbst in der Galerie speicherst oder über das normale Android-Teilen-Menü teilst. Dann geht er genau dorthin, wohin du ihn schickst.",
           "Wenn du einem Film Musik hinzufügst, wird die gewählte Audiodatei während der Bearbeitung in den temporären Speicher der App kopiert und danach gelöscht.",
         ],
       },

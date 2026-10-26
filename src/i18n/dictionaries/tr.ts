@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const tr: Dictionary = {
   meta: {
-    title: "Glisk — Hayatın, filtresiz. 30 saniyelik ham bir video günlüğü",
-    description: "Gerçek hayattan kısa, ham 30 saniyelik klipler çek: filtre yok, tekrar çekim yok, izleyici yok. Glisk onları günlere göre saklar ve bir yılı dürüst bir filme dönüştürür. Android’de ücretsiz, tamamen çevrimdışı.",
+    title: "Glisk: 30 saniyelik kliplerden video günlüğü",
+    description: "Gündelik hayatından kısa klipler çek, kurgu ve filtre olmadan. Glisk onları günlere göre sıralar ve ayın ya da yılın filmine dönüştürür. Android’de ücretsiz, çevrimdışı çalışır, reklam yok.",
   },
   nav: {
     privacy: "Gizlilik",
@@ -16,18 +16,18 @@ export const tr: Dictionary = {
     titleStart: "Hayatın, ",
     titleAccent: "filtresiz",
     titleEnd: ".",
-    text: "Glisk, İskoççada bir bakış, geçip giden bir an demek. Şu anda olan şeyin otuz saniyesini titreyen ellerle, ışık nasılsa öyle çek ve olduğu gibi bırak. Kısa, ham kliplerden senin gerçek hayatın oluşur.",
-    privacyLink: "Gizliliğini nasıl koruyoruz →",
+    text: "Glisk, “göz atmak” anlamına gelen eski bir İskoç kelimesi. Şu an olan şeyin otuz saniyesini çek. Elin titriyorsa ya da ışık kötüyse sorun değil. Zamanla bu küçük klipler hayatının gerçekte nasıl geçtiğini anlatır.",
+    privacyLink: "Verilerinle ne yapıyoruz →",
   },
   manifesto: {
-    title: "Mükemmel yapmaya çalışmayı bırak.",
+    title: "Güzel olmak zorunda değil.",
     lines: [
-      "İyi ışığı bekleme. Saçını düzeltme. Herkesten bir kez daha gülümsemesini isteme.",
-      "Ellerin mi titriyor? Olsun. Arkada gürültü mü var? Olsun. Cümlenin ortasında kesilen bir kahkaha mı? Daha da iyi.",
-      "On kez izleme. Kırpma. Yeniden çekme.",
-      "Kimse beğenmeyecek, kimse puan vermeyecek. Bu içerik değil — bu senin hayatın.",
+      "İyi ışığı bekleme, önce saçını düzeltmeye uğraşma.",
+      "Elin mi titriyor? Sorun değil. Arkadaki gürültü ya da cümlenin ortasında kesilen bir kahkaha da sorun değil.",
+      "On kez izlemene ya da yeniden çekmene gerek yok.",
+      "Burada beğeni yok. Bu senin için, ileride izlemen için.",
     ],
-    closing: "Sadece çek. Gerçek yeter.",
+    closing: "O yüzden sadece çek.",
   },
   mockup: {
     month: "Ekim 2026",
@@ -36,20 +36,20 @@ export const tr: Dictionary = {
   },
   features: [
     {
-      title: "Otuz saniye yeter",
-      text: "Bir prodüksiyon değil, bir bakış. Zamanlayıcı 30 saniyede durur; böylece anı yönetmek yerine yakalarsın.",
+      title: "En fazla 30 saniye",
+      text: "Zamanlayıcı 30 saniyede durur. Anı saklamaya yeter, işi prodüksiyona çevirmez.",
     },
     {
-      title: "Her gün, olduğu gibi",
-      text: "Her klip yaşandığı güne yerleşir. Akış yok, beğeni yok, takipçi yok — sadece her şeyin gerçekte nasıl olduğunu gösteren sakin bir takvim.",
+      title: "Günlere göre",
+      text: "Her klip çektiğin güne gider. Akış ya da takipçi yok, sadece günlerinin takvimi var.",
     },
     {
-      title: "Bir yıl, bir film olur",
-      text: "Bir ay, bir yıl ya da birkaç gün seç, istersen müzik ekle; Glisk ham kliplerini tek bir dürüst filmde birleştirsin.",
+      title: "Ayın ya da yılın filmi",
+      text: "Bir ay, bir yıl ya da birkaç gün seç, istersen müzik ekle. Glisk klipleri tek bir videoda birleştirir.",
     },
     {
-      title: "Sadece senin için",
-      text: "Hesap yok, bulut yok, reklam yok, takip yok. Kimse izlemiyorsa rol yapmaya gerek yok.",
+      title: "Telefonunda kalır",
+      text: "Hesap, bulut ve reklam yok. Sen göndermedikçe kliplerini kimse görmez.",
     },
   ],
   howItWorks: {
@@ -57,15 +57,15 @@ export const tr: Dictionary = {
     steps: [
       {
         title: "Çek",
-        text: "Uygulamayı aç; doğrudan kamerayla başlar. Başlatmak için bir dokunuş, durdurmak için bir dokunuş. Fazla düşünme.",
+        text: "Uygulama doğrudan kamerayla açılır. Başlatmak için dokun, durdurmak için tekrar dokun.",
       },
       {
         title: "Sakla",
-        text: "Klipler takvimini gün gün doldurur; dokunulmamış, yaşandığı gibi.",
+        text: "Klipler gün gün takvimine eklenir, çektiğin haliyle.",
       },
       {
-        title: "Hatırla",
-        text: "Bir ayın ya da bir yılın filmini yap ve hayatının gerçekte nasıl göründüğünü gör.",
+        title: "İzle",
+        text: "Bir ayın ya da yılın filmini yap ve nasıl geçtiğini gör.",
       },
     ],
   },
@@ -74,45 +74,45 @@ export const tr: Dictionary = {
     items: [
       {
         question: "Glisk ücretsiz mi?",
-        answer: "Evet. Glisk Android’de ücretsiz indirilip kullanılabilir ve reklam içermez.",
+        answer: "Evet. Android’de ücretsiz ve reklam yok.",
       },
       {
         question: "“Glisk” ne demek?",
-        answer: "İskoçça bir kelime: bakış, pırıltı, geçip giden bir an. 30 saniyelik bir klip tam olarak budur.",
+        answer: "Bir anlık bakış anlamına gelen İskoç bir kelime. Kısa kliplerden oluşan bir uygulamaya uygun geldi.",
       },
       {
         question: "Neden filtre veya efekt yok?",
-        answer: "Çünkü amaç güzel görünmek değil, gerçekte nasıl olduğunu hatırlamak. Kötü ışık, titreyen görüntü, arkadaki gürültü: sonra en çok özleyeceğin şey tam da bunlar.",
+        answer: "Klibin o gün nasıl göründüyse öyle görünmesini istiyoruz. Kötü ışık ve titreyen görüntü de sonra anının bir parçası oluyor.",
       },
       {
         question: "Neden sadece 30 saniye?",
-        answer: "Gerçek anlar kısadır. Sınır, yönetmek yerine çekmeni sağlar ve 30 saniyelik kliplerden oluşan bir yıl, gerçekten tekrar izlemek isteyeceğin bir filme dönüşür.",
+        answer: "Kısa klipler hızlı çekilir ve kolay izlenir. Koca bir yıldan bile sonuna kadar izlenebilecek bir film çıkar.",
       },
       {
         question: "Videolarım bir yere yükleniyor mu?",
-        answer: "Hayır. Klipler doğrudan telefonunda çekilir, saklanır ve filme dönüştürülür. Hesap da bulut da yok; hiçbir şey ne bize ne de başkasına gönderilir.",
+        answer: "Hayır. Kayıt, depolama ve kurgu telefonunda yapılır. Hesap ve bulut olmadığı için hiçbir şey ne bize ne de başkasına gider.",
       },
       {
         question: "Filmime müzik ekleyebilir miyim?",
-        answer: "Evet. Telefonundaki herhangi bir ses dosyasını seç, şarkının hangi bölümünün çalacağını belirle ve kliplerin orijinal sesini koruyup korumayacağına karar ver.",
+        answer: "Evet. Telefonundan bir ses dosyası seç, şarkının hangi kısmının çalacağını ve kliplerin kendi sesinin kalıp kalmayacağını belirle.",
       },
       {
         question: "Bir filmi nasıl saklar veya paylaşırım?",
-        answer: "Bitmiş filmi telefonunun galerisine kaydet ya da standart paylaşım menüsüyle herhangi bir uygulama üzerinden gönder.",
+        answer: "Galeriye kaydet ya da her zamanki paylaşım menüsünden gönder.",
       },
       {
         question: "iPhone sürümü var mı?",
-        answer: "Henüz yok. Glisk önce Android’de çıkıyor.",
+        answer: "Henüz yok. Şimdilik Glisk sadece Android’de.",
       },
     ],
   },
   privacyBand: {
-    title: "Hiçbir şey telefonundan çıkmaz. Asla.",
-    text: "Çekim, depolama ve film oluşturma tamamen cihazda gerçekleşir. Sunucu yok, kayıt yok, analiz yok, izleyici yok. Dürüst anlar gizliliği hak eder.",
+    title: "Videoların telefonunda kalır.",
+    text: "Glisk her şeyi cihazda çeker, saklar ve kurgular. Sunucumuz, üyelik sistemimiz ve analizimiz yok.",
     link: "Gizlilik politikasını oku",
   },
   footer: {
-    tagline: "Kısa, ham, gerçek. Telefonunda saklanır.",
+    tagline: "Sıradan günler için. Telefonunda saklanır.",
     privacy: "Gizlilik politikası",
     contact: "İletişim",
   },
@@ -142,7 +142,7 @@ export const tr: Dictionary = {
         title: "Videoların",
         paragraphs: [
           "Kaydettiğin klipler, her klibin küçük bir önizleme görseli, tarihi ve süresiyle birlikte cihazındaki uygulamaya özel depolama alanına kaydedilir. Bu bilgiler telefonundan asla çıkmaz; ne bizim ne de diğer uygulamaların erişimine açıktır.",
-          "Filmler cihazda birleştirilir. Bitmiş bir film yalnızca sen onu galeriye kaydetmeyi ya da Android’in standart paylaşım menüsüyle paylaşmayı seçersen uygulamadan çıkar — o zaman tam olarak gönderdiğin yere gider.",
+          "Filmler cihazda birleştirilir. Bitmiş bir film yalnızca sen onu galeriye kaydetmeyi ya da Android’in standart paylaşım menüsüyle paylaşmayı seçersen uygulamadan çıkar. O zaman tam olarak gönderdiğin yere gider.",
           "Bir filme müzik eklersen, seçtiğin ses dosyası düzenleme süresince uygulamanın geçici depolamasına kopyalanır ve işin bitince silinir.",
         ],
       },

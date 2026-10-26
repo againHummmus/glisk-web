@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const it: Dictionary = {
   meta: {
-    title: "Glisk — La tua vita, senza filtri. Un diario video crudo da 30 secondi",
-    description: "Gira brevi clip crude da 30 secondi di vita vera: senza filtri, senza rifare, senza pubblico. Glisk le ordina per giorno e trasforma un anno in un film sincero. Gratis su Android, completamente offline.",
+    title: "Glisk: diario video con clip da 30 secondi",
+    description: "Gira brevi clip della tua vita di tutti i giorni, senza montaggio e senza filtri. Glisk le ordina per giorno e ne fa un film del mese o dell’anno. Gratis su Android, funziona offline, senza pubblicità.",
   },
   nav: {
     privacy: "Privacy",
@@ -16,18 +16,18 @@ export const it: Dictionary = {
     titleStart: "La tua vita, ",
     titleAccent: "senza filtri",
     titleEnd: ".",
-    text: "Glisk è una parola scozzese per un’occhiata, un attimo fugace. Gira trenta secondi di quello che sta succedendo adesso, con le mani che tremano e la luce che c’è, e lascialo così com’è. Quelle brevi clip crude diventano la tua vita vera.",
-    privacyLink: "Come proteggiamo la tua privacy →",
+    text: "Glisk è una vecchia parola scozzese che vuol dire «dare un’occhiata». Gira trenta secondi di quello che succede adesso. Se la mano trema o la luce è brutta, va bene lo stesso. Col tempo queste piccole clip raccontano com’è andata davvero la tua vita.",
+    privacyLink: "Cosa facciamo con i tuoi dati →",
   },
   manifesto: {
-    title: "Smetti di renderlo perfetto.",
+    title: "Non serve che venga bello.",
     lines: [
-      "Non aspettare la luce giusta. Non sistemarti i capelli. Non chiedere a tutti di sorridere di nuovo.",
-      "Le mani tremano? Pazienza. C’è rumore dietro? Pazienza. Una risata interrotta a metà frase? Ancora meglio.",
-      "Non riguardarlo dieci volte. Non tagliarlo. Non rifarlo.",
-      "Nessuno metterà like o darà un voto. Non è un contenuto: è la tua vita.",
+      "Non aspettare la luce giusta e non sistemarti i capelli prima.",
+      "Ti trema la mano? Non importa. Nemmeno il rumore di fondo o una risata che si interrompe a metà frase.",
+      "Non serve riguardarlo dieci volte o rifarlo.",
+      "Qui non ci sono like. È per te, per più avanti.",
     ],
-    closing: "Gira e basta. La verità è abbastanza.",
+    closing: "Quindi gira e basta.",
   },
   mockup: {
     month: "Ottobre 2026",
@@ -36,20 +36,20 @@ export const it: Dictionary = {
   },
   features: [
     {
-      title: "Trenta secondi bastano",
-      text: "Non una produzione, uno sguardo. Il timer si ferma a 30 secondi, così catturi il momento invece di dirigerlo.",
+      title: "Massimo 30 secondi",
+      text: "Il timer si ferma a 30 secondi. Bastano per tenere il momento senza farne una produzione.",
     },
     {
-      title: "Ogni giorno, com’era",
-      text: "Ogni clip finisce nel giorno in cui è successa. Niente feed, niente like, niente follower: solo un calendario tranquillo di come sono andate davvero le cose.",
+      title: "Ordinato per giorno",
+      text: "Ogni clip va nel giorno in cui l’hai girata. Niente feed e niente follower, solo un calendario delle tue giornate.",
     },
     {
-      title: "Un anno diventa un film",
-      text: "Scegli un mese, un anno o qualche giorno, aggiungi musica se vuoi e Glisk unisce le tue clip crude in un unico film sincero.",
+      title: "Un film del mese o dell’anno",
+      text: "Scegli un mese, un anno o qualche giorno, aggiungi musica se vuoi e Glisk unisce le clip in un solo video.",
     },
     {
-      title: "Solo per te",
-      text: "Niente account, niente cloud, niente pubblicità, niente tracciamento. Quando nessuno guarda, non c’è motivo di fingere.",
+      title: "Resta sul tuo telefono",
+      text: "Niente account, niente cloud, niente pubblicità. Nessuno vede le tue clip se non sei tu a mandarle.",
     },
   ],
   howItWorks: {
@@ -57,15 +57,15 @@ export const it: Dictionary = {
     steps: [
       {
         title: "Gira",
-        text: "Apri l’app: parte subito dalla fotocamera. Un tocco per iniziare, uno per fermare. Senza pensarci due volte.",
+        text: "L’app si apre subito sulla fotocamera. Tocca per iniziare e di nuovo per fermare.",
       },
       {
         title: "Conserva",
-        text: "Le clip riempiono il calendario giorno dopo giorno, intatte, così come sono successe.",
+        text: "Le clip finiscono nel calendario giorno per giorno, così come le hai girate.",
       },
       {
-        title: "Ricorda",
-        text: "Crea il film di un mese o di un anno e guarda com’era davvero la tua vita.",
+        title: "Guarda",
+        text: "Fai un film di un mese o di un anno e rivedi com’era davvero.",
       },
     ],
   },
@@ -74,45 +74,45 @@ export const it: Dictionary = {
     items: [
       {
         question: "Glisk è gratis?",
-        answer: "Sì. Glisk si scarica e si usa gratis su Android, e non ci sono pubblicità.",
+        answer: "Sì. È gratis su Android e non ha pubblicità.",
       },
       {
         question: "Cosa significa «Glisk»?",
-        answer: "È una parola scozzese che indica un’occhiata, un lampo, un attimo fugace. Esattamente ciò che è una clip da 30 secondi.",
+        answer: "È una parola scozzese che vuol dire occhiata o scorcio. Ci sembrava adatta a un’app fatta di clip brevi.",
       },
       {
         question: "Perché non ci sono filtri o effetti?",
-        answer: "Perché lo scopo non è apparire belli, ma ricordare com’era davvero. La luce sbagliata, l’inquadratura che trema, il rumore di fondo: è proprio questo che ti mancherà di più.",
+        answer: "Vogliamo che la clip somigli alla giornata. La luce brutta e l’immagine mossa diventano parte del ricordo.",
       },
       {
         question: "Perché solo 30 secondi?",
-        answer: "I momenti veri sono brevi. Il limite ti fa girare invece di dirigere, e un anno di clip da 30 secondi diventa un film che vorrai davvero rivedere.",
+        answer: "Le clip brevi si girano in fretta e si riguardano facilmente. Anche con un anno intero ne esce un film che si guarda fino alla fine.",
       },
       {
         question: "I miei video vengono caricati da qualche parte?",
-        answer: "No. Le clip vengono girate, salvate e trasformate in film direttamente sul tuo telefono. Nessun account e nessun cloud: non viene inviato nulla, né a noi né ad altri.",
+        answer: "No. Registrazione, archiviazione e montaggio avvengono sul tuo telefono. Non ci sono account né cloud, quindi non arriva niente né a noi né ad altri.",
       },
       {
         question: "Posso aggiungere musica al mio film?",
-        answer: "Sì. Scegli un qualsiasi file audio dal telefono, decidi quale parte della canzone suonare e se mantenere l’audio originale delle clip.",
+        answer: "Sì. Scegli un file audio sul telefono, la parte della canzone e se tenere l’audio delle clip.",
       },
       {
         question: "Come salvo o condivido un film?",
-        answer: "Salva il film finito nella galleria del telefono o invialo con qualsiasi app tramite il normale menu di condivisione.",
+        answer: "Salvalo nella galleria o mandalo dal solito menu di condivisione.",
       },
       {
         question: "C’è una versione per iPhone?",
-        answer: "Non ancora. Glisk arriva prima su Android.",
+        answer: "Non ancora. Per ora Glisk è solo su Android.",
       },
     ],
   },
   privacyBand: {
-    title: "Niente lascia il tuo telefono. Mai.",
-    text: "Riprese, archiviazione e creazione dei film avvengono sul dispositivo. Niente server, niente registrazioni, niente analisi, nessun pubblico. I momenti sinceri meritano privacy.",
+    title: "I tuoi video restano sul telefono.",
+    text: "Glisk registra, salva e monta tutto sul dispositivo. Non abbiamo server, registrazione o analisi.",
     link: "Leggi l’informativa sulla privacy",
   },
   footer: {
-    tagline: "Breve, crudo, vero. Custodito sul tuo telefono.",
+    tagline: "Per i giorni normali. Custodito sul tuo telefono.",
     privacy: "Informativa sulla privacy",
     contact: "Contatti",
   },

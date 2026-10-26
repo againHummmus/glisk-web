@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const pl: Dictionary = {
   meta: {
-    title: "Glisk — Twoje życie bez filtrów. Surowy wideopamiętnik po 30 sekund",
-    description: "Nagrywaj krótkie, surowe 30-sekundowe klipy z prawdziwego życia — bez filtrów, bez powtórek, bez widowni. Glisk układa je według dni i robi z całego roku szczery film. Za darmo na Androida, w pełni offline.",
+    title: "Glisk: wideopamiętnik z 30-sekundowych klipów",
+    description: "Nagrywaj krótkie klipy z codzienności, bez montażu i bez filtrów. Glisk układa je według dni i robi z nich film z miesiąca albo roku. Za darmo na Androida, działa offline, bez reklam.",
   },
   nav: {
     privacy: "Prywatność",
@@ -16,18 +16,18 @@ export const pl: Dictionary = {
     titleStart: "Twoje życie ",
     titleAccent: "bez filtrów",
     titleEnd: ".",
-    text: "Glisk to szkockie słowo oznaczające przelotne spojrzenie, chwilę. Nagraj trzydzieści sekund tego, co dzieje się teraz — drżącymi rękami, przy takim świetle, jakie jest — i zostaw to tak, jak było. Z krótkich, surowych klipów składa się twoje prawdziwe życie.",
-    privacyLink: "Jak chronimy twoją prywatność →",
+    text: "Glisk to stare szkockie słowo, które znaczy „rzucić okiem”. Nagraj trzydzieści sekund tego, co dzieje się teraz. Drżące ręce i słabe światło to nie problem. Z czasem te krótkie klipy pokażą, jak naprawdę wyglądało twoje życie.",
+    privacyLink: "Co robimy z twoimi danymi →",
   },
   manifesto: {
-    title: "Przestań robić to idealnie.",
+    title: "Nie musi być ładnie.",
     lines: [
-      "Nie czekaj na dobre światło. Nie poprawiaj włosów. Nie proś wszystkich, żeby uśmiechnęli się jeszcze raz.",
-      "Drżą ręce? Trudno. Hałas w tle? Trudno. Śmiech urwany w pół zdania? Tym lepiej.",
-      "Nie oglądaj tego dziesięć razy. Nie przycinaj. Nie nagrywaj od nowa.",
-      "Nikt tego nie polubi ani nie oceni. To nie jest content — to twoje życie.",
+      "Nie czekaj na dobre światło i nie poprawiaj najpierw włosów.",
+      "Ręce się trzęsą? Nic nie szkodzi. Hałas w tle albo śmiech urwany w pół zdania też.",
+      "Nie musisz oglądać tego dziesięć razy ani nagrywać od nowa.",
+      "Tu nie ma lajków. To dla ciebie, na później.",
     ],
-    closing: "Po prostu nagrywaj. Prawda wystarczy.",
+    closing: "Więc po prostu nagrywaj.",
   },
   mockup: {
     month: "Październik 2026",
@@ -36,20 +36,20 @@ export const pl: Dictionary = {
   },
   features: [
     {
-      title: "Trzydzieści sekund wystarczy",
-      text: "To nie produkcja, tylko spojrzenie. Licznik zatrzymuje się po 30 sekundach, żeby łapać chwilę, a nie ją reżyserować.",
+      title: "Maksymalnie 30 sekund",
+      text: "Licznik zatrzymuje nagranie po 30 sekundach. To wystarczy, żeby zachować chwilę i nie robić z niej produkcji.",
     },
     {
-      title: "Każdy dzień taki, jaki był",
-      text: "Klip trafia do dnia, w którym powstał. Bez feedu, lajków i obserwujących — tylko spokojny kalendarz tego, jak było naprawdę.",
+      title: "Według dni",
+      text: "Każdy klip trafia do dnia, w którym go nagrano. Nie ma feedu ani obserwujących, jest tylko kalendarz twoich dni.",
     },
     {
-      title: "Z roku powstaje film",
-      text: "Wybierz miesiąc, rok albo kilka dni, dodaj muzykę, jeśli chcesz, a Glisk połączy surowe klipy w jeden szczery film.",
+      title: "Film z miesiąca albo roku",
+      text: "Wybierz miesiąc, rok albo kilka dni, dodaj muzykę, jeśli chcesz, a Glisk połączy klipy w jedno wideo.",
     },
     {
-      title: "Tylko dla ciebie",
-      text: "Bez konta, chmury, reklam i śledzenia. Kiedy nikt nie patrzy, nie ma powodu udawać.",
+      title: "Zostaje na telefonie",
+      text: "Bez konta, chmury i reklam. Nikt nie zobaczy twoich klipów, dopóki ich nie wyślesz.",
     },
   ],
   howItWorks: {
@@ -57,15 +57,15 @@ export const pl: Dictionary = {
     steps: [
       {
         title: "Nagrywaj",
-        text: "Otwórz aplikację — od razu startuje z kamerą. Jedno dotknięcie, by zacząć, drugie, by zatrzymać. Bez zastanawiania się.",
+        text: "Aplikacja otwiera się od razu na kamerze. Dotknij, żeby zacząć, i jeszcze raz, żeby zatrzymać.",
       },
       {
-        title: "Zachowuj",
-        text: "Klipy dzień po dniu wypełniają kalendarz — nietknięte, takie, jakie były.",
+        title: "Zbieraj",
+        text: "Klipy dzień po dniu trafiają do kalendarza w takiej postaci, w jakiej zostały nagrane.",
       },
       {
-        title: "Wspominaj",
-        text: "Zrób film z miesiąca albo roku i zobacz, jak naprawdę wyglądało twoje życie.",
+        title: "Oglądaj",
+        text: "Zrób film z miesiąca albo roku i zobacz, jak było naprawdę.",
       },
     ],
   },
@@ -74,45 +74,45 @@ export const pl: Dictionary = {
     items: [
       {
         question: "Czy Glisk jest darmowy?",
-        answer: "Tak. Glisk można za darmo pobrać i używać na Androidzie, bez reklam.",
+        answer: "Tak. Jest darmowy na Androidzie i nie ma reklam.",
       },
       {
         question: "Co znaczy „Glisk”?",
-        answer: "To szkockie słowo oznaczające spojrzenie, przebłysk, ulotną chwilę. Dokładnie tym jest 30-sekundowy klip.",
+        answer: "To szkockie słowo oznaczające spojrzenie albo przebłysk. Pasowało nam do aplikacji z krótkich klipów.",
       },
       {
         question: "Dlaczego nie ma filtrów ani efektów?",
-        answer: "Bo nie chodzi o to, żeby dobrze wyglądać, tylko żeby zapamiętać, jak było naprawdę. Kiepskie światło, drżący kadr, hałas w tle — właśnie za tym najbardziej się potem tęskni.",
+        answer: "Chcemy, żeby klip wyglądał tak, jak wyglądał dzień. Słabe światło i trzęsący się obraz też stają się częścią wspomnienia.",
       },
       {
         question: "Dlaczego tylko 30 sekund?",
-        answer: "Prawdziwe chwile są krótkie. Limit sprawia, że nagrywasz zamiast reżyserować, a rok 30-sekundowych klipów staje się filmem, do którego naprawdę chce się wracać.",
+        answer: "Krótkie klipy szybko się nagrywa i łatwo ogląda. Nawet z całego roku wychodzi film, który da się obejrzeć do końca.",
       },
       {
         question: "Czy moje filmy są gdzieś wysyłane?",
-        answer: "Nie. Klipy są nagrywane, przechowywane i łączone w filmy bezpośrednio na twoim telefonie. Nie ma konta ani chmury — nic nie trafia ani do nas, ani do nikogo innego.",
+        answer: "Nie. Nagrywanie, przechowywanie i montaż odbywają się na telefonie. Nie ma konta ani chmury, więc nic nie trafia ani do nas, ani do nikogo innego.",
       },
       {
         question: "Czy mogę dodać muzykę do filmu?",
-        answer: "Tak. Wybierz dowolny plik audio z telefonu, wskaż fragment utworu i zdecyduj, czy zostawić oryginalny dźwięk klipów.",
+        answer: "Tak. Wybierz plik audio z telefonu, fragment utworu i to, czy zostawić dźwięk z klipów.",
       },
       {
         question: "Jak zapisać film lub się nim podzielić?",
-        answer: "Zapisz gotowy film w galerii telefonu albo wyślij go przez dowolną aplikację w standardowym menu udostępniania.",
+        answer: "Zapisz go w galerii albo wyślij przez zwykłe menu udostępniania.",
       },
       {
         question: "Czy jest wersja na iPhone’a?",
-        answer: "Jeszcze nie. Glisk najpierw pojawia się na Androidzie.",
+        answer: "Jeszcze nie. Na razie Glisk jest tylko na Androida.",
       },
     ],
   },
   privacyBand: {
-    title: "Nic nie opuszcza twojego telefonu. Nigdy.",
-    text: "Nagrywanie, przechowywanie i tworzenie filmów odbywa się na urządzeniu. Bez serwerów, rejestracji, analityki i widowni. Szczere chwile zasługują na prywatność.",
+    title: "Twoje filmy zostają na telefonie.",
+    text: "Glisk nagrywa, przechowuje i montuje wszystko na urządzeniu. Nie mamy serwerów, rejestracji ani analityki.",
     link: "Przeczytaj politykę prywatności",
   },
   footer: {
-    tagline: "Krótko, surowo, prawdziwie. Na twoim telefonie.",
+    tagline: "Na zwykłe dni. Zapisane na twoim telefonie.",
     privacy: "Polityka prywatności",
     contact: "Kontakt",
   },
@@ -142,7 +142,7 @@ export const pl: Dictionary = {
         title: "Twoje filmy",
         paragraphs: [
           "Nagrane klipy są zapisywane w prywatnej pamięci aplikacji na Twoim urządzeniu razem z małym obrazem podglądu, datą i długością każdego klipu. Te informacje nigdy nie opuszczają Twojego telefonu i nie są dostępne ani dla nas, ani dla innych aplikacji.",
-          "Filmy są składane na urządzeniu. Gotowy film opuszcza aplikację tylko wtedy, gdy sam zapiszesz go w galerii lub udostępnisz przez standardowe menu udostępniania Androida — trafia wtedy dokładnie tam, gdzie go wyślesz.",
+          "Filmy są składane na urządzeniu. Gotowy film opuszcza aplikację tylko wtedy, gdy sam zapiszesz go w galerii lub udostępnisz przez standardowe menu udostępniania Androida. Trafia wtedy dokładnie tam, gdzie go wyślesz.",
           "Jeśli dodasz muzykę do filmu, wybrany plik audio jest kopiowany do pamięci tymczasowej aplikacji na czas edycji i usuwany po jej zakończeniu.",
         ],
       },

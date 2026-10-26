@@ -3,7 +3,7 @@ import { playStoreUrl, site } from "@/lib/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${site.name} — family video diary`,
+    name: `${site.name}: video diary`,
     short_name: site.name,
     description: "Record 30-second family moments and turn a month or a year into a film. Free on Android.",
     start_url: "/",

@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const id: Dictionary = {
   meta: {
-    title: "Glisk — Hidupmu, tanpa filter. Buku harian video mentah 30 detik",
-    description: "Rekam klip pendek dan mentah 30 detik dari kehidupan nyata: tanpa filter, tanpa ulang, tanpa penonton. Glisk menyimpannya per hari dan mengubah setahun menjadi film yang jujur. Gratis di Android, sepenuhnya offline.",
+    title: "Glisk: buku harian video dari klip 30 detik",
+    description: "Rekam klip pendek dari keseharianmu, tanpa edit dan tanpa filter. Glisk mengurutkannya per hari dan menjadikannya film bulanan atau tahunan. Gratis di Android, bisa offline, tanpa iklan.",
   },
   nav: {
     privacy: "Privasi",
@@ -16,18 +16,18 @@ export const id: Dictionary = {
     titleStart: "Hidupmu, ",
     titleAccent: "tanpa filter",
     titleEnd: ".",
-    text: "Glisk adalah kata dalam bahasa Skotlandia untuk lirikan, sekilas momen. Rekam tiga puluh detik dari apa yang sedang terjadi sekarang, dengan tangan gemetar dan cahaya seadanya, lalu biarkan apa adanya. Klip-klip pendek yang mentah itulah hidupmu yang sebenarnya.",
-    privacyLink: "Cara kami menjaga privasimu →",
+    text: "Glisk adalah kata lama dari Skotlandia yang artinya “melirik sebentar”. Rekam tiga puluh detik dari apa yang sedang terjadi sekarang. Tangan gemetar atau cahaya kurang bagus tidak masalah. Lama-lama, klip kecil ini menunjukkan seperti apa hidupmu sebenarnya.",
+    privacyLink: "Apa yang kami lakukan dengan datamu →",
   },
   manifesto: {
-    title: "Berhenti berusaha membuatnya sempurna.",
+    title: "Tidak harus bagus.",
     lines: [
-      "Jangan tunggu cahaya yang bagus. Jangan rapikan rambut. Jangan minta semua orang tersenyum sekali lagi.",
-      "Tangan gemetar? Tidak apa-apa. Ada suara bising? Tidak apa-apa. Tawa yang terpotong di tengah kalimat? Justru bagus.",
-      "Jangan tonton sepuluh kali. Jangan dipotong. Jangan diulang.",
-      "Tidak ada yang akan memberi like atau menilai. Ini bukan konten — ini hidupmu.",
+      "Tidak usah menunggu cahaya bagus atau merapikan rambut dulu.",
+      "Tangan gemetar? Tidak apa-apa. Suara bising atau tawa yang terpotong di tengah kalimat juga tidak apa-apa.",
+      "Kamu tidak perlu menontonnya sepuluh kali atau merekam ulang.",
+      "Di sini tidak ada like. Ini untukmu, untuk nanti.",
     ],
-    closing: "Rekam saja. Kejujuran sudah cukup.",
+    closing: "Jadi rekam saja.",
   },
   mockup: {
     month: "Oktober 2026",
@@ -36,20 +36,20 @@ export const id: Dictionary = {
   },
   features: [
     {
-      title: "Tiga puluh detik sudah cukup",
-      text: "Bukan produksi, hanya sekilas. Timer berhenti di 30 detik supaya kamu menangkap momen, bukan menyutradarainya.",
+      title: "Maksimal 30 detik",
+      text: "Timer berhenti di 30 detik. Cukup untuk menyimpan momen tanpa menjadikannya produksi.",
     },
     {
-      title: "Setiap hari, apa adanya",
-      text: "Setiap klip tersimpan di hari kejadiannya. Tanpa feed, tanpa like, tanpa pengikut — hanya kalender tenang tentang bagaimana semuanya benar-benar terjadi.",
+      title: "Diurutkan per hari",
+      text: "Setiap klip masuk ke hari saat kamu merekamnya. Tidak ada feed atau pengikut, hanya kalender hari-harimu.",
     },
     {
-      title: "Setahun menjadi film",
-      text: "Pilih satu bulan, satu tahun, atau beberapa hari, tambahkan musik jika mau, dan Glisk akan menyatukan klip mentahmu menjadi satu film yang jujur.",
+      title: "Film bulanan atau tahunan",
+      text: "Pilih satu bulan, satu tahun, atau beberapa hari, tambahkan musik kalau mau, lalu Glisk menggabungkan klipnya jadi satu video.",
     },
     {
-      title: "Hanya untukmu",
-      text: "Tanpa akun, tanpa cloud, tanpa iklan, tanpa pelacakan. Saat tidak ada yang menonton, tak perlu berpura-pura.",
+      title: "Tetap di ponselmu",
+      text: "Tanpa akun, tanpa cloud, tanpa iklan. Tidak ada yang melihat klipmu kecuali kamu mengirimnya.",
     },
   ],
   howItWorks: {
@@ -57,15 +57,15 @@ export const id: Dictionary = {
     steps: [
       {
         title: "Rekam",
-        text: "Buka aplikasinya — langsung ke kamera. Satu ketukan untuk mulai, satu lagi untuk berhenti. Jangan berpikir dua kali.",
+        text: "Aplikasi langsung terbuka di kamera. Ketuk untuk mulai, ketuk lagi untuk berhenti.",
       },
       {
         title: "Simpan",
-        text: "Klip mengisi kalendermu hari demi hari, tanpa disentuh, persis seperti kejadiannya.",
+        text: "Klip masuk ke kalendermu hari demi hari, sama seperti saat direkam.",
       },
       {
-        title: "Kenang",
-        text: "Buat film dari satu bulan atau satu tahun dan lihat seperti apa hidupmu sebenarnya.",
+        title: "Tonton",
+        text: "Buat film dari satu bulan atau satu tahun dan lihat bagaimana semuanya sebenarnya.",
       },
     ],
   },
@@ -74,45 +74,45 @@ export const id: Dictionary = {
     items: [
       {
         question: "Apakah Glisk gratis?",
-        answer: "Ya. Glisk gratis diunduh dan digunakan di Android, dan tidak ada iklan.",
+        answer: "Ya. Glisk gratis di Android dan tidak ada iklan.",
       },
       {
         question: "Apa arti “Glisk”?",
-        answer: "Ini kata dalam bahasa Skotlandia yang berarti lirikan, kilasan, momen yang sekejap. Persis seperti klip 30 detik.",
+        answer: "Itu kata Skotlandia untuk lirikan atau kilasan. Rasanya cocok untuk aplikasi yang isinya klip pendek.",
       },
       {
         question: "Kenapa tidak ada filter atau efek?",
-        answer: "Karena tujuannya bukan terlihat bagus, tapi mengingat bagaimana sebenarnya. Cahaya yang buruk, gambar yang goyang, suara bising di latar: justru itulah yang paling kamu rindukan nanti.",
+        answer: "Kami ingin klip terlihat seperti hari itu apa adanya. Cahaya jelek dan gambar goyang nanti juga jadi bagian dari kenangan.",
       },
       {
         question: "Kenapa hanya 30 detik?",
-        answer: "Momen nyata itu singkat. Batas ini membuatmu merekam alih-alih menyutradarai, dan setahun klip 30 detik menjadi film yang benar-benar ingin kamu tonton lagi.",
+        answer: "Klip pendek cepat direkam dan gampang ditonton ulang. Bahkan dari setahun penuh, hasilnya tetap film yang bisa ditonton sampai habis.",
       },
       {
         question: "Apakah videoku diunggah ke suatu tempat?",
-        answer: "Tidak. Klip direkam, disimpan, dan dijadikan film langsung di ponselmu. Tidak ada akun dan tidak ada cloud — tidak ada yang dikirim ke kami atau siapa pun.",
+        answer: "Tidak. Perekaman, penyimpanan, dan pengeditan terjadi di ponselmu. Tidak ada akun dan cloud, jadi tidak ada yang terkirim ke kami atau siapa pun.",
       },
       {
         question: "Bisakah aku menambahkan musik ke film?",
-        answer: "Bisa. Pilih file audio apa pun dari ponselmu, tentukan bagian lagu yang diputar, dan putuskan apakah suara asli klip tetap dipertahankan.",
+        answer: "Bisa. Pilih file audio di ponselmu, bagian lagu yang mau diputar, dan apakah suara klip tetap dipakai.",
       },
       {
         question: "Bagaimana cara menyimpan atau membagikan film?",
-        answer: "Simpan film yang sudah jadi ke galeri ponsel atau kirim lewat aplikasi apa pun melalui menu berbagi standar.",
+        answer: "Simpan ke galeri atau kirim lewat menu berbagi biasa.",
       },
       {
         question: "Apakah ada versi iPhone?",
-        answer: "Belum. Glisk hadir di Android terlebih dahulu.",
+        answer: "Belum. Untuk sekarang Glisk hanya ada di Android.",
       },
     ],
   },
   privacyBand: {
-    title: "Tidak ada yang keluar dari ponselmu. Selamanya.",
-    text: "Perekaman, penyimpanan, dan pembuatan film semuanya terjadi di perangkat. Tanpa server, tanpa pendaftaran, tanpa analitik, tanpa penonton. Momen yang jujur layak tetap pribadi.",
+    title: "Videomu tetap di ponselmu.",
+    text: "Glisk merekam, menyimpan, dan mengedit semuanya di perangkat. Kami tidak punya server, pendaftaran, atau analitik.",
     link: "Baca kebijakan privasi",
   },
   footer: {
-    tagline: "Singkat, mentah, nyata. Tersimpan di ponselmu.",
+    tagline: "Untuk hari-hari biasa. Tersimpan di ponselmu.",
     privacy: "Kebijakan privasi",
     contact: "Kontak",
   },
@@ -142,7 +142,7 @@ export const id: Dictionary = {
         title: "Videomu",
         paragraphs: [
           "Klip yang kamu rekam disimpan di penyimpanan pribadi aplikasi di perangkatmu, bersama gambar pratinjau kecil, tanggal, dan durasi setiap klip. Informasi ini tidak pernah keluar dari ponselmu dan tidak dapat diakses oleh kami maupun aplikasi lain.",
-          "Film disusun di perangkat. Film yang sudah jadi hanya keluar dari aplikasi jika kamu memilih menyimpannya ke galeri atau membagikannya lewat menu berbagi standar Android — dan film itu akan pergi tepat ke tempat yang kamu tuju.",
+          "Film disusun di perangkat. Film yang sudah jadi hanya keluar dari aplikasi jika kamu memilih menyimpannya ke galeri atau membagikannya lewat menu berbagi standar Android. Film itu akan pergi tepat ke tempat yang kamu tuju.",
           "Jika kamu menambahkan musik ke film, file audio yang kamu pilih disalin ke penyimpanan sementara aplikasi selama pengeditan dan dihapus setelah selesai.",
         ],
       },

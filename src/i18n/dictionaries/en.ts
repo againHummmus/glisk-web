@@ -2,8 +2,8 @@ import type { Dictionary } from "../types";
 
 export const en: Dictionary = {
   meta: {
-    title: "Glisk — Your Life, Unedited. A Raw 30-Second Video Diary",
-    description: "Film short, raw 30-second clips of real life — no filters, no retakes, no audience. Glisk keeps them by day and turns a year into an honest film. Free on Android, fully offline.",
+    title: "Glisk: a video diary in 30-second clips",
+    description: "Film short, unedited clips of your everyday life. Glisk sorts them by day and turns a month or a year into one film. Free on Android, works offline, no ads.",
   },
   nav: {
     privacy: "Privacy",
@@ -16,18 +16,18 @@ export const en: Dictionary = {
     titleStart: "Your life, ",
     titleAccent: "unedited",
     titleEnd: ".",
-    text: "Glisk is Scots for a glance — a fleeting moment. Film thirty seconds of what’s happening right now, with shaky hands and whatever light there is, and keep it just as it was. Short, raw clips add up to your real life.",
-    privacyLink: "How we keep it private →",
+    text: "Glisk is an old Scots word for a quick glance. Film thirty seconds of whatever is happening right now. Shaky hands and bad light are fine. Over time these little clips add up to a record of how your life actually went.",
+    privacyLink: "How we handle your data →",
   },
   manifesto: {
-    title: "Stop making it perfect.",
+    title: "It doesn’t have to look good.",
     lines: [
-      "Don’t wait for good light. Don’t fix your hair. Don’t ask everyone to smile one more time.",
-      "Shaky hands? Fine. Noise in the background? Fine. Laughter cut off mid-sentence? Even better.",
-      "Don’t rewatch it ten times. Don’t trim it. Don’t retake it.",
-      "Nobody is going to like it or rate it. It’s not content — it’s your life.",
+      "Don’t wait for good light or fix your hair first.",
+      "Shaky hands are fine. So is background noise, or a laugh that gets cut off halfway.",
+      "You don’t have to rewatch it ten times or film it again.",
+      "There are no likes here. It’s for you, a few years from now.",
     ],
-    closing: "Just film. The truth is enough.",
+    closing: "So just film.",
   },
   mockup: {
     month: "October 2026",
@@ -36,20 +36,20 @@ export const en: Dictionary = {
   },
   features: [
     {
-      title: "Thirty seconds is enough",
-      text: "Not a production, a glance. The timer stops at 30 seconds, so you catch the moment instead of directing it.",
+      title: "30 seconds max",
+      text: "The timer stops at 30 seconds. That’s enough to catch the moment without turning it into a production.",
     },
     {
-      title: "Every day, as it was",
-      text: "Clips land on the day they happened. No feed, no likes, no followers — just a quiet calendar of how things really were.",
+      title: "Sorted by day",
+      text: "Each clip goes to the day you filmed it. There’s no feed and no followers, just a calendar of your days.",
     },
     {
-      title: "A year becomes a film",
-      text: "Pick a month, a year or a few days, add music if you like, and Glisk stitches your raw clips into one honest film.",
+      title: "A film of the month or year",
+      text: "Pick a month, a year or a few days, add music if you want, and Glisk joins the clips into one video.",
     },
     {
-      title: "Only for you",
-      text: "No account, no cloud, no ads, no tracking. When nobody is watching, there’s no reason to pretend.",
+      title: "Stays on your phone",
+      text: "No account, no cloud, no ads. Nobody sees your clips unless you send them.",
     },
   ],
   howItWorks: {
@@ -57,15 +57,15 @@ export const en: Dictionary = {
     steps: [
       {
         title: "Film",
-        text: "Open the app — it starts on the camera. One tap to start, one tap to stop. Don’t think twice.",
+        text: "The app opens on the camera. Tap to start, tap again to stop.",
       },
       {
         title: "Keep",
-        text: "Clips fill your calendar day by day, untouched, exactly as they happened.",
+        text: "Clips land in your calendar day by day, just as you filmed them.",
       },
       {
-        title: "Remember",
-        text: "Make a film of a month or a year and see what your life really looked like.",
+        title: "Watch",
+        text: "Make a film of a month or a year and see what it was really like.",
       },
     ],
   },
@@ -74,45 +74,45 @@ export const en: Dictionary = {
     items: [
       {
         question: "Is Glisk free?",
-        answer: "Yes. Glisk is free to download and use on Android, and there are no ads.",
+        answer: "Yes. It’s free on Android and has no ads.",
       },
       {
         question: "What does “Glisk” mean?",
-        answer: "It’s a Scots word for a glance, a glimpse, a fleeting moment. That’s exactly what a 30-second clip is.",
+        answer: "It’s a Scots word for a glance or a glimpse. It felt right for an app made of short clips.",
       },
       {
         question: "Why are there no filters or effects?",
-        answer: "Because the point isn’t to look good — it’s to remember how it really was. The bad light, the shaky frame, the noise in the background: that’s what you’ll miss most later.",
+        answer: "We want the clips to look the way the day looked. Bad light and a shaky camera end up being part of what you remember.",
       },
       {
         question: "Why only 30 seconds?",
-        answer: "Real moments are short. The limit keeps you filming instead of directing, and a year of 30-second clips becomes a film you’ll actually rewatch.",
+        answer: "Short clips are quick to film and easy to watch back. Even a whole year of them makes a film you can sit through.",
       },
       {
         question: "Are my videos uploaded anywhere?",
-        answer: "No. Clips are recorded, stored and turned into films right on your phone. There is no account and no cloud — nothing is sent to us or anyone else.",
+        answer: "No. Recording, storage and editing all happen on your phone. There’s no account and no cloud, so nothing gets sent to us or anyone else.",
       },
       {
         question: "Can I add music to my film?",
-        answer: "Yes. Pick any audio file from your phone, choose which part of the song plays, and decide whether to keep the original sound of your clips.",
+        answer: "Yes. Pick any audio file on your phone, choose which part of the song plays, and decide whether to keep the clips’ own sound.",
       },
       {
         question: "How do I keep or share a film?",
-        answer: "Save the finished film to your phone’s gallery or send it through any app with the standard share menu.",
+        answer: "Save it to your phone’s gallery, or send it from the usual share menu.",
       },
       {
         question: "Is there an iPhone version?",
-        answer: "Not yet. Glisk is available on Android first.",
+        answer: "Not yet. Glisk is Android-only for now.",
       },
     ],
   },
   privacyBand: {
-    title: "Nothing leaves your phone. Ever.",
-    text: "Recording, storage and film-making all happen on the device. No servers, no sign-ups, no analytics, no audience. Honest moments deserve to stay private.",
+    title: "Your videos stay on your phone.",
+    text: "Glisk records, stores and edits everything on the device. We don’t run servers, there’s no sign-up, and we don’t collect analytics.",
     link: "Read the privacy policy",
   },
   footer: {
-    tagline: "Short, raw, real. Kept on your phone.",
+    tagline: "Made for ordinary days. Kept on your phone.",
     privacy: "Privacy policy",
     contact: "Contact",
   },
@@ -142,7 +142,7 @@ export const en: Dictionary = {
         title: "Your videos",
         paragraphs: [
           "Clips you record are saved in the app’s private storage on your device, together with a small preview image, the date and the length of each clip. This information never leaves your phone and is not accessible to us or to other apps.",
-          "Films you create are put together on the device. A finished film only leaves the app when you choose to save it to your gallery or share it through the standard Android share menu — in that case it goes exactly where you send it.",
+          "Films you create are put together on the device. A finished film only leaves the app when you choose to save it to your gallery or share it through the standard Android share menu. In that case it goes exactly where you send it.",
           "If you add music to a film, the audio file you pick is copied to the app’s temporary storage while you edit and is deleted when you are done.",
         ],
       },
