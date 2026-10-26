@@ -22,6 +22,7 @@ export interface Dictionary {
     privacy: string;
     getApp: string;
     language: string;
+    blog: string;
   };
   storeButton: string;
   hero: {
@@ -41,6 +42,20 @@ export interface Dictionary {
   howItWorks: {
     title: string;
     steps: [TextBlock, TextBlock, TextBlock];
+  };
+  blog: {
+    title: string;
+    description: string;
+    latest: string;
+    all: string;
+    related: string;
+    ctaTitle: string;
+    ctaText: string;
+  };
+  notFound: {
+    title: string;
+    text: string;
+    home: string;
   };
   faq: {
     title: string;

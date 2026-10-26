@@ -9,6 +9,7 @@ export const tr: Dictionary = {
     privacy: "Gizlilik",
     getApp: "Uygulamayı indir",
     language: "Dil",
+    blog: "Blog",
   },
   storeButton: "Google Play’den indir",
   hero: {
@@ -58,6 +59,20 @@ export const tr: Dictionary = {
         text: "Bir ayın ya da yılın filmini yapın ve her şeyin gerçekte nasıl olduğunu görün.",
       },
     ],
+  },
+  blog: {
+    title: "Glisk blogu",
+    description: "Video günlüğü tutmak, gündelik hayatı çekmek ve bir ayı ya da yılı tek bir filme dönüştürmek üzerine yazılar.",
+    latest: "Bloğdan",
+    all: "Tüm yazılar",
+    related: "Bunları da okuyun",
+    ctaTitle: "Glisk’i deneyin",
+    ctaText: "Android için ücretsiz bir video günlüğü. 30 saniyelik klipler, günlerinizin takvimi ve yılınızın filmi, hepsi telefonunuzda.",
+  },
+  notFound: {
+    title: "Sayfa bulunamadı",
+    text: "Bu sayfa yok ya da taşınmış. Başa dönelim.",
+    home: "Ana sayfaya dön",
   },
   faq: {
     title: "Sık sorulan sorular",

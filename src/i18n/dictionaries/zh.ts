@@ -9,6 +9,7 @@ export const zh: Dictionary = {
     privacy: "隐私",
     getApp: "下载应用",
     language: "语言",
+    blog: "博客",
   },
   storeButton: "在 Google Play 下载",
   hero: {
@@ -58,6 +59,20 @@ export const zh: Dictionary = {
         text: "为一个月或一年做一部影片，回头看看那段日子到底是什么样。",
       },
     ],
+  },
+  blog: {
+    title: "Glisk 博客",
+    description: "关于如何写视频日记、拍下日常，以及把一个月或一年做成一部影片的文章。",
+    latest: "来自博客",
+    all: "全部文章",
+    related: "继续阅读",
+    ctaTitle: "试试 Glisk",
+    ctaText: "一款适用于 Android 的免费视频日记。30 秒的短片、记录每一天的日历、一整年的影片，全都保存在您的手机里。",
+  },
+  notFound: {
+    title: "页面未找到",
+    text: "这个页面不存在，或已被移动。我们回到首页吧。",
+    home: "返回首页",
   },
   faq: {
     title: "常见问题",

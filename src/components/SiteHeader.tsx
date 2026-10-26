@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/types";
+import { getBlogLanguages } from "@/lib/blog";
 import { getPlayStoreLink, site } from "@/lib/site";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -11,7 +12,8 @@ interface SiteHeaderProps {
   dict: Dictionary;
 }
 
-export function SiteHeader({ lang, path, dict }: SiteHeaderProps) {
+export async function SiteHeader({ lang, path, dict }: SiteHeaderProps) {
+  const hasBlog = (await getBlogLanguages()).includes(lang);
   return (
     <header className="sticky top-0 z-20 border-b border-white/10 bg-black/70 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
@@ -23,6 +25,14 @@ export function SiteHeader({ lang, path, dict }: SiteHeaderProps) {
         </Link>
         <nav className="flex items-center gap-1 text-sm sm:gap-2">
           <LanguageSwitcher lang={lang} path={path} label={dict.nav.language} />
+          {hasBlog && (
+            <Link
+              href={`/${lang}/blog`}
+              className="hidden rounded-full px-4 py-2 text-neutral-400 transition-colors hover:text-white sm:block"
+            >
+              {dict.nav.blog}
+            </Link>
+          )}
           <Link
             href={`/${lang}/privacy`}
             className="hidden rounded-full px-4 py-2 text-neutral-400 transition-colors hover:text-white sm:block"

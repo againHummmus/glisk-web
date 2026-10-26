@@ -32,3 +32,12 @@ Then deploy, for example to Vercel (`npx vercel`), and put the `/en/privacy` URL
 2. Submit `https://<your-domain>/sitemap.xml` in Search Console and Yandex Webmaster.
 3. Check a page with https://search.google.com/test/rich-results and a link preview with https://www.opengraph.xyz.
 4. Play Store links carry `utm_source=website`, `utm_medium=<button>` and `utm_campaign=site_<lang>` — installs from the site show up in Play Console → Grow users → Acquisition reports.
+
+## Blog (Sanity)
+
+Articles live in a Sanity project (`n5hfln30`, dataset `production`, studio in `../glisk-sanity/studio`) and are shown at `/{lang}/blog` and `/{lang}/blog/{slug}`.
+
+- A language shows the blog (header and footer links, "From the blog" block on the home page, sitemap entries) only once it has at least one published article. The dataset must be public for the site to read it.
+- Queries and caching are in `src/lib/blog.ts`; data is cached with the `posts` tag.
+- To publish without redeploying, create a webhook in Sanity (manage.sanity.io → API → Webhooks): URL `https://<your-domain>/api/revalidate`, method POST, filter `_type == "post"`, trigger on create, update and delete, HTTP header `x-revalidate-secret` with the same value as the `SANITY_REVALIDATE_SECRET` environment variable (set it on the host and in `.env.local`).
+- Without the webhook the site picks up changes within an hour.

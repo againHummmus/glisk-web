@@ -9,6 +9,7 @@ export const en: Dictionary = {
     privacy: "Privacy",
     getApp: "Get the app",
     language: "Language",
+    blog: "Blog",
   },
   storeButton: "Get it on Google Play",
   hero: {
@@ -58,6 +59,20 @@ export const en: Dictionary = {
         text: "Make a film of a month or a year and see how it all really was.",
       },
     ],
+  },
+  blog: {
+    title: "Glisk blog",
+    description: "Articles about keeping a video diary, filming everyday life and turning a month or a year into one film.",
+    latest: "From the blog",
+    all: "All articles",
+    related: "Read next",
+    ctaTitle: "Try Glisk",
+    ctaText: "A free video diary for Android. 30-second clips, a calendar of your days and a film of your year, all kept on your phone.",
+  },
+  notFound: {
+    title: "Page not found",
+    text: "This page doesn’t exist or has been moved. Let’s get you back to the start.",
+    home: "Back to home",
   },
   faq: {
     title: "Frequently asked questions",

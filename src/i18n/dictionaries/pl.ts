@@ -9,6 +9,7 @@ export const pl: Dictionary = {
     privacy: "Prywatność",
     getApp: "Pobierz",
     language: "Język",
+    blog: "Blog",
   },
   storeButton: "Pobierz z Google Play",
   hero: {
@@ -58,6 +59,20 @@ export const pl: Dictionary = {
         text: "Film z miesiąca albo roku pokazuje, jak wszystko wyglądało naprawdę.",
       },
     ],
+  },
+  blog: {
+    title: "Blog Glisk",
+    description: "Artykuły o tym, jak prowadzić wideopamiętnik, nagrywać codzienność i robić z miesiąca albo roku jeden film.",
+    latest: "Z bloga",
+    all: "Wszystkie artykuły",
+    related: "Czytaj dalej",
+    ctaTitle: "Wypróbuj Glisk",
+    ctaText: "Darmowy wideopamiętnik na Androida. Klipy po 30 sekund, kalendarz Twoich dni i film z całego roku, a wszystko na telefonie.",
+  },
+  notFound: {
+    title: "Nie znaleziono strony",
+    text: "Ta strona nie istnieje albo została przeniesiona. Wróćmy na początek.",
+    home: "Wróć na stronę główną",
   },
   faq: {
     title: "Najczęstsze pytania",

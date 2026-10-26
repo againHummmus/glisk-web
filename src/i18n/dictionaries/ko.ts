@@ -9,6 +9,7 @@ export const ko: Dictionary = {
     privacy: "개인정보",
     getApp: "앱 받기",
     language: "언어",
+    blog: "블로그",
   },
   storeButton: "Google Play에서 받기",
   hero: {
@@ -58,6 +59,20 @@ export const ko: Dictionary = {
         text: "한 달이나 1년의 영화를 만들어 실제로 어땠는지 돌아보세요.",
       },
     ],
+  },
+  blog: {
+    title: "Glisk 블로그",
+    description: "비디오 일기를 쓰는 법, 일상을 찍는 법, 한 달이나 1년을 한 편의 영화로 만드는 법에 대한 글이에요.",
+    latest: "블로그에서",
+    all: "모든 글",
+    related: "함께 읽어 보세요",
+    ctaTitle: "Glisk 써 보기",
+    ctaText: "Android용 무료 비디오 일기예요. 30초 클립, 하루하루의 캘린더, 1년의 영화까지 모두 휴대폰에 보관돼요.",
+  },
+  notFound: {
+    title: "페이지를 찾을 수 없어요",
+    text: "이 페이지는 없거나 다른 곳으로 옮겨졌어요. 처음으로 돌아가 볼까요?",
+    home: "홈으로 돌아가기",
   },
   faq: {
     title: "자주 묻는 질문",

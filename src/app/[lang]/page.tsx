@@ -2,6 +2,7 @@ import { CalendarDays, ChevronDown, Clapperboard, Lock, Timer } from "lucide-rea
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { LatestPosts } from "@/components/LatestPosts";
 import { PhoneMockup } from "@/components/PhoneMockup";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -115,6 +116,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             ))}
           </ol>
         </section>
+
+        <LatestPosts lang={lang} dict={dict} />
 
         <section className="mx-auto w-full max-w-3xl px-5 pb-24 sm:px-8">
           <h2 className="mb-8 text-3xl font-semibold tracking-tight">{dict.faq.title}</h2>

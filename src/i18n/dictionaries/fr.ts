@@ -9,6 +9,7 @@ export const fr: Dictionary = {
     privacy: "Confidentialité",
     getApp: "Obtenir l’app",
     language: "Langue",
+    blog: "Blog",
   },
   storeButton: "Disponible sur Google Play",
   hero: {
@@ -58,6 +59,20 @@ export const fr: Dictionary = {
         text: "Créez le film d’un mois ou d’une année et revoyez comment tout s’est vraiment passé.",
       },
     ],
+  },
+  blog: {
+    title: "Le blog Glisk",
+    description: "Des articles pour tenir un journal vidéo, filmer le quotidien et faire d’un mois ou d’une année un seul film.",
+    latest: "Sur le blog",
+    all: "Tous les articles",
+    related: "À lire aussi",
+    ctaTitle: "Essayez Glisk",
+    ctaText: "Un journal vidéo gratuit pour Android. Des clips de 30 secondes, un calendrier de vos journées et un film de votre année, le tout sur votre téléphone.",
+  },
+  notFound: {
+    title: "Page introuvable",
+    text: "Cette page n’existe pas ou a été déplacée. Revenons à l’accueil.",
+    home: "Retour à l’accueil",
   },
   faq: {
     title: "Questions fréquentes",

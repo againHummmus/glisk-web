@@ -9,6 +9,7 @@ export const id: Dictionary = {
     privacy: "Privasi",
     getApp: "Unduh aplikasi",
     language: "Bahasa",
+    blog: "Blog",
   },
   storeButton: "Dapatkan di Google Play",
   hero: {
@@ -58,6 +59,20 @@ export const id: Dictionary = {
         text: "Buat film dari satu bulan atau satu tahun dan lihat bagaimana semuanya sebenarnya.",
       },
     ],
+  },
+  blog: {
+    title: "Blog Glisk",
+    description: "Artikel tentang cara menulis buku harian video, merekam keseharian, dan menjadikan satu bulan atau satu tahun sebuah film.",
+    latest: "Dari blog",
+    all: "Semua artikel",
+    related: "Baca juga",
+    ctaTitle: "Coba Glisk",
+    ctaText: "Buku harian video gratis untuk Android. Klip 30 detik, kalender hari-hari Anda, dan film tahunan Anda, semuanya tersimpan di ponsel.",
+  },
+  notFound: {
+    title: "Halaman tidak ditemukan",
+    text: "Halaman ini tidak ada atau sudah dipindahkan. Mari kembali ke awal.",
+    home: "Kembali ke beranda",
   },
   faq: {
     title: "Pertanyaan umum",

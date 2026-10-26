@@ -9,6 +9,7 @@ export const es: Dictionary = {
     privacy: "Privacidad",
     getApp: "Descargar",
     language: "Idioma",
+    blog: "Blog",
   },
   storeButton: "Disponible en Google Play",
   hero: {
@@ -58,6 +59,20 @@ export const es: Dictionary = {
         text: "Cree una película de un mes o de un año y vea cómo fue todo de verdad.",
       },
     ],
+  },
+  blog: {
+    title: "Blog de Glisk",
+    description: "Artículos sobre cómo llevar un diario en vídeo, grabar el día a día y convertir un mes o un año en una sola película.",
+    latest: "Del blog",
+    all: "Todos los artículos",
+    related: "Sigue leyendo",
+    ctaTitle: "Pruebe Glisk",
+    ctaText: "Un diario en vídeo gratis para Android. Clips de 30 segundos, un calendario de sus días y una película de su año, todo guardado en su teléfono.",
+  },
+  notFound: {
+    title: "Página no encontrada",
+    text: "Esta página no existe o se ha movido. Volvamos al inicio.",
+    home: "Volver al inicio",
   },
   faq: {
     title: "Preguntas frecuentes",

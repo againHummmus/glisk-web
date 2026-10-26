@@ -9,5 +9,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/privacy"],
+  matcher: ["/", "/privacy", "/blog", "/blog/:slug*"],
 };

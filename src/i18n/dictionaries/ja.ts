@@ -9,6 +9,7 @@ export const ja: Dictionary = {
     privacy: "プライバシー",
     getApp: "アプリを入手",
     language: "言語",
+    blog: "ブログ",
   },
   storeButton: "Google Playで手に入れよう",
   hero: {
@@ -58,6 +59,20 @@ export const ja: Dictionary = {
         text: "1か月や1年の映画を作って、実際どんな日々だったかを振り返りましょう。",
       },
     ],
+  },
+  blog: {
+    title: "Gliskブログ",
+    description: "ビデオ日記のつけ方、毎日の撮り方、1か月や1年を1本の映画にまとめる方法についての記事です。",
+    latest: "ブログから",
+    all: "すべての記事",
+    related: "あわせて読みたい",
+    ctaTitle: "Gliskを試してみる",
+    ctaText: "Android向けの無料ビデオ日記。30秒のクリップ、日々のカレンダー、1年分の映画まで、すべてスマホの中で完結します。",
+  },
+  notFound: {
+    title: "ページが見つかりません",
+    text: "このページは存在しないか、移動した可能性があります。トップページに戻りましょう。",
+    home: "トップへ戻る",
   },
   faq: {
     title: "よくある質問",
