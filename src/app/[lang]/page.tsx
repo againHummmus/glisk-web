@@ -90,6 +90,18 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </section>
 
         <section className="mx-auto w-full max-w-6xl px-5 pb-24 sm:px-8">
+          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">{dict.manifesto.title}</h2>
+          <div className="mt-10 flex flex-col border-l-2 border-accent pl-6 sm:pl-8">
+            {dict.manifesto.lines.map((line) => (
+              <p key={line} className="text-md text-neutral-300 sm:text-base">
+                {line}
+              </p>
+            ))}
+          </div>
+          <p className="mt-10 text-xl font-semibold tracking-tight text-accent sm:text-2xl">{dict.manifesto.closing}</p>
+        </section>
+
+        <section className="mx-auto w-full max-w-6xl px-5 pb-24 sm:px-8">
           <div className="grid gap-4 sm:grid-cols-2">
             {dict.features.map(({ title, text }, index) => {
               const Icon = FEATURE_ICONS[index];

@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "Blinkin — family video diary in 30-second clips";
+export const alt = "Glisk — your life, unedited";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
           <img src={logoSrc} width={198} height={123} alt="" />
-          <div style={{ display: "flex", fontSize: 120, fontWeight: 700, letterSpacing: -4 }}>Blinkin</div>
+          <div style={{ display: "flex", fontSize: 120, fontWeight: 700, letterSpacing: -4 }}>Glisk</div>
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
             <div
               style={{

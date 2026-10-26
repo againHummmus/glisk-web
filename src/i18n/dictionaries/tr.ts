@@ -2,9 +2,8 @@ import type { Dictionary } from "../types";
 
 export const tr: Dictionary = {
   meta: {
-    title: "Blinkin — 30 saniyelik kliplerle aile video günlüğü",
-    description:
-      "Aile anlarını 30 saniyelik kliplerle kaydet, takvimde sakla ve ayı ya da yılı müzikli bir filme dönüştür. Android’de ücretsiz. Bulut yok, reklam yok.",
+    title: "Glisk — Hayatın, filtresiz. 30 saniyelik ham bir video günlüğü",
+    description: "Gerçek hayattan kısa, ham 30 saniyelik klipler çek: filtre yok, tekrar çekim yok, izleyici yok. Glisk onları günlere göre saklar ve bir yılı dürüst bir filme dönüştürür. Android’de ücretsiz, tamamen çevrimdışı.",
   },
   nav: {
     privacy: "Gizlilik",
@@ -14,11 +13,21 @@ export const tr: Dictionary = {
   storeButton: "Google Play’den indir",
   hero: {
     badge: "Android’de ücretsiz",
-    titleStart: "Hayatın ",
-    titleAccent: "30 saniyelik",
-    titleEnd: " anlarda.",
-    text: "Blinkin, ailen için küçük bir video günlüğü. Önemli bir şey olduğunda kısa bir klip kaydet, onu kendi gününde sakla ve bir ayı ya da koca bir yılı filme dönüştür — hiçbir şey telefonundan çıkmadan.",
-    privacyLink: "Gizliliği nasıl koruyoruz →",
+    titleStart: "Hayatın, ",
+    titleAccent: "filtresiz",
+    titleEnd: ".",
+    text: "Glisk, İskoççada bir bakış, geçip giden bir an demek. Şu anda olan şeyin otuz saniyesini titreyen ellerle, ışık nasılsa öyle çek ve olduğu gibi bırak. Kısa, ham kliplerden senin gerçek hayatın oluşur.",
+    privacyLink: "Gizliliğini nasıl koruyoruz →",
+  },
+  manifesto: {
+    title: "Mükemmel yapmaya çalışmayı bırak.",
+    lines: [
+      "İyi ışığı bekleme. Saçını düzeltme. Herkesten bir kez daha gülümsemesini isteme.",
+      "Ellerin mi titriyor? Olsun. Arkada gürültü mü var? Olsun. Cümlenin ortasında kesilen bir kahkaha mı? Daha da iyi.",
+      "On kez izleme. Kırpma. Yeniden çekme.",
+      "Kimse beğenmeyecek, kimse puan vermeyecek. Bu içerik değil — bu senin hayatın.",
+    ],
+    closing: "Sadece çek. Gerçek yeter.",
   },
   mockup: {
     month: "Ekim 2026",
@@ -27,80 +36,100 @@ export const tr: Dictionary = {
   },
   features: [
     {
-      title: "30 saniye, asla fazlası değil",
-      text: "Kayda dokun ve anı yakala. Sayaç her klibi kısa tutar, böylece günlüğünü izlemek hep kolay olur.",
+      title: "Otuz saniye yeter",
+      text: "Bir prodüksiyon değil, bir bakış. Zamanlayıcı 30 saniyede durur; böylece anı yönetmek yerine yakalarsın.",
     },
     {
-      title: "Anlardan bir takvim",
-      text: "Her klip kendi gününe yerleşir. Günler, aylar ve yıllar arasında gezin, istediğini tek dokunuşla izle.",
+      title: "Her gün, olduğu gibi",
+      text: "Her klip yaşandığı güne yerleşir. Akış yok, beğeni yok, takipçi yok — sadece her şeyin gerçekte nasıl olduğunu gösteren sakin bir takvim.",
     },
     {
-      title: "Bir yıl, bir film",
-      text: "Bir ay, bir yıl ya da sadece en sevdiğin günleri seç, müzik ekle; Blinkin hepsini tek bir filmde birleştirsin.",
+      title: "Bir yıl, bir film olur",
+      text: "Bir ay, bir yıl ya da birkaç gün seç, istersen müzik ekle; Glisk ham kliplerini tek bir dürüst filmde birleştirsin.",
     },
     {
-      title: "Baştan gizli",
-      text: "Hesap yok, bulut yok, reklam yok, takip yok. Videoların yalnızca telefonunda yaşar.",
+      title: "Sadece senin için",
+      text: "Hesap yok, bulut yok, reklam yok, takip yok. Kimse izlemiyorsa rol yapmaya gerek yok.",
     },
   ],
   howItWorks: {
     title: "Nasıl çalışır",
     steps: [
-      { title: "Kaydet", text: "Uygulamayı aç — doğrudan kamerayla başlar. Başlatmak için bir dokunuş, durdurmak için bir dokunuş." },
-      { title: "Biriktir", text: "Klipler gün gün takvimini doldurur ve ailenin hayatından sakin bir arşiv oluşur." },
-      { title: "Yeniden yaşa", text: "Ayın ya da yılın filmini yap, galeriye kaydet veya paylaş." },
+      {
+        title: "Çek",
+        text: "Uygulamayı aç; doğrudan kamerayla başlar. Başlatmak için bir dokunuş, durdurmak için bir dokunuş. Fazla düşünme.",
+      },
+      {
+        title: "Sakla",
+        text: "Klipler takvimini gün gün doldurur; dokunulmamış, yaşandığı gibi.",
+      },
+      {
+        title: "Hatırla",
+        text: "Bir ayın ya da bir yılın filmini yap ve hayatının gerçekte nasıl göründüğünü gör.",
+      },
     ],
   },
   faq: {
     title: "Sorular ve cevaplar",
     items: [
-      { question: "Blinkin ücretsiz mi?", answer: "Evet. Blinkin’i Android’de ücretsiz indirip kullanabilirsin ve hiç reklam yok." },
       {
-        question: "Videolarım bir yere yükleniyor mu?",
-        answer:
-          "Hayır. Klipler doğrudan telefonunda kaydedilir, saklanır ve filme dönüştürülür. Hesap yok, bulut yok — hiçbir şey bize ya da başka birine gönderilmez.",
+        question: "Glisk ücretsiz mi?",
+        answer: "Evet. Glisk Android’de ücretsiz indirilip kullanılabilir ve reklam içermez.",
       },
       {
-        question: "Klipler neden 30 saniyeyle sınırlı?",
-        answer:
-          "Kısa klipler hızlı çekilir ve kolay izlenir. Bir ayın ya da yılın 30 saniyelik anları, gerçekten izlemek isteyeceğin bir filme dönüşür.",
+        question: "“Glisk” ne demek?",
+        answer: "İskoçça bir kelime: bakış, pırıltı, geçip giden bir an. 30 saniyelik bir klip tam olarak budur.",
+      },
+      {
+        question: "Neden filtre veya efekt yok?",
+        answer: "Çünkü amaç güzel görünmek değil, gerçekte nasıl olduğunu hatırlamak. Kötü ışık, titreyen görüntü, arkadaki gürültü: sonra en çok özleyeceğin şey tam da bunlar.",
+      },
+      {
+        question: "Neden sadece 30 saniye?",
+        answer: "Gerçek anlar kısadır. Sınır, yönetmek yerine çekmeni sağlar ve 30 saniyelik kliplerden oluşan bir yıl, gerçekten tekrar izlemek isteyeceğin bir filme dönüşür.",
+      },
+      {
+        question: "Videolarım bir yere yükleniyor mu?",
+        answer: "Hayır. Klipler doğrudan telefonunda çekilir, saklanır ve filme dönüştürülür. Hesap da bulut da yok; hiçbir şey ne bize ne de başkasına gönderilir.",
       },
       {
         question: "Filmime müzik ekleyebilir miyim?",
-        answer:
-          "Evet. Telefonundan herhangi bir ses dosyası seç, şarkının hangi bölümünün çalacağını belirle ve kliplerin orijinal sesini koruyup korumayacağına karar ver.",
+        answer: "Evet. Telefonundaki herhangi bir ses dosyasını seç, şarkının hangi bölümünün çalacağını belirle ve kliplerin orijinal sesini koruyup korumayacağına karar ver.",
       },
       {
-        question: "Bir filmi nasıl saklarım veya paylaşırım?",
-        answer: "Bitmiş filmi telefonunun galerisine kaydet ya da standart paylaşım menüsüyle istediğin uygulamadan gönder.",
+        question: "Bir filmi nasıl saklar veya paylaşırım?",
+        answer: "Bitmiş filmi telefonunun galerisine kaydet ya da standart paylaşım menüsüyle herhangi bir uygulama üzerinden gönder.",
       },
-      { question: "iPhone sürümü var mı?", answer: "Henüz yok. Blinkin önce Android’de çıkıyor." },
+      {
+        question: "iPhone sürümü var mı?",
+        answer: "Henüz yok. Glisk önce Android’de çıkıyor.",
+      },
     ],
   },
   privacyBand: {
     title: "Hiçbir şey telefonundan çıkmaz. Asla.",
-    text: "Çekim, saklama ve film yapımı tamamen cihazda gerçekleşir. Sunucu yok, kayıt yok, analiz yok — sadece anların, cebinde.",
+    text: "Çekim, depolama ve film oluşturma tamamen cihazda gerçekleşir. Sunucu yok, kayıt yok, analiz yok, izleyici yok. Dürüst anlar gizliliği hak eder.",
     link: "Gizlilik politikasını oku",
   },
   footer: {
-    tagline: "Aileler için yapıldı, telefonunda saklanır.",
+    tagline: "Kısa, ham, gerçek. Telefonunda saklanır.",
     privacy: "Gizlilik politikası",
     contact: "İletişim",
   },
   privacy: {
     metaTitle: "Gizlilik politikası",
-    metaDescription: "Blinkin videolarını ve verilerini nasıl ele alır: her şey cihazında kalır.",
+    metaDescription: "Glisk videolarını ve verilerini nasıl ele alır: her şey cihazında kalır.",
     title: "Gizlilik politikası",
     lastUpdated: "Son güncelleme",
     translationNote: "Bu bir çeviridir. Farklılık olması durumunda İngilizce sürüm geçerlidir.",
     summaryTitle: "Kısaca",
     summaryText:
-      "Blinkin hiçbir kişisel veriyi toplamaz, saklamaz veya paylaşmaz. Videoların yalnızca telefonunda kaydedilir, saklanır ve düzenlenir. Sunucumuz, hesabımız, analiz aracımız ve reklamımız yok.",
+      "Glisk hiçbir kişisel veriyi toplamaz, saklamaz veya paylaşmaz. Videoların yalnızca telefonunda kaydedilir, saklanır ve düzenlenir. Sunucumuz, hesabımız, analiz aracımız ve reklamımız yok.",
     sectionsBefore: [
       {
         title: "Biz kimiz",
         paragraphs: [
-          "Blinkin (“uygulama”, “biz”), Android için bir video günlüğü uygulamasıdır. Bu politika, uygulamayı kullandığında bilgilerine ne olduğunu açıklar.",
+          "Glisk (“uygulama”, “biz”), Android için bir video günlüğü uygulamasıdır. Bu politika, uygulamayı kullandığında bilgilerine ne olduğunu açıklar.",
         ],
       },
       {
@@ -125,7 +154,7 @@ export const tr: Dictionary = {
         { name: "Mikrofon", purpose: "Kliplerinle birlikte sesi kaydetmek için." },
         {
           name: "Fotoğraf ve videolar / depolama",
-          purpose: "Yalnızca bitmiş bir filmi galeriye kaydetmeyi seçtiğinde. Blinkin galerini asla okumaz.",
+          purpose: "Yalnızca bitmiş bir filmi galeriye kaydetmeyi seçtiğinde. Glisk galerini asla okumaz.",
         },
         { name: "Titreşim", purpose: "Kayıt yaparken veya düğmelere dokunurken hafif dokunsal geri bildirim için." },
       ],
@@ -148,7 +177,7 @@ export const tr: Dictionary = {
       {
         title: "Çocuklar",
         paragraphs: [
-          "Blinkin, aile anlarını saklamak isteyen yetişkinler için yapılmıştır. Çocuklara yönelik değildir. Ailenle çektiğin videolar cihazında kalır ve tarafımızdan asla toplanmaz.",
+          "Glisk, aile anlarını saklamak isteyen yetişkinler için yapılmıştır. Çocuklara yönelik değildir. Ailenle çektiğin videolar cihazında kalır ve tarafımızdan asla toplanmaz.",
         ],
       },
       {

@@ -13,28 +13,30 @@ interface SiteHeaderProps {
 
 export function SiteHeader({ lang, path, dict }: SiteHeaderProps) {
   return (
-    <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
-      <Link href={`/${lang}`} className="flex items-center gap-2.5">
-        <span className="flex size-9 items-center justify-center">
-          <Image src="/logo.png" alt="" width={36} height={36} priority />
-        </span>
-        <span className="text-lg font-semibold tracking-tight">{site.name}</span>
-      </Link>
-      <nav className="flex items-center gap-1 text-sm sm:gap-2">
-        <LanguageSwitcher lang={lang} path={path} label={dict.nav.language} />
-        <Link
-          href={`/${lang}/privacy`}
-          className="hidden rounded-full px-4 py-2 text-neutral-400 transition-colors hover:text-white sm:block"
-        >
-          {dict.nav.privacy}
+    <header className="sticky top-0 z-20 border-b border-white/10 bg-black/70 backdrop-blur-md">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+        <Link href={`/${lang}`} className="flex items-center gap-2.5">
+          <span className="flex size-9 items-center justify-center">
+            <Image src="/logo.png" alt="" width={36} height={36} priority />
+          </span>
+          <span className="text-lg font-semibold tracking-tight">{site.name}</span>
         </Link>
-        <a
-          href={getPlayStoreLink(lang, "header")}
-          className="rounded-full border border-white/15 bg-neutral-950 px-4 py-2 font-medium transition-opacity hover:opacity-80"
-        >
-          {dict.nav.getApp}
-        </a>
-      </nav>
+        <nav className="flex items-center gap-1 text-sm sm:gap-2">
+          <LanguageSwitcher lang={lang} path={path} label={dict.nav.language} />
+          <Link
+            href={`/${lang}/privacy`}
+            className="hidden rounded-full px-4 py-2 text-neutral-400 transition-colors hover:text-white sm:block"
+          >
+            {dict.nav.privacy}
+          </Link>
+          <a
+            href={getPlayStoreLink(lang, "header")}
+            className="rounded-full border border-white/15 bg-neutral-950 px-4 py-2 font-medium transition-opacity hover:opacity-80"
+          >
+            {dict.nav.getApp}
+          </a>
+        </nav>
+      </div>
     </header>
   );
 }

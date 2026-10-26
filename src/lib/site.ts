@@ -5,12 +5,12 @@ function resolveSiteUrl() {
 }
 
 export const site = {
-  name: "Blinkin",
+  name: "Glisk",
   url: resolveSiteUrl(),
-  androidPackage: "com.ahh.blinkin",
+  androidPackage: "com.ahh.glisk",
   contactEmail: "ahhummmus@gmail.com",
-  privacyUpdatedAt: "2026-10-23T00:00:00Z",
-  contentUpdatedAt: "2026-10-23T00:00:00Z",
+  privacyUpdatedAt: "2026-10-26T00:00:00Z",
+  contentUpdatedAt: "2026-10-26T00:00:00Z",
   copyrightYear: 2026,
   googleSiteVerification: "",
   yandexVerification: "",

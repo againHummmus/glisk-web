@@ -1,6 +1,6 @@
-# Blinkin website
+# Glisk website
 
-Promo page (`/{lang}`) and privacy policy (`/{lang}/privacy`) for the Blinkin Android app.
+Promo page (`/{lang}`) and privacy policy (`/{lang}/privacy`) for the Glisk Android app.
 
 ## Languages
 
@@ -22,7 +22,7 @@ Open http://localhost:3000.
 ## Before publishing
 
 - Set `contactEmail` in `src/lib/site.ts` — the address shown in the privacy policy and footer.
-- The site address is detected automatically on Vercel. On other hosts set the `SITE_URL` environment variable (for example `https://blinkin.app`) — sitemap, canonical links and previews use it.
+- The site address is detected automatically on Vercel. On other hosts set the `SITE_URL` environment variable (for example `https://glisk.app`) — sitemap, canonical links and previews use it.
 
 Then deploy, for example to Vercel (`npx vercel`), and put the `/en/privacy` URL into Google Play Console.
 

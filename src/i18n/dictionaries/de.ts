@@ -2,9 +2,8 @@ import type { Dictionary } from "../types";
 
 export const de: Dictionary = {
   meta: {
-    title: "Blinkin — Familien-Videotagebuch in 30-Sekunden-Clips",
-    description:
-      "Halte Familienmomente in 30-Sekunden-Clips fest, sammle sie im Kalender und mach aus Monat oder Jahr einen Film mit Musik. Kostenlos für Android. Ohne Cloud und Werbung.",
+    title: "Glisk – Dein Leben, ungeschnitten. Ehrliches Video-Tagebuch in 30 Sekunden",
+    description: "Filme kurze, rohe 30-Sekunden-Clips aus dem echten Leben – ohne Filter, ohne zweiten Versuch, ohne Publikum. Glisk ordnet sie nach Tagen und macht aus einem Jahr einen ehrlichen Film. Kostenlos für Android, komplett offline.",
   },
   nav: {
     privacy: "Datenschutz",
@@ -14,11 +13,21 @@ export const de: Dictionary = {
   storeButton: "Bei Google Play holen",
   hero: {
     badge: "Kostenlos für Android",
-    titleStart: "Dein Leben in ",
-    titleAccent: "30-Sekunden",
-    titleEnd: "-Momenten.",
-    text: "Blinkin ist ein kleines Video-Tagebuch für deine Familie. Nimm einen kurzen Clip auf, wenn etwas zählt, behalte ihn an seinem Tag und mach aus einem Monat oder einem ganzen Jahr einen Film — ohne dass etwas dein Handy verlässt.",
-    privacyLink: "So bleibt alles privat →",
+    titleStart: "Dein Leben, ",
+    titleAccent: "ungeschnitten",
+    titleEnd: ".",
+    text: "Glisk ist Schottisch für einen flüchtigen Blick – einen Augenblick. Filme dreißig Sekunden von dem, was gerade passiert, mit zittrigen Händen und dem Licht, das eben da ist, und lass es, wie es war. Aus kurzen, rohen Clips wird dein echtes Leben.",
+    privacyLink: "So schützen wir deine Privatsphäre →",
+  },
+  manifesto: {
+    title: "Hör auf, es perfekt zu machen.",
+    lines: [
+      "Warte nicht auf gutes Licht. Richte nicht deine Haare. Bitte nicht alle, noch einmal zu lächeln.",
+      "Zittrige Hände? Egal. Lärm im Hintergrund? Egal. Ein Lachen, das mitten im Satz abbricht? Umso besser.",
+      "Schau es dir nicht zehnmal an. Schneide nichts weg. Dreh es nicht neu.",
+      "Niemand wird es liken oder bewerten. Es ist kein Content – es ist dein Leben.",
+    ],
+    closing: "Einfach filmen. Die Wahrheit reicht.",
   },
   mockup: {
     month: "Oktober 2026",
@@ -27,80 +36,100 @@ export const de: Dictionary = {
   },
   features: [
     {
-      title: "30 Sekunden, nie mehr",
-      text: "Tippe auf Aufnahme und halte den Moment fest. Ein Timer hält jeden Clip kurz, damit dein Tagebuch leicht anzuschauen bleibt.",
+      title: "Dreißig Sekunden reichen",
+      text: "Keine Produktion, ein Blick. Der Timer stoppt bei 30 Sekunden, damit du den Moment einfängst, statt Regie zu führen.",
     },
     {
-      title: "Ein Kalender voller Momente",
-      text: "Jeder Clip landet an seinem Tag. Blättere durch Tage, Monate und Jahre und spiele jeden mit einem Tipp ab.",
+      title: "Jeder Tag, wie er war",
+      text: "Clips landen an dem Tag, an dem sie passiert sind. Kein Feed, keine Likes, keine Follower – nur ein stiller Kalender davon, wie es wirklich war.",
     },
     {
       title: "Aus einem Jahr wird ein Film",
-      text: "Wähle einen Monat, ein Jahr oder nur deine Lieblingstage, füge Musik hinzu, und Blinkin fügt alles zu einem Film zusammen.",
+      text: "Wähle einen Monat, ein Jahr oder ein paar Tage, füge Musik hinzu, wenn du magst, und Glisk fügt deine rohen Clips zu einem ehrlichen Film zusammen.",
     },
     {
-      title: "Privat von Grund auf",
-      text: "Kein Konto, keine Cloud, keine Werbung, kein Tracking. Deine Videos leben auf deinem Handy und sonst nirgends.",
+      title: "Nur für dich",
+      text: "Kein Konto, keine Cloud, keine Werbung, kein Tracking. Wenn niemand zuschaut, gibt es keinen Grund, sich zu verstellen.",
     },
   ],
   howItWorks: {
     title: "So funktioniert’s",
     steps: [
-      { title: "Aufnehmen", text: "Öffne die App — sie startet direkt mit der Kamera. Ein Tipp zum Starten, einer zum Stoppen." },
-      { title: "Sammeln", text: "Tag für Tag füllen Clips deinen Kalender und werden zu einem stillen Archiv eures Familienlebens." },
-      { title: "Wiedererleben", text: "Erstelle einen Film für den Monat oder das Jahr und speichere ihn in der Galerie oder teile ihn." },
+      {
+        title: "Filmen",
+        text: "Öffne die App – sie startet direkt mit der Kamera. Einmal tippen zum Starten, einmal zum Stoppen. Nicht lange überlegen.",
+      },
+      {
+        title: "Behalten",
+        text: "Clips füllen deinen Kalender Tag für Tag – unbearbeitet, genau so, wie es passiert ist.",
+      },
+      {
+        title: "Erinnern",
+        text: "Mach einen Film aus einem Monat oder einem Jahr und sieh, wie dein Leben wirklich aussah.",
+      },
     ],
   },
   faq: {
-    title: "Fragen und Antworten",
+    title: "Fragen & Antworten",
     items: [
-      { question: "Ist Blinkin kostenlos?", answer: "Ja. Blinkin ist auf Android kostenlos zum Herunterladen und Nutzen, und es gibt keine Werbung." },
+      {
+        question: "Ist Glisk kostenlos?",
+        answer: "Ja. Glisk ist auf Android kostenlos zum Herunterladen und Nutzen, und es gibt keine Werbung.",
+      },
+      {
+        question: "Was bedeutet „Glisk“?",
+        answer: "Ein schottisches Wort für einen Blick, einen Schimmer, einen flüchtigen Moment. Genau das ist ein 30-Sekunden-Clip.",
+      },
+      {
+        question: "Warum gibt es keine Filter oder Effekte?",
+        answer: "Weil es nicht darum geht, gut auszusehen, sondern sich daran zu erinnern, wie es wirklich war. Schlechtes Licht, wackliges Bild, Lärm im Hintergrund – genau das wirst du später am meisten vermissen.",
+      },
+      {
+        question: "Warum nur 30 Sekunden?",
+        answer: "Echte Momente sind kurz. Das Limit sorgt dafür, dass du filmst, statt Regie zu führen, und ein Jahr voller 30-Sekunden-Clips wird zu einem Film, den du dir wirklich wieder ansiehst.",
+      },
       {
         question: "Werden meine Videos irgendwo hochgeladen?",
-        answer:
-          "Nein. Clips werden direkt auf deinem Handy aufgenommen, gespeichert und zu Filmen gemacht. Es gibt kein Konto und keine Cloud — nichts wird an uns oder sonst jemanden gesendet.",
+        answer: "Nein. Clips werden direkt auf deinem Handy aufgenommen, gespeichert und zu Filmen zusammengefügt. Es gibt kein Konto und keine Cloud – nichts wird an uns oder an andere gesendet.",
       },
       {
-        question: "Warum sind Clips auf 30 Sekunden begrenzt?",
-        answer:
-          "Kurze Clips sind schnell aufgenommen und leicht anzuschauen. Ein Monat oder ein Jahr voller 30-Sekunden-Momente wird zu einem Film, den du wirklich sehen willst.",
+        question: "Kann ich Musik zu meinem Film hinzufügen?",
+        answer: "Ja. Wähle eine beliebige Audiodatei auf deinem Handy, bestimme, welcher Teil des Songs läuft, und entscheide, ob der Originalton deiner Clips bleiben soll.",
       },
       {
-        question: "Kann ich meinem Film Musik hinzufügen?",
-        answer:
-          "Ja. Wähle eine beliebige Audiodatei von deinem Handy, bestimme, welcher Teil des Songs läuft, und entscheide, ob der Originalton deiner Clips bleibt.",
+        question: "Wie speichere oder teile ich einen Film?",
+        answer: "Speichere den fertigen Film in der Galerie deines Handys oder sende ihn über das normale Teilen-Menü mit einer beliebigen App.",
       },
       {
-        question: "Wie behalte oder teile ich einen Film?",
-        answer: "Speichere den fertigen Film in der Galerie deines Handys oder teile ihn über das normale Teilen-Menü mit jeder App.",
+        question: "Gibt es eine iPhone-Version?",
+        answer: "Noch nicht. Glisk erscheint zuerst für Android.",
       },
-      { question: "Gibt es eine iPhone-Version?", answer: "Noch nicht. Blinkin erscheint zuerst für Android." },
     ],
   },
   privacyBand: {
     title: "Nichts verlässt dein Handy. Niemals.",
-    text: "Aufnahme, Speicherung und Filmerstellung passieren direkt auf dem Gerät. Keine Server, keine Anmeldung, keine Analyse — nur deine Momente, in deiner Tasche.",
+    text: "Aufnahme, Speicherung und Filmerstellung passieren direkt auf dem Gerät. Keine Server, keine Anmeldung, keine Analyse, kein Publikum. Ehrliche Momente verdienen Privatsphäre.",
     link: "Datenschutzerklärung lesen",
   },
   footer: {
-    tagline: "Für Familien gemacht, auf deinem Handy gespeichert.",
+    tagline: "Kurz, roh, echt. Bleibt auf deinem Handy.",
     privacy: "Datenschutzerklärung",
     contact: "Kontakt",
   },
   privacy: {
     metaTitle: "Datenschutzerklärung",
-    metaDescription: "Wie Blinkin mit deinen Videos und Daten umgeht: Alles bleibt auf deinem Gerät.",
+    metaDescription: "Wie Glisk mit deinen Videos und Daten umgeht: Alles bleibt auf deinem Gerät.",
     title: "Datenschutzerklärung",
     lastUpdated: "Zuletzt aktualisiert",
     translationNote: "Dies ist eine Übersetzung. Bei Abweichungen gilt die englische Fassung.",
     summaryTitle: "Kurz gesagt",
     summaryText:
-      "Blinkin erhebt, speichert und teilt keine personenbezogenen Daten. Deine Videos werden nur auf deinem Handy aufgenommen, gespeichert und bearbeitet. Wir haben keine Server, keine Konten, keine Analyse und keine Werbung.",
+      "Glisk erhebt, speichert und teilt keine personenbezogenen Daten. Deine Videos werden nur auf deinem Handy aufgenommen, gespeichert und bearbeitet. Wir haben keine Server, keine Konten, keine Analyse und keine Werbung.",
     sectionsBefore: [
       {
         title: "Wer wir sind",
         paragraphs: [
-          "Blinkin („die App“, „wir“) ist eine Video-Tagebuch-App für Android. Diese Erklärung beschreibt, was mit deinen Informationen passiert, wenn du sie nutzt.",
+          "Glisk („die App“, „wir“) ist eine Video-Tagebuch-App für Android. Diese Erklärung beschreibt, was mit deinen Informationen passiert, wenn du sie nutzt.",
         ],
       },
       {
@@ -125,7 +154,7 @@ export const de: Dictionary = {
         { name: "Mikrofon", purpose: "Um Ton zusammen mit deinen Clips aufzunehmen." },
         {
           name: "Fotos und Videos / Speicher",
-          purpose: "Nur wenn du einen fertigen Film in deiner Galerie speicherst. Blinkin liest deine Galerie nie.",
+          purpose: "Nur wenn du einen fertigen Film in deiner Galerie speicherst. Glisk liest deine Galerie nie.",
         },
         { name: "Vibration", purpose: "Für kurzes haptisches Feedback beim Aufnehmen und Tippen." },
       ],
@@ -148,7 +177,7 @@ export const de: Dictionary = {
       {
         title: "Kinder",
         paragraphs: [
-          "Blinkin ist für Erwachsene gemacht, die Familienmomente festhalten möchten. Die App richtet sich nicht an Kinder. Videos, die du von deiner Familie aufnimmst, bleiben auf deinem Gerät und werden von uns nie erhoben.",
+          "Glisk ist für Erwachsene gemacht, die Familienmomente festhalten möchten. Die App richtet sich nicht an Kinder. Videos, die du von deiner Familie aufnimmst, bleiben auf deinem Gerät und werden von uns nie erhoben.",
         ],
       },
       {

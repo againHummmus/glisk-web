@@ -2,9 +2,8 @@ import type { Dictionary } from "../types";
 
 export const pt: Dictionary = {
   meta: {
-    title: "Blinkin — Diário em vídeo da família em clipes de 30 segundos",
-    description:
-      "Grave momentos em família de 30 segundos, guarde em um calendário e crie um filme com música do mês ou do ano. Grátis no Android. Sem nuvem e sem anúncios.",
+    title: "Glisk — Sua vida, sem filtro. Um diário em vídeo cru de 30 segundos",
+    description: "Grave clipes curtos e crus de 30 segundos da vida real: sem filtros, sem regravar, sem plateia. O Glisk organiza tudo por dia e transforma um ano em um filme sincero. Grátis no Android, totalmente offline.",
   },
   nav: {
     privacy: "Privacidade",
@@ -14,11 +13,21 @@ export const pt: Dictionary = {
   storeButton: "Disponível no Google Play",
   hero: {
     badge: "Grátis no Android",
-    titleStart: "Sua vida em momentos de ",
-    titleAccent: "30 segundos",
+    titleStart: "Sua vida, ",
+    titleAccent: "sem filtro",
     titleEnd: ".",
-    text: "Blinkin é um pequeno diário em vídeo para a sua família. Grave um clipe curto sempre que algo importar, guarde-o no dia certo e transforme um mês ou um ano inteiro em um filme — sem que nada saia do seu celular.",
+    text: "Glisk é uma palavra escocesa para um olhar rápido, um instante. Grave trinta segundos do que está acontecendo agora, com as mãos tremendo e a luz que tiver, e guarde do jeito que foi. Esses clipes curtos e crus viram a sua vida de verdade.",
     privacyLink: "Como protegemos sua privacidade →",
+  },
+  manifesto: {
+    title: "Pare de tentar deixar perfeito.",
+    lines: [
+      "Não espere a luz boa. Não arrume o cabelo. Não peça para todo mundo sorrir de novo.",
+      "As mãos tremem? Tudo bem. Barulho no fundo? Tudo bem. Uma risada cortada no meio da frase? Melhor ainda.",
+      "Não reveja dez vezes. Não corte. Não regrave.",
+      "Ninguém vai curtir nem dar nota. Não é conteúdo — é a sua vida.",
+    ],
+    closing: "Só grave. A verdade basta.",
   },
   mockup: {
     month: "Outubro 2026",
@@ -27,80 +36,100 @@ export const pt: Dictionary = {
   },
   features: [
     {
-      title: "30 segundos, nunca mais",
-      text: "Toque em gravar e capture o momento. Um cronômetro mantém cada clipe curto, para o diário ser fácil de assistir.",
+      title: "Trinta segundos bastam",
+      text: "Não é uma produção, é um olhar. O timer para em 30 segundos para você capturar o momento em vez de dirigi-lo.",
     },
     {
-      title: "Um calendário de momentos",
-      text: "Cada clipe fica no seu dia. Navegue por dias, meses e anos e assista a qualquer um com um toque.",
+      title: "Cada dia, do jeito que foi",
+      text: "Cada clipe fica no dia em que aconteceu. Sem feed, sem curtidas, sem seguidores — só um calendário tranquilo de como as coisas realmente foram.",
     },
     {
       title: "Um ano vira um filme",
-      text: "Escolha um mês, um ano ou só seus dias favoritos, adicione música e o Blinkin junta tudo em um único filme.",
+      text: "Escolha um mês, um ano ou alguns dias, adicione música se quiser, e o Glisk junta seus clipes crus em um único filme sincero.",
     },
     {
-      title: "Privado por natureza",
-      text: "Sem conta, sem nuvem, sem anúncios, sem rastreamento. Seus vídeos ficam no seu celular e em nenhum outro lugar.",
+      title: "Só para você",
+      text: "Sem conta, sem nuvem, sem anúncios, sem rastreamento. Quando ninguém está olhando, não há motivo para fingir.",
     },
   ],
   howItWorks: {
     title: "Como funciona",
     steps: [
-      { title: "Grave", text: "Abra o app — ele já começa na câmera. Um toque para começar, outro para parar." },
-      { title: "Colecione", text: "Dia após dia, os clipes preenchem seu calendário e formam um arquivo tranquilo da vida da sua família." },
-      { title: "Reviva", text: "Crie um filme do mês ou do ano e salve na galeria ou compartilhe." },
+      {
+        title: "Grave",
+        text: "Abra o app — ele já começa na câmera. Um toque para começar, outro para parar. Sem pensar duas vezes.",
+      },
+      {
+        title: "Guarde",
+        text: "Os clipes preenchem seu calendário dia após dia, intactos, do jeito que aconteceram.",
+      },
+      {
+        title: "Relembre",
+        text: "Crie um filme de um mês ou de um ano e veja como sua vida realmente era.",
+      },
     ],
   },
   faq: {
     title: "Perguntas e respostas",
     items: [
-      { question: "O Blinkin é grátis?", answer: "Sim. O Blinkin é grátis para baixar e usar no Android, e não tem anúncios." },
       {
-        question: "Meus vídeos são enviados para algum lugar?",
-        answer:
-          "Não. Os clipes são gravados, guardados e transformados em filmes no seu celular. Não há conta nem nuvem — nada é enviado para nós nem para ninguém.",
+        question: "O Glisk é grátis?",
+        answer: "Sim. O Glisk é grátis para baixar e usar no Android, e não tem anúncios.",
       },
       {
-        question: "Por que os clipes têm só 30 segundos?",
-        answer:
-          "Clipes curtos são rápidos de gravar e fáceis de rever. Um mês ou um ano de momentos de 30 segundos vira um filme que você realmente quer assistir.",
+        question: "O que significa “Glisk”?",
+        answer: "É uma palavra escocesa para olhar, vislumbre, instante passageiro. Exatamente o que é um clipe de 30 segundos.",
+      },
+      {
+        question: "Por que não há filtros nem efeitos?",
+        answer: "Porque a ideia não é ficar bonito, e sim lembrar de como foi de verdade. A luz ruim, a imagem tremida, o barulho de fundo: é disso que você vai sentir mais falta depois.",
+      },
+      {
+        question: "Por que só 30 segundos?",
+        answer: "Momentos reais são curtos. O limite faz você gravar em vez de dirigir, e um ano de clipes de 30 segundos vira um filme que você vai querer rever de verdade.",
+      },
+      {
+        question: "Meus vídeos são enviados para algum lugar?",
+        answer: "Não. Os clipes são gravados, guardados e transformados em filmes direto no seu celular. Não há conta nem nuvem — nada é enviado para nós ou para ninguém.",
       },
       {
         question: "Posso adicionar música ao meu filme?",
-        answer:
-          "Sim. Escolha qualquer arquivo de áudio do celular, selecione o trecho da música e decida se mantém o som original dos clipes.",
+        answer: "Sim. Escolha qualquer arquivo de áudio do celular, defina qual trecho da música toca e decida se quer manter o som original dos clipes.",
       },
       {
-        question: "Como guardo ou compartilho um filme?",
-        answer: "Salve o filme pronto na galeria do celular ou envie por qualquer app pelo menu de compartilhamento padrão.",
+        question: "Como salvo ou compartilho um filme?",
+        answer: "Salve o filme pronto na galeria do celular ou envie por qualquer app usando o menu de compartilhamento padrão.",
       },
-      { question: "Tem versão para iPhone?", answer: "Ainda não. O Blinkin chega primeiro ao Android." },
+      {
+        question: "Existe versão para iPhone?",
+        answer: "Ainda não. O Glisk chega primeiro ao Android.",
+      },
     ],
   },
   privacyBand: {
     title: "Nada sai do seu celular. Nunca.",
-    text: "Gravação, armazenamento e criação de filmes acontecem no aparelho. Sem servidores, sem cadastro e sem análises — só seus momentos, no seu bolso.",
+    text: "Gravação, armazenamento e criação de filmes acontecem no aparelho. Sem servidores, sem cadastro, sem análises, sem plateia. Momentos sinceros merecem privacidade.",
     link: "Ler a política de privacidade",
   },
   footer: {
-    tagline: "Feito para famílias, guardado no seu celular.",
+    tagline: "Curto, cru, real. Guardado no seu celular.",
     privacy: "Política de privacidade",
     contact: "Contato",
   },
   privacy: {
     metaTitle: "Política de privacidade",
-    metaDescription: "Como o Blinkin trata seus vídeos e dados: tudo fica no seu aparelho.",
+    metaDescription: "Como o Glisk trata seus vídeos e dados: tudo fica no seu aparelho.",
     title: "Política de privacidade",
     lastUpdated: "Última atualização",
     translationNote: "Esta é uma tradução. Em caso de divergência, prevalece a versão em inglês.",
     summaryTitle: "Em resumo",
     summaryText:
-      "O Blinkin não coleta, armazena nem compartilha nenhum dado pessoal. Seus vídeos são gravados, guardados e editados somente no seu celular. Não temos servidores, contas, análises nem anúncios.",
+      "O Glisk não coleta, armazena nem compartilha nenhum dado pessoal. Seus vídeos são gravados, guardados e editados somente no seu celular. Não temos servidores, contas, análises nem anúncios.",
     sectionsBefore: [
       {
         title: "Quem somos",
         paragraphs: [
-          "Blinkin (“o app”, “nós”) é um app de diário em vídeo para Android. Esta política explica o que acontece com suas informações quando você o usa.",
+          "Glisk (“o app”, “nós”) é um app de diário em vídeo para Android. Esta política explica o que acontece com suas informações quando você o usa.",
         ],
       },
       {
@@ -125,7 +154,7 @@ export const pt: Dictionary = {
         { name: "Microfone", purpose: "Para gravar o som junto com seus clipes." },
         {
           name: "Fotos e vídeos / armazenamento",
-          purpose: "Só quando você decide salvar um filme pronto na galeria. O Blinkin nunca lê sua galeria.",
+          purpose: "Só quando você decide salvar um filme pronto na galeria. O Glisk nunca lê sua galeria.",
         },
         { name: "Vibração", purpose: "Para uma leve resposta tátil ao gravar ou tocar nos botões." },
       ],
@@ -148,7 +177,7 @@ export const pt: Dictionary = {
       {
         title: "Crianças",
         paragraphs: [
-          "O Blinkin foi feito para adultos que querem guardar momentos em família. Ele não é direcionado a crianças. Os vídeos que você grava da sua família ficam no seu aparelho e nunca são coletados por nós.",
+          "O Glisk foi feito para adultos que querem guardar momentos em família. Ele não é direcionado a crianças. Os vídeos que você grava da sua família ficam no seu aparelho e nunca são coletados por nós.",
         ],
       },
       {
