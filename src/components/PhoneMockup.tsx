@@ -76,7 +76,7 @@ interface PhoneMockupProps {
 export function PhoneMockup({ labels }: PhoneMockupProps) {
   return (
     <div className="relative mx-auto w-[280px] sm:w-[300px]">
-      <div className="absolute -inset-10 rounded-full bg-brand/60 blur-3xl" />
+      <div className="absolute -inset-10 rounded-full bg-brand/30 blur-3xl" />
       <div className="relative rounded-[2.75rem] border border-white/15 bg-neutral-900 p-2.5 shadow-2xl shadow-black">
         <div className="relative aspect-[9/19] overflow-hidden rounded-[2.25rem] bg-black">
           <div className="px-3 pt-8">
