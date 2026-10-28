@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/types";
 import { getLatestPosts } from "@/lib/blog";
+import { BrandMark } from "./BrandMark";
 import { PostCard } from "./PostCard";
 
 interface LatestPostsProps {
@@ -17,7 +18,10 @@ export async function LatestPosts({ lang, dict }: LatestPostsProps) {
   return (
     <section className="mx-auto w-full max-w-6xl px-5 pb-24 sm:px-8">
       <div className="mb-8 flex items-end justify-between gap-4">
-        <h2 className="text-3xl font-semibold tracking-tight">{dict.blog.latest}</h2>
+        <h2 className="text-3xl font-semibold tracking-tight">
+          <BrandMark />
+          {dict.blog.latest}
+        </h2>
         <Link href={`/${lang}/blog`} className="text-sm text-neutral-400 transition-colors hover:text-white">
           {dict.blog.all} →
         </Link>

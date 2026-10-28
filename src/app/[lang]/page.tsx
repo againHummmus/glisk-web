@@ -2,6 +2,7 @@ import { CalendarDays, ChevronDown, Clapperboard, Lock, Timer } from "lucide-rea
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BrandMark } from "@/components/BrandMark";
 import { LatestPosts } from "@/components/LatestPosts";
 import { PhoneMockup } from "@/components/PhoneMockup";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -71,7 +72,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <section className="mx-auto grid w-full max-w-6xl items-center gap-16 px-5 pb-24 pt-10 sm:px-8 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
           <div className="flex flex-col items-start gap-7">
             <span className="flex items-center gap-2 rounded-full border border-white/10 bg-neutral-950 px-3.5 py-1.5 text-sm text-neutral-300">
-              <span className="size-2 rounded-full bg-record" />
+              <span className="size-2 rounded-full bg-brand" />
               {dict.hero.badge}
             </span>
             <h1 className="text-5xl font-semibold leading-[1.1] tracking-tight sm:text-6xl">
@@ -105,7 +106,10 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </section>
 
         <section className="mx-auto w-full max-w-6xl px-5 pb-24 sm:px-8">
-          <h2 className="mb-8 text-3xl font-semibold tracking-tight">{dict.howItWorks.title}</h2>
+          <h2 className="mb-8 text-3xl font-semibold tracking-tight">
+            <BrandMark />
+            {dict.howItWorks.title}
+          </h2>
           <ol className="grid gap-4 md:grid-cols-3">
             {dict.howItWorks.steps.map(({ title, text }, index) => (
               <li key={title} className="flex flex-col gap-3 border-t border-white/15 pt-5">
@@ -120,7 +124,10 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <LatestPosts lang={lang} dict={dict} />
 
         <section className="mx-auto w-full max-w-3xl px-5 pb-24 sm:px-8">
-          <h2 className="mb-8 text-3xl font-semibold tracking-tight">{dict.faq.title}</h2>
+          <h2 className="mb-8 text-3xl font-semibold tracking-tight">
+            <BrandMark />
+            {dict.faq.title}
+          </h2>
           <div className="flex flex-col gap-3">
             {dict.faq.items.map(({ question, answer }) => (
               <details key={question} className="faq-item group rounded-2xl border border-white/10 bg-neutral-950">
@@ -135,15 +142,16 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </section>
 
         <section className="mx-auto w-full max-w-6xl px-5 pb-24 sm:px-8">
-          <div className="relative flex flex-col items-start gap-6 overflow-hidden rounded-[2rem] bg-brand p-8 sm:p-12">
+          <div className="relative flex flex-col items-start gap-6 overflow-hidden rounded-4xl bg-brand p-8 sm:p-12">
             <Image
               src="/logo-symbol.png"
               alt=""
               width={620}
               height={620}
-              className="pointer-events-none absolute -right-16 top-1/2 -translate-y-1/2 opacity-15"
+              className="pointer-events-none absolute -right-16 top-1/2 -translate-y-1/2 hidden xl:block xl:opacity-70"
             />
             <h2 className="relative max-w-xl text-3xl font-semibold tracking-tight sm:text-4xl">
+              <BrandMark />
               {dict.privacyBand.title}
             </h2>
             <p className="relative max-w-xl leading-7 text-white/75">{dict.privacyBand.text}</p>

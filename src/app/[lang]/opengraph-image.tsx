@@ -32,7 +32,7 @@ export default function OpengraphImage() {
           alignItems: "center",
           justifyContent: "space-between",
           padding: "0 90px",
-          background: "radial-gradient(circle at 75% 50%, #252c23 0%, #000000 60%)",
+          background: "radial-gradient(circle at 75% 50%, #0072cf 0%, #000000 60%)",
           color: "#ffffff",
         }}
       >
