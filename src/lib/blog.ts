@@ -97,11 +97,11 @@ const POST_QUERY = `*[${PUBLISHED} && language == $language && slug.current == $
       "height": asset->metadata.dimensions.height
     }
   },
-  "related": coalesce(relatedPosts[]->[defined(slug.current) && publishedAt <= now()]{
+  "related": *[${PUBLISHED} && _id in ^.relatedPosts[]._ref]{
     title,
     "slug": slug.current,
     description
-  }, [])
+  }
 }`;
 
 const LANGUAGES_QUERY = `array::unique(*[${PUBLISHED}].language)`;
