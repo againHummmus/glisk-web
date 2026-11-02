@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
+import { cacheLife, cacheTag } from "next/cache";
 import { languageAlternates, locales } from "@/i18n/config";
-import { blogAlternates, getBlogLanguages, getPostPaths } from "@/lib/blog";
+import { blogAlternates, getBlogLanguages, getPostPaths, localeAlternates, POSTS_TAG } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 interface SitemapPage {
@@ -15,7 +16,14 @@ const PAGES: SitemapPage[] = [
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly", lastModified: site.privacyUpdatedAt },
 ];
 
+function absoluteUrls(alternates: Record<string, string>) {
+  return Object.fromEntries(Object.entries(alternates).map(([tag, path]) => [tag, `${site.url}${path}`]));
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  "use cache";
+  cacheLife("hours");
+  cacheTag(POSTS_TAG);
   const [blogLanguages, postPaths] = await Promise.all([getBlogLanguages(), getPostPaths()]);
 
   const staticEntries = PAGES.flatMap(({ path, priority, changeFrequency, lastModified }) =>
@@ -34,9 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "weekly" as const,
     priority: 0.7,
     alternates: {
-      languages: Object.fromEntries(
-        Object.entries(blogAlternates(blogLanguages)).map(([tag, path]) => [tag, `${site.url}${path}`]),
-      ),
+      languages: absoluteUrls(blogAlternates(blogLanguages)),
     },
   }));
 
@@ -45,6 +51,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: updatedAt,
     changeFrequency: "monthly" as const,
     priority: 0.6,
+    alternates: {
+      languages: absoluteUrls(
+        localeAlternates(
+          postPaths.filter((path) => path.slug === slug).map((path) => path.lang),
+          `/blog/${slug}`,
+        ),
+      ),
+    },
   }));
 
   return [...staticEntries, ...blogEntries, ...postEntries];

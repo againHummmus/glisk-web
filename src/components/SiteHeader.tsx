@@ -9,10 +9,11 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 interface SiteHeaderProps {
   lang: Locale;
   path: string;
+  translatedPaths?: Partial<Record<Locale, string>>;
   dict: Dictionary;
 }
 
-export async function SiteHeader({ lang, path, dict }: SiteHeaderProps) {
+export async function SiteHeader({ lang, path, translatedPaths, dict }: SiteHeaderProps) {
   const hasBlog = (await getBlogLanguages()).includes(lang);
   return (
     <header className="sticky top-0 z-20 border-b border-white/10 bg-black/70 backdrop-blur-md">
@@ -24,7 +25,7 @@ export async function SiteHeader({ lang, path, dict }: SiteHeaderProps) {
           <span className="text-lg font-semibold tracking-tight">{site.name}</span>
         </Link>
         <nav className="flex items-center gap-1 text-sm sm:gap-2">
-          <LanguageSwitcher lang={lang} path={path} label={dict.nav.language} />
+          <LanguageSwitcher lang={lang} path={path} translatedPaths={translatedPaths} label={dict.nav.language} />
           {hasBlog && (
             <Link
               href={`/${lang}/blog`}

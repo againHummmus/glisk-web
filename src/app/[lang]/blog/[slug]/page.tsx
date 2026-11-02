@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StoreButton } from "@/components/StoreButton";
 import { defaultLocale, isLocale, languageTags } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { formatPostDate, getPost, getPostPaths, PLACEHOLDER_SLUG } from "@/lib/blog";
+import { formatPostDate, getPost, getPostPaths, localeAlternates, PLACEHOLDER_SLUG } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 export async function generateStaticParams() {
@@ -27,7 +27,10 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/blog/[slug
     title,
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: `/${lang}/blog/${slug}` },
+    alternates: {
+      canonical: `/${lang}/blog/${slug}`,
+      languages: localeAlternates(post.translations.filter(isLocale), `/blog/${slug}`),
+    },
     openGraph: {
       title,
       description: post.description,
@@ -48,6 +51,9 @@ export default async function PostPage({ params }: PageProps<"/[lang]/blog/[slug
   if (!post) notFound();
   const dict = getDictionary(lang);
   const pageUrl = `${site.url}/${lang}/blog/${slug}`;
+  const translatedPaths = Object.fromEntries(
+    post.translations.filter(isLocale).map((language) => [language, `/blog/${slug}`]),
+  );
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -70,7 +76,7 @@ export default async function PostPage({ params }: PageProps<"/[lang]/blog/[slug
 
   return (
     <>
-      <SiteHeader lang={lang} path="" dict={dict} />
+      <SiteHeader lang={lang} path="" translatedPaths={translatedPaths} dict={dict} />
       <main className="flex-1">
         <script
           type="application/ld+json"

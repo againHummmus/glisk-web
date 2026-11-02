@@ -31,6 +31,7 @@ export interface Post extends PostSummary {
   keywords: string[];
   body: PortableTextProps["value"];
   related: RelatedPost[];
+  translations: string[];
 }
 
 export interface BodyImage {
@@ -101,7 +102,8 @@ const POST_QUERY = `*[${PUBLISHED} && language == $language && slug.current == $
     title,
     "slug": slug.current,
     description
-  }
+  },
+  "translations": *[${PUBLISHED} && slug.current == ^.slug.current].language
 }`;
 
 const LANGUAGES_QUERY = `array::unique(*[${PUBLISHED}].language)`;
@@ -159,11 +161,15 @@ export async function getLatestPosts(language: Locale, limit: number) {
   }
 }
 
-export function blogAlternates(languages: Locale[]) {
+export function localeAlternates(languages: Locale[], path: string) {
   return {
-    ...Object.fromEntries(languages.map((language) => [languageTags[language], `/${language}/blog`])),
-    ...(languages.includes(defaultLocale) && { "x-default": `/${defaultLocale}/blog` }),
+    ...Object.fromEntries(languages.map((language) => [languageTags[language], `/${language}${path}`])),
+    ...(languages.includes(defaultLocale) && { "x-default": `/${defaultLocale}${path}` }),
   };
+}
+
+export function blogAlternates(languages: Locale[]) {
+  return localeAlternates(languages, "/blog");
 }
 
 export function formatPostDate(isoDate: string, lang: Locale) {

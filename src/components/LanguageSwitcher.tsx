@@ -8,10 +8,11 @@ import { languageTags, localeNames, locales, type Locale } from "@/i18n/config";
 interface LanguageSwitcherProps {
   lang: Locale;
   path: string;
+  translatedPaths?: Partial<Record<Locale, string>>;
   label: string;
 }
 
-export function LanguageSwitcher({ lang, path, label }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ lang, path, translatedPaths, label }: LanguageSwitcherProps) {
   const detailsRef = useRef<HTMLDetailsElement>(null);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ export function LanguageSwitcher({ lang, path, label }: LanguageSwitcherProps) {
         {locales.map((locale) => (
           <Link
             key={locale}
-            href={`/${locale}${path}`}
+            href={`/${locale}${translatedPaths?.[locale] ?? path}`}
             hrefLang={languageTags[locale]}
             aria-current={locale === lang ? "page" : undefined}
             className={`rounded-xl px-3 py-2 transition-colors hover:bg-white/10 ${
