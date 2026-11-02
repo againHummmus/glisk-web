@@ -55,23 +55,42 @@ export default async function PostPage({ params }: PageProps<"/[lang]/blog/[slug
     post.translations.filter(isLocale).map((language) => [language, `/blog/${slug}`]),
   );
 
+  const organization = {
+    "@type": "Organization",
+    "@id": `${site.url}/#organization`,
+    name: site.name,
+    url: site.url,
+    logo: { "@type": "ImageObject", url: `${site.url}/icon-512.png`, width: 512, height: 512 },
+  };
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.description,
-    inLanguage: languageTags[lang],
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt,
-    mainEntityOfPage: pageUrl,
-    ...(post.image && { image: [post.image.url] }),
-    ...(post.keywords.length > 0 && { keywords: post.keywords.join(", ") }),
-    author: { "@type": "Organization", name: site.name, url: site.url },
-    publisher: {
-      "@type": "Organization",
-      name: site.name,
-      logo: { "@type": "ImageObject", url: `${site.url}/icon-512.png` },
-    },
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": `${pageUrl}#article`,
+        headline: post.title,
+        description: post.description,
+        url: pageUrl,
+        inLanguage: languageTags[lang],
+        datePublished: post.publishedAt,
+        dateModified: post.updatedAt,
+        mainEntityOfPage: pageUrl,
+        ...(post.image && { image: [post.image.url] }),
+        ...(post.keywords.length > 0 && { keywords: post.keywords.join(", ") }),
+        isPartOf: { "@type": "Blog", "@id": `${site.url}/${lang}/blog#blog`, name: dict.blog.title, url: `${site.url}/${lang}/blog` },
+        author: organization,
+        publisher: organization,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: site.name, item: `${site.url}/${lang}` },
+          { "@type": "ListItem", position: 2, name: dict.nav.blog, item: `${site.url}/${lang}/blog` },
+          { "@type": "ListItem", position: 3, name: post.title },
+        ],
+      },
+    ],
   };
 
   return (

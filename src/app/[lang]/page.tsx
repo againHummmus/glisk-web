@@ -21,11 +21,21 @@ function buildStructuredData(lang: Locale, dict: Dictionary) {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": `${site.url}/#organization`,
+        name: site.name,
+        url: site.url,
+        logo: { "@type": "ImageObject", url: `${site.url}/icon-512.png`, width: 512, height: 512 },
+        email: site.contactEmail,
+        sameAs: [playStoreUrl],
+      },
+      {
         "@type": "WebSite",
         "@id": `${site.url}/#website`,
         name: site.name,
         url: site.url,
         inLanguage: languageTags[lang],
+        publisher: { "@id": `${site.url}/#organization` },
       },
       {
         "@type": "MobileApplication",
@@ -39,6 +49,7 @@ function buildStructuredData(lang: Locale, dict: Dictionary) {
         installUrl: playStoreUrl,
         downloadUrl: playStoreUrl,
         inLanguage: languageTags[lang],
+        publisher: { "@id": `${site.url}/#organization` },
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       },
       {
