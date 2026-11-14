@@ -26,12 +26,21 @@ export interface RelatedPost {
   description: string;
 }
 
+export interface PostRobots {
+  index: boolean;
+  follow: boolean;
+}
+
 export interface Post extends PostSummary {
   seoTitle: string | null;
   keywords: string[];
   body: PortableTextProps["value"];
   related: RelatedPost[];
+  robots: PostRobots;
+  /** Every published language of this post, for the language switcher. */
   translations: string[];
+  /** Published languages of this post that allow indexing, for hreflang. */
+  indexedTranslations: string[];
 }
 
 export interface BodyImage {
@@ -48,12 +57,14 @@ export interface PostPath {
   lang: Locale;
   slug: string;
   updatedAt: string;
+  index: boolean;
 }
 
 interface RawPostPath {
   language: string;
   slug: string;
   updatedAt: string;
+  index: boolean;
 }
 
 export const POSTS_TAG = "posts";
@@ -68,6 +79,10 @@ const client = createClient({
 });
 
 const PUBLISHED = `_type == "post" && defined(slug.current) && publishedAt <= now()`;
+
+// Posts created before the SEO block existed have no `seo` object: they stay index, follow.
+const INDEX = `coalesce(seo.index, true)`;
+const FOLLOW = `coalesce(seo.follow, true)`;
 
 const SUMMARY_FIELDS = `
   "id": _id,
@@ -103,12 +118,16 @@ const POST_QUERY = `*[${PUBLISHED} && language == $language && slug.current == $
     "slug": slug.current,
     description
   },
-  "translations": *[${PUBLISHED} && slug.current == ^.slug.current].language
+  "robots": { "index": ${INDEX}, "follow": ${FOLLOW} },
+  "translations": *[${PUBLISHED} && slug.current == ^.slug.current].language,
+  "indexedTranslations": *[${PUBLISHED} && ${INDEX} && slug.current == ^.slug.current].language
 }`;
 
 const LANGUAGES_QUERY = `array::unique(*[${PUBLISHED}].language)`;
 
-const PATHS_QUERY = `*[${PUBLISHED}]{language, "slug": slug.current, "updatedAt": _updatedAt}`;
+const INDEXED_LANGUAGES_QUERY = `array::unique(*[${PUBLISHED} && ${INDEX}].language)`;
+
+const PATHS_QUERY = `*[${PUBLISHED}]{language, "slug": slug.current, "updatedAt": _updatedAt, "index": ${INDEX}}`;
 
 async function fetchPosts(language: Locale, limit: number) {
   "use cache";
@@ -122,6 +141,13 @@ async function fetchBlogLanguages() {
   cacheLife("hours");
   cacheTag(POSTS_TAG);
   return client.fetch<string[]>(LANGUAGES_QUERY);
+}
+
+async function fetchIndexedBlogLanguages() {
+  "use cache";
+  cacheLife("hours");
+  cacheTag(POSTS_TAG);
+  return client.fetch<string[]>(INDEXED_LANGUAGES_QUERY);
 }
 
 export async function getPosts(language: Locale, limit = 100) {
@@ -140,8 +166,8 @@ export async function getPostPaths() {
   cacheLife("hours");
   cacheTag(POSTS_TAG);
   const paths = await client.fetch<RawPostPath[]>(PATHS_QUERY);
-  return paths.flatMap(({ language, slug, updatedAt }): PostPath[] =>
-    isLocale(language) ? [{ lang: language, slug, updatedAt }] : [],
+  return paths.flatMap(({ language, slug, updatedAt, index }): PostPath[] =>
+    isLocale(language) ? [{ lang: language, slug, updatedAt, index }] : [],
   );
 }
 
@@ -151,6 +177,27 @@ export async function getBlogLanguages() {
   } catch {
     return [];
   }
+}
+
+/** Languages with at least one indexable post: only their blog lists are indexed and listed in hreflang. */
+export async function getIndexedBlogLanguages() {
+  try {
+    return (await fetchIndexedBlogLanguages()).filter(isLocale);
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Page-level robots metadata. It replaces the layout's `robots` as a whole,
+ * so googleBot directives are repeated here.
+ */
+export function robotsMetadata({ index, follow }: PostRobots) {
+  return {
+    index,
+    follow,
+    googleBot: { index, follow, ...(index && { "max-image-preview": "large" as const, "max-snippet": -1 }) },
+  };
 }
 
 export async function getLatestPosts(language: Locale, limit: number) {

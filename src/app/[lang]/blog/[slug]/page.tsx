@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StoreButton } from "@/components/StoreButton";
 import { defaultLocale, isLocale, languageTags } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { formatPostDate, getPost, getPostPaths, localeAlternates, PLACEHOLDER_SLUG } from "@/lib/blog";
+import { formatPostDate, getPost, getPostPaths, localeAlternates, PLACEHOLDER_SLUG, robotsMetadata } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 export async function generateStaticParams() {
@@ -27,9 +27,13 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/blog/[slug
     title,
     description: post.description,
     keywords: post.keywords,
+    robots: robotsMetadata(post.robots),
     alternates: {
       canonical: `/${lang}/blog/${slug}`,
-      languages: localeAlternates(post.translations.filter(isLocale), `/blog/${slug}`),
+      // hreflang must only link indexable pages, and a noindex page should not take part in the set.
+      ...(post.robots.index && {
+        languages: localeAlternates(post.indexedTranslations.filter(isLocale), `/blog/${slug}`),
+      }),
     },
     openGraph: {
       title,

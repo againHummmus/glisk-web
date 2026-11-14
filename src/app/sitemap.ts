@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import { languageAlternates, locales } from "@/i18n/config";
-import { blogAlternates, getBlogLanguages, getPostPaths, localeAlternates, POSTS_TAG } from "@/lib/blog";
+import { blogAlternates, getIndexedBlogLanguages, getPostPaths, localeAlternates, POSTS_TAG } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 interface SitemapPage {
@@ -24,7 +24,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   "use cache";
   cacheLife("hours");
   cacheTag(POSTS_TAG);
-  const [blogLanguages, postPaths] = await Promise.all([getBlogLanguages(), getPostPaths()]);
+  // Only indexable pages belong in the sitemap.
+  const [blogLanguages, allPostPaths] = await Promise.all([getIndexedBlogLanguages(), getPostPaths()]);
+  const postPaths = allPostPaths.filter((path) => path.index);
 
   const staticEntries = PAGES.flatMap(({ path, priority, changeFrequency, lastModified }) =>
     locales.map((locale) => ({

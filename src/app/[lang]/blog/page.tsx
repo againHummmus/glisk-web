@@ -5,20 +5,23 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { defaultLocale, isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { blogAlternates, getBlogLanguages, getPosts } from "@/lib/blog";
+import { blogAlternates, getIndexedBlogLanguages, getPosts, robotsMetadata } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/blog">): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const dict = getDictionary(lang);
-  const blogLanguages = await getBlogLanguages();
+  const indexedLanguages = await getIndexedBlogLanguages();
+  // A list made only of noindex posts is not indexed either; links are still followed.
+  const index = indexedLanguages.includes(lang);
   return {
     title: { absolute: dict.blog.title },
     description: dict.blog.description,
+    robots: robotsMetadata({ index, follow: true }),
     alternates: {
       canonical: `/${lang}/blog`,
-      languages: blogAlternates(blogLanguages),
+      ...(index && { languages: blogAlternates(indexedLanguages) }),
     },
     openGraph: {
       title: dict.blog.title,
