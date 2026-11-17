@@ -1,7 +1,8 @@
 import type { PortableTextProps } from "@portabletext/react";
-import { createClient } from "@sanity/client";
 import { cacheLife, cacheTag } from "next/cache";
 import { defaultLocale, isLocale, languageTags, type Locale } from "@/i18n/config";
+import { sanityClient as client } from "@/lib/sanity";
+import { getIndexedLocales } from "@/lib/settings";
 
 export interface PostImage {
   url: string;
@@ -69,14 +70,6 @@ interface RawPostPath {
 
 export const POSTS_TAG = "posts";
 export const PLACEHOLDER_SLUG = "__placeholder__";
-
-const client = createClient({
-  projectId: "n5hfln30",
-  dataset: "production",
-  apiVersion: "2026-10-26",
-  useCdn: false,
-  perspective: "published",
-});
 
 const PUBLISHED = `_type == "post" && defined(slug.current) && publishedAt <= now()`;
 
@@ -154,20 +147,38 @@ export async function getPosts(language: Locale, limit = 100) {
   return fetchPosts(language, limit);
 }
 
-export async function getPost(language: Locale, slug: string) {
+async function fetchPost(language: Locale, slug: string) {
   "use cache";
   cacheLife("hours");
   cacheTag(POSTS_TAG);
   return client.fetch<Post | null>(POST_QUERY, { language, slug });
 }
 
-export async function getPostPaths() {
+async function fetchPostPaths() {
   "use cache";
   cacheLife("hours");
   cacheTag(POSTS_TAG);
-  const paths = await client.fetch<RawPostPath[]>(PATHS_QUERY);
+  return client.fetch<RawPostPath[]>(PATHS_QUERY);
+}
+
+// Indexing is gated twice: by the post's own SEO block and by the site-wide
+// list of indexed languages in Sanity settings. Both are cached separately,
+// so a settings change applies without refetching posts.
+
+export async function getPost(language: Locale, slug: string): Promise<Post | null> {
+  const [post, indexedLocales] = await Promise.all([fetchPost(language, slug), getIndexedLocales()]);
+  if (!post) return null;
+  return {
+    ...post,
+    robots: { ...post.robots, index: post.robots.index && indexedLocales.includes(language) },
+    indexedTranslations: post.indexedTranslations.filter((lang) => isLocale(lang) && indexedLocales.includes(lang)),
+  };
+}
+
+export async function getPostPaths() {
+  const [paths, indexedLocales] = await Promise.all([fetchPostPaths(), getIndexedLocales()]);
   return paths.flatMap(({ language, slug, updatedAt, index }): PostPath[] =>
-    isLocale(language) ? [{ lang: language, slug, updatedAt, index }] : [],
+    isLocale(language) ? [{ lang: language, slug, updatedAt, index: index && indexedLocales.includes(language) }] : [],
   );
 }
 
@@ -179,10 +190,14 @@ export async function getBlogLanguages() {
   }
 }
 
-/** Languages with at least one indexable post: only their blog lists are indexed and listed in hreflang. */
+/**
+ * Indexed locales with at least one indexable post: only their blog lists are
+ * indexed and listed in hreflang.
+ */
 export async function getIndexedBlogLanguages() {
+  const indexedLocales = await getIndexedLocales();
   try {
-    return (await fetchIndexedBlogLanguages()).filter(isLocale);
+    return (await fetchIndexedBlogLanguages()).filter(isLocale).filter((language) => indexedLocales.includes(language));
   } catch {
     return [];
   }

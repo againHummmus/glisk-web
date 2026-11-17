@@ -3,7 +3,10 @@ import { Geist } from "next/font/google";
 import { notFound } from "next/navigation";
 import { isLocale, languageAlternates, languageTags, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { robotsMetadata } from "@/lib/blog";
+import { getIndexedLocales } from "@/lib/settings";
 import { playStoreUrl, site } from "@/lib/site";
+import { brandGraph, jsonLd } from "@/lib/structured-data";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -28,6 +31,8 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
     ...(site.googleSiteVerification && { google: site.googleSiteVerification }),
     ...(site.yandexVerification && { yandex: site.yandexVerification }),
   };
+  const indexedLocales = await getIndexedLocales();
+  const index = indexedLocales.includes(lang);
   return {
     metadataBase: new URL(site.url),
     applicationName: site.name,
@@ -38,7 +43,8 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
     description: dict.meta.description,
     alternates: {
       canonical: `/${lang}`,
-      languages: languageAlternates(""),
+      // A noindex page takes no part in the hreflang set.
+      ...(index && { languages: languageAlternates("", indexedLocales) }),
     },
     openGraph: {
       title: dict.meta.title,
@@ -47,18 +53,17 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
       siteName: site.name,
       type: "website",
       locale: languageTags[lang].replace("-", "_"),
-      alternateLocale: locales.filter((locale) => locale !== lang).map((locale) => languageTags[locale].replace("-", "_")),
+      alternateLocale: indexedLocales
+        .filter((locale) => locale !== lang)
+        .map((locale) => languageTags[locale].replace("-", "_")),
     },
     twitter: {
       card: "summary_large_image",
       title: dict.meta.title,
       description: dict.meta.description,
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
-    },
+    // Locales not enabled in Sanity site settings are noindex; links are still followed.
+    robots: robotsMetadata({ index, follow: true }),
     appLinks: {
       android: { package: site.androidPackage, app_name: site.name, url: playStoreUrl },
     },
@@ -69,9 +74,13 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
 
 export default async function RootLayout({ children, params }: LayoutProps<"/[lang]">) {
   const { lang } = await params;
-  const htmlLang = isLocale(lang) ? languageTags[lang] : languageTags.en;
+  const locale = isLocale(lang) ? lang : "en";
+  const dict = getDictionary(locale);
   return (
-    <html lang={htmlLang} className={`${geistSans.variable} h-full antialiased`}>
+    <html lang={languageTags[locale]} className={`${geistSans.variable} h-full antialiased`}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(brandGraph(locale, dict.meta.description))} />
+      </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );

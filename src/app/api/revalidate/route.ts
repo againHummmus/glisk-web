@@ -1,6 +1,7 @@
 import { timingSafeEqual } from "node:crypto";
 import { revalidateTag } from "next/cache";
 import { POSTS_TAG } from "@/lib/blog";
+import { SETTINGS_TAG } from "@/lib/settings";
 
 function isAuthorized(request: Request) {
   const secret = process.env.SANITY_REVALIDATE_SECRET;
@@ -16,5 +17,6 @@ export async function POST(request: Request) {
     return Response.json({ revalidated: false }, { status: 401 });
   }
   revalidateTag(POSTS_TAG, { expire: 0 });
+  revalidateTag(SETTINGS_TAG, { expire: 0 });
   return Response.json({ revalidated: true });
 }

@@ -10,6 +10,7 @@ import { defaultLocale, isLocale, languageTags } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { formatPostDate, getPost, getPostPaths, localeAlternates, PLACEHOLDER_SLUG, robotsMetadata } from "@/lib/blog";
 import { site } from "@/lib/site";
+import { jsonLd, organizationRef } from "@/lib/structured-data";
 
 export async function generateStaticParams() {
   const paths = await getPostPaths();
@@ -59,14 +60,6 @@ export default async function PostPage({ params }: PageProps<"/[lang]/blog/[slug
     post.translations.filter(isLocale).map((language) => [language, `/blog/${slug}`]),
   );
 
-  const organization = {
-    "@type": "Organization",
-    "@id": `${site.url}/#organization`,
-    name: site.name,
-    url: site.url,
-    logo: { "@type": "ImageObject", url: `${site.url}/icon-512.png`, width: 512, height: 512 },
-  };
-
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -83,8 +76,8 @@ export default async function PostPage({ params }: PageProps<"/[lang]/blog/[slug
         ...(post.image && { image: [post.image.url] }),
         ...(post.keywords.length > 0 && { keywords: post.keywords.join(", ") }),
         isPartOf: { "@type": "Blog", "@id": `${site.url}/${lang}/blog#blog`, name: dict.blog.title, url: `${site.url}/${lang}/blog` },
-        author: organization,
-        publisher: organization,
+        author: organizationRef,
+        publisher: organizationRef,
       },
       {
         "@type": "BreadcrumbList",
@@ -101,10 +94,7 @@ export default async function PostPage({ params }: PageProps<"/[lang]/blog/[slug
     <>
       <SiteHeader lang={lang} path="" translatedPaths={translatedPaths} dict={dict} />
       <main className="flex-1">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(structuredData)} />
         <article className="mx-auto w-full max-w-3xl px-5 pb-16 pt-10 sm:px-8 lg:pt-16">
           <Link href={`/${lang}/blog`} className="text-sm text-neutral-400 transition-colors hover:text-white">
             ← {dict.blog.all}

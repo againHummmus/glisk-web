@@ -6,6 +6,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { isLocale, languageAlternates, languageTags } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { PolicySection } from "@/i18n/types";
+import { robotsMetadata } from "@/lib/blog";
+import { getIndexedLocales } from "@/lib/settings";
 import { site } from "@/lib/site";
 
 interface SectionProps {
@@ -17,13 +19,16 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/privacy">)
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const dict = getDictionary(lang);
+  const indexedLocales = await getIndexedLocales();
+  const index = indexedLocales.includes(lang);
   return {
     title: dict.privacy.metaTitle,
     description: dict.privacy.metaDescription,
     alternates: {
       canonical: `/${lang}/privacy`,
-      languages: languageAlternates("/privacy"),
+      ...(index && { languages: languageAlternates("/privacy", indexedLocales) }),
     },
+    robots: robotsMetadata({ index, follow: true }),
     openGraph: {
       title: `${dict.privacy.metaTitle} · ${site.name}`,
       description: dict.privacy.metaDescription,

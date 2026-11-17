@@ -11,58 +11,22 @@ import { StoreButton } from "@/components/StoreButton";
 import { isLocale, languageTags, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { Dictionary } from "@/i18n/types";
-import { playStoreUrl, site } from "@/lib/site";
+import { site } from "@/lib/site";
+import { jsonLd } from "@/lib/structured-data";
 
 const FEATURE_ICONS = [Timer, CalendarDays, Clapperboard, Lock];
 
-function buildStructuredData(lang: Locale, dict: Dictionary) {
-  const pageUrl = `${site.url}/${lang}`;
+function buildFaqData(lang: Locale, dict: Dictionary) {
   return {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": `${site.url}/#organization`,
-        name: site.name,
-        url: site.url,
-        logo: { "@type": "ImageObject", url: `${site.url}/icon-512.png`, width: 512, height: 512 },
-        email: site.contactEmail,
-        sameAs: [playStoreUrl],
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${site.url}/#website`,
-        name: site.name,
-        url: site.url,
-        inLanguage: languageTags[lang],
-        publisher: { "@id": `${site.url}/#organization` },
-      },
-      {
-        "@type": "MobileApplication",
-        "@id": `${site.url}/#app`,
-        name: site.name,
-        description: dict.meta.description,
-        url: pageUrl,
-        image: `${site.url}/icon-512.png`,
-        operatingSystem: "Android",
-        applicationCategory: "MultimediaApplication",
-        installUrl: playStoreUrl,
-        downloadUrl: playStoreUrl,
-        inLanguage: languageTags[lang],
-        publisher: { "@id": `${site.url}/#organization` },
-        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${pageUrl}#faq`,
-        inLanguage: languageTags[lang],
-        mainEntity: dict.faq.items.map(({ question, answer }) => ({
-          "@type": "Question",
-          name: question,
-          acceptedAnswer: { "@type": "Answer", text: answer },
-        })),
-      },
-    ],
+    "@type": "FAQPage",
+    "@id": `${site.url}/${lang}#faq`,
+    inLanguage: languageTags[lang],
+    mainEntity: dict.faq.items.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
   };
 }
 
@@ -76,10 +40,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <SiteHeader lang={lang} path="" dict={dict} />
 
       <main className="flex-1">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildStructuredData(lang, dict)).replace(/</g, "\\u003c") }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(buildFaqData(lang, dict))} />
         <section className="mx-auto grid w-full max-w-6xl items-center gap-16 px-5 pb-24 pt-10 sm:px-8 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
           <div className="flex flex-col items-start gap-7">
             <span className="flex items-center gap-2 rounded-full border border-white/10 bg-neutral-950 px-3.5 py-1.5 text-sm text-neutral-300">
@@ -87,6 +48,11 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               {dict.hero.badge}
             </span>
             <h1 className="text-5xl font-semibold leading-[1.1] tracking-tight sm:text-6xl">
+              <span className="mb-4 block text-3xl leading-none sm:text-4xl">
+                <BrandMark />
+                {site.name}
+              </span>
+              <span className="sr-only">: </span>
               {dict.hero.titleStart}
               <span className="whitespace-nowrap text-accent">{dict.hero.titleAccent}</span>
               {dict.hero.titleEnd}

@@ -61,9 +61,10 @@ export function matchLocale(acceptLanguage: string | null): Locale {
   return defaultLocale;
 }
 
-export function languageAlternates(path: string, baseUrl = "") {
+/** hreflang for pages that exist in every locale: lists only the given (indexed) locales. */
+export function languageAlternates(path: string, indexedLocales: readonly Locale[], baseUrl = "") {
   return {
-    ...Object.fromEntries(locales.map((locale) => [languageTags[locale], `${baseUrl}/${locale}${path}`])),
+    ...Object.fromEntries(indexedLocales.map((locale) => [languageTags[locale], `${baseUrl}/${locale}${path}`])),
     "x-default": `${baseUrl}/${defaultLocale}${path}`,
   };
 }

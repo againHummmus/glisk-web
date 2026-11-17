@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { cacheLife, cacheTag } from "next/cache";
-import { languageAlternates, locales } from "@/i18n/config";
+import { languageAlternates } from "@/i18n/config";
 import { blogAlternates, getIndexedBlogLanguages, getPostPaths, localeAlternates, POSTS_TAG } from "@/lib/blog";
+import { getIndexedLocales, SETTINGS_TAG } from "@/lib/settings";
 import { site } from "@/lib/site";
 
 interface SitemapPage {
@@ -23,18 +24,22 @@ function absoluteUrls(alternates: Record<string, string>) {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   "use cache";
   cacheLife("hours");
-  cacheTag(POSTS_TAG);
+  cacheTag(POSTS_TAG, SETTINGS_TAG);
   // Only indexable pages belong in the sitemap.
-  const [blogLanguages, allPostPaths] = await Promise.all([getIndexedBlogLanguages(), getPostPaths()]);
+  const [indexedLocales, blogLanguages, allPostPaths] = await Promise.all([
+    getIndexedLocales(),
+    getIndexedBlogLanguages(),
+    getPostPaths(),
+  ]);
   const postPaths = allPostPaths.filter((path) => path.index);
 
   const staticEntries = PAGES.flatMap(({ path, priority, changeFrequency, lastModified }) =>
-    locales.map((locale) => ({
+    indexedLocales.map((locale) => ({
       url: `${site.url}/${locale}${path}`,
       lastModified,
       changeFrequency,
       priority,
-      alternates: { languages: languageAlternates(path, site.url) },
+      alternates: { languages: languageAlternates(path, indexedLocales, site.url) },
     })),
   );
 

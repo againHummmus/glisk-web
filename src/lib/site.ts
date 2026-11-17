@@ -18,6 +18,12 @@ export const site = {
 
 export const playStoreUrl = `https://play.google.com/store/apps/details?id=${site.androidPackage}`;
 
+/**
+ * Official brand profiles for JSON-LD `sameAs`: they tell search engines that Glisk
+ * is this app and not another "Glisk". Add Reddit, X, etc. here as full URLs.
+ */
+export const brandProfiles: string[] = [playStoreUrl];
+
 export function getPlayStoreLink(lang: string, placement: string) {
   const referrer = `utm_source=website&utm_medium=${placement}&utm_campaign=site_${lang}`;
   return `${playStoreUrl}&hl=${lang}&referrer=${encodeURIComponent(referrer)}`;
